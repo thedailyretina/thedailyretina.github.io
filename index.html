@@ -43,7 +43,14 @@ a:focus-visible, button:focus-visible, input:focus-visible { outline: 2px solid 
 .tag { font-family: var(--sans); font-size: 14px; color: var(--muted); margin: 6px 0 0; }
 .btn { font-family: var(--sans); font-weight: 600; font-size: 15px; background: var(--red); color: #fff; text-decoration: none; padding: 9px 16px; border-radius: 2px; display: inline-block; }
 .btn:hover { opacity: .9; }
-.acts { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; }
+button.btn { border: 0; cursor: pointer; }
+.sub { display: flex; flex-wrap: wrap; gap: 8px; }
+.sub input[type=email] { flex: 1 1 200px; min-width: 0; font: inherit; font-family: var(--sans); font-size: 15px; padding: 8px 10px; border: 1px solid #c9c9c9; border-radius: 2px; background: #fff; color: var(--ink); }
+.box .sub input[type=email] { flex-basis: 100%; width: 100%; }
+aside > *, .sub { min-width: 0; }
+.sr { position: absolute; left: -9999px; }
+.acts { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; flex: 0 1 380px; }
+.acts .sub { width: 100%; }
 
 .page { max-width: 1040px; margin: 0 auto; padding-block: 24px 48px; display: grid; grid-template-columns: minmax(0, 1fr) 280px; gap: 40px; }
 main { min-width: 0; }
@@ -107,7 +114,12 @@ footer p { margin: 0 0 4px; }
     <p class="tag">Retina news every weekday morning. Headlines and links, readable in two minutes.</p>
   </div>
   <div class="acts">
-    <a class="btn" href="https://buttondown.com/thedailyretina" target="_blank" rel="noopener">Subscribe free</a>
+    <form class="sub" action="https://buttondown.com/api/emails/embed-subscribe/thedailyretina" method="post" target="_blank">
+      <label for="bd-email-top" class="sr">Email address</label>
+      <input type="email" name="email" id="bd-email-top" placeholder="Your email" required autocomplete="email">
+      <input type="hidden" value="1" name="embed">
+      <button type="submit" class="btn">Subscribe free</button>
+    </form>
   </div>
 </header>
 
@@ -131,7 +143,12 @@ footer p { margin: 0 0 4px; }
     <div class="box">
       <h3>Get it by email</h3>
       <p>One short email each weekday. Free, no ads, unsubscribe anytime.</p>
-      <a class="btn" href="https://buttondown.com/thedailyretina" target="_blank" rel="noopener">Subscribe</a>
+      <form class="sub" action="https://buttondown.com/api/emails/embed-subscribe/thedailyretina" method="post" target="_blank">
+      <label for="bd-email-side" class="sr">Email address</label>
+      <input type="email" name="email" id="bd-email-side" placeholder="Your email" required autocomplete="email">
+      <input type="hidden" value="1" name="embed">
+      <button type="submit" class="btn">Subscribe</button>
+    </form>
     </div>
     <div>
       <h3>Sections</h3>
