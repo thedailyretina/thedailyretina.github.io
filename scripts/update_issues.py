@@ -13,6 +13,7 @@ import urllib.request
 import xml.etree.ElementTree as ET
 from datetime import date, datetime, timedelta, timezone
 from html.parser import HTMLParser
+from urllib.parse import parse_qsl, urlencode, urlsplit, urlunsplit
 
 FEED = "https://buttondown.com/thedailyretina/rss"
 OUT = "issues.json"
@@ -92,6 +93,52 @@ def clean(s):
     return re.sub(r"\s+", " ", s or "").strip()
 
 
+MONTH_RX = r"(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Sept|Oct|Nov|Dec)[a-z]*\.?\s+\d{1,2}(?:,\s*\d{4})?"
+# Parentheticals like "(earlier item: Oct 15 opinion)" or "(previously reported)".
+EARLIER_PAREN = re.compile(r"\s*\((?:[^()]*\b(?:earlier|previously|past)\b[^()]*)\)", re.I)
+# Sentences that only date-stamp an item: "Published Oct 15.", "Covered by Healio Oct 19.", "Published July 9; covered by Healio Oct 19."
+DATE_ONLY_SENT = re.compile(r"(?:^|(?<=[.;]))\s*(?:(?:first\s+)?(?:published|posted|indexed|covered|reported)\b[^.;]*?" + MONTH_RX + r"[^.;]*(?:[.;]|$))+", re.I)
+# Trailing clauses like "Ophthalmic Image, published Oct 15."
+DATE_CLAUSE = re.compile(r",\s*(?:first\s+)?(?:published|posted|indexed|covered|reported)\b[^.;,]*?" + MONTH_RX + r"[^.;,]*", re.I)
+
+
+def real_url(url):
+    """Unwrap Gmail/Google redirect links and drop email tracking parameters."""
+    parts = urlsplit(url)
+    if parts.netloc.endswith("google.com") and parts.path == "/url":
+        q = dict(parse_qsl(parts.query))
+        if q.get("q", "").startswith("http"):
+            return real_url(q["q"])
+    query = [(k, v) for k, v in parse_qsl(parts.query, keep_blank_values=True) if not k.lower().startswith("utm_")]
+    return urlunsplit((parts.scheme, parts.netloc, parts.path, urlencode(query), parts.fragment))
+
+
+def strip_earlier(text):
+    text = EARLIER_PAREN.sub("", text or "")
+    text = DATE_ONLY_SENT.sub("", text)
+    text = DATE_CLAUSE.sub("", text)
+    text = clean(text).strip(" ;,")
+    if text and not text.endswith((".", ")", "?")):
+        text += "."
+    return text
+
+
+def normalize(issue):
+    """House style: no summary or coverage line under the date, no earlier/past-news labels, real source URLs."""
+    def fix(e, with_ctx):
+        out = dict(e)
+        out["h"] = clean(EARLIER_PAREN.sub("", e.get("h", ""))).rstrip(". ")
+        out["url"] = real_url(e.get("url", ""))
+        if with_ctx:
+            out["ctx"] = strip_earlier(e.get("ctx", ""))
+        return out
+    return {
+        "date": issue["date"],
+        "top": [fix(t, False) for t in issue.get("top", [])],
+        "items": [fix(x, True) for x in issue.get("items", [])],
+    }
+
+
 def section_of(heading):
     for key, rx in SECTION_KEYS:
         if rx.search(heading):
@@ -158,8 +205,9 @@ def main():
             data = json.load(f)
     except FileNotFoundError:
         data = {"issues": []}
-    by_date = {i["date"]: i for i in data.get("issues", [])}
-    added = 0
+    old = {i["date"]: i for i in data.get("issues", [])}
+    by_date = {d: normalize(i) for d, i in old.items()}
+    added = sum(1 for d in by_date if by_date[d] != old[d])
     for it in root.iter("item"):
         title = it.findtext("title") or ""
         if "daily retina" not in title.lower():
@@ -170,7 +218,7 @@ def main():
             print("skipped (no items parsed):", title, file=sys.stderr)
             continue
         d = issue_date(title, it.findtext("pubDate") or "")
-        new = {"date": d, "summary": summary, "coverage": coverage, "top": top, "items": items}
+        new = normalize({"date": d, "top": top, "items": items})
         if by_date.get(d) != new:
             by_date[d] = new
             added += 1
