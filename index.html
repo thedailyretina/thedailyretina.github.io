@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>The Daily Retina</title>
+<meta name="description" content="Retina news every weekday morning: FDA and CMS actions, pipeline and trial news, and new papers. Headlines and links, readable in two minutes.">
+<meta property="og:title" content="The Daily Retina">
+<meta property="og:description" content="Retina news every weekday morning. Headlines and links, readable in two minutes.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='14' fill='%23c8102e'/%3E%3Ccircle cx='16' cy='16' r='5' fill='%23fff'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;600;800&display=swap">
+<style>
+/* Layout: plain news site. Header bar, then a two-column page (stories left, sidebar right) that stacks on phones. */
+:root {
+  --bg: #ffffff;
+  --ink: #141414;
+  --muted: #5f5f5f;
+  --line: #e4e4e4;
+  --red: #c8102e;
+  --soft: #f4f4f4;
+  --sans: "Libre Franklin", "Franklin Gothic Medium", "Helvetica Neue", Arial, sans-serif;
+  --serif: Georgia, "Times New Roman", serif;
+}
+:root { color-scheme: light; }
+
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--bg); color: var(--ink);
+  font-family: var(--serif); font-size: 17px; line-height: 1.5;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+}
+a { color: inherit; }
+a:focus-visible, button:focus-visible, input:focus-visible { outline: 2px solid var(--red); outline-offset: 2px; }
+
+.top { max-width: 1040px; margin: 0 auto; padding-block: 18px 14px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px; border-bottom: 3px solid var(--ink); }
+.logo { font-family: var(--sans); font-weight: 800; font-size: 30px; letter-spacing: -0.02em; line-height: 1; margin: 0; }
+.logo span { color: var(--red); }
+.tag { font-family: var(--sans); font-size: 14px; color: var(--muted); margin: 6px 0 0; }
+.btn { font-family: var(--sans); font-weight: 600; font-size: 15px; background: var(--red); color: #fff; text-decoration: none; padding: 9px 16px; border-radius: 2px; display: inline-block; }
+.btn:hover { opacity: .9; }
+.acts { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; }
+
+.page { max-width: 1040px; margin: 0 auto; padding-block: 24px 48px; display: grid; grid-template-columns: minmax(0, 1fr) 280px; gap: 40px; }
+main { min-width: 0; }
+aside { display: grid; gap: 28px; align-content: start; font-family: var(--sans); font-size: 15px; }
+
+h2, h3 { font-family: var(--sans); }
+.date { font-family: var(--sans); font-size: 15px; font-weight: 600; color: var(--red); margin: 0 0 4px; }
+.cov { font-family: var(--sans); font-size: 14px; color: var(--muted); margin: 0 0 18px; }
+
+.lead { margin: 0 0 8px; padding: 0; list-style: none; display: grid; gap: 14px; }
+.lead li { padding-bottom: 14px; border-bottom: 1px solid var(--line); }
+.lead a.h { font-family: var(--sans); font-weight: 800; font-size: 23px; line-height: 1.2; text-decoration: none; letter-spacing: -0.01em; }
+.lead a.h:hover { text-decoration: underline; }
+.lead .s { font-family: var(--sans); font-size: 13px; color: var(--muted); margin-top: 4px; }
+
+.sec h3 { font-size: 17px; font-weight: 800; margin: 26px 0 10px; padding-top: 10px; border-top: 1px solid var(--ink); }
+.story { margin: 0 0 14px; }
+.story a.h { font-weight: 700; text-decoration: none; font-family: var(--serif); }
+.story a.h:hover { text-decoration: underline; }
+.story p { margin: 2px 0 0; color: var(--muted); font-size: 16px; }
+.story .s { font-family: var(--sans); font-size: 13px; color: var(--muted); }
+.nil { color: var(--muted); margin: 0; }
+
+.past { margin-top: 44px; }
+.past h2 { font-size: 22px; font-weight: 800; margin: 0 0 12px; }
+#q { width: 100%; font: inherit; font-family: var(--sans); font-size: 16px; padding: 9px 10px; border: 1px solid var(--line); border-radius: 2px; background: var(--bg); color: var(--ink); }
+.day { margin-top: 20px; }
+.day h4 { font-family: var(--sans); font-size: 14px; font-weight: 600; margin: 0 0 6px; color: var(--muted); }
+.day h4 a { text-decoration: none; }
+.day ul { margin: 0; padding-left: 18px; }
+.day li { margin: 3px 0; }
+.day li a { text-decoration: none; }
+.day li a:hover { text-decoration: underline; }
+.day li small { font-family: var(--sans); color: var(--muted); font-size: 12.5px; margin-left: 4px; }
+mark { background: #ffe58a; color: #141414; }
+
+.box { background: var(--soft); padding: 16px; }
+.box h3 { margin: 0 0 6px; font-size: 17px; font-weight: 800; }
+.box p { margin: 0 0 12px; color: var(--muted); line-height: 1.45; }
+aside h3 { margin: 0 0 8px; font-size: 15px; font-weight: 800; }
+aside p { margin: 0; color: var(--muted); line-height: 1.45; }
+.secs { list-style: none; margin: 0; padding: 0; display: grid; gap: 4px; }
+.secs button { font: inherit; background: none; border: 0; padding: 2px 0; color: var(--ink); cursor: pointer; text-align: left; }
+.secs button[aria-pressed="true"] { color: var(--red); font-weight: 600; }
+.secs button:hover { text-decoration: underline; }
+
+footer { max-width: 1040px; margin: 0 auto; padding-block: 16px 32px; border-top: 1px solid var(--line); font-family: var(--sans); font-size: 13px; color: var(--muted); }
+footer p { margin: 0 0 4px; }
+
+@media (max-width: 800px) {
+  .page { grid-template-columns: 1fr; gap: 28px; }
+  aside .box { display: none; }
+  .lead a.h { font-size: 20px; }
+}
+</style>
+</head>
+<body>
+<header class="top">
+  <div>
+    <p class="logo">The Daily Retina<span>.</span></p>
+    <p class="tag">Retina news every weekday morning. Headlines and links, readable in two minutes.</p>
+  </div>
+  <div class="acts">
+    <a class="btn" href="https://buttondown.com/thedailyretina" target="_blank" rel="noopener">Subscribe free</a>
+  </div>
+</header>
+
+<div class="page">
+  <main>
+    <p class="date" id="d"></p>
+    <p class="cov" id="cov">Loading…</p>
+    <ul class="lead" id="lead"></ul>
+    <div id="secs-body"></div>
+
+    <section class="past" aria-labelledby="past-h">
+      <h2 id="past-h">Past issues</h2>
+      <label for="q" style="position:absolute;left:-9999px">Search past headlines</label>
+      <input id="q" type="search" placeholder="Search headlines (e.g. faricimab, PDUFA, GA)" autocomplete="off">
+      <div id="days"></div>
+      <p class="nil" id="none" hidden>Nothing matches that search.</p>
+    </section>
+  </main>
+
+  <aside>
+    <div class="box">
+      <h3>Get it by email</h3>
+      <p>One short email each weekday. Free, no ads, unsubscribe anytime.</p>
+      <a class="btn" href="https://buttondown.com/thedailyretina" target="_blank" rel="noopener">Subscribe</a>
+    </div>
+    <div>
+      <h3>Sections</h3>
+      <ul class="secs" id="secs"></ul>
+    </div>
+    <div class="side-extra">
+      <h3>About</h3>
+      <p>FDA and CMS actions, pipeline and trial news, and new papers that matter to retina specialists. Each item links to the original source.</p>
+    </div>
+  </aside>
+</div>
+
+<footer>
+  <p id="upd"></p>
+</footer>
+
+<script>
+(function () {
+  var SECTIONS = [["fda", "FDA & CMS"], ["industry", "Industry"], ["research", "Research"], ["guidelines", "Guidelines & other news"]];
+  var NAMES = {}; SECTIONS.forEach(function (s) { NAMES[s[0]] = s[1]; });
+  var data = [], filter = "all";
+  function $(id) { return document.getElementById(id); }
+  function el(t, c, txt) { var n = document.createElement(t); if (c) n.className = c; if (txt != null) n.textContent = txt; return n; }
+  function a(url, txt, cls) { var x = el("a", cls, txt); x.href = url; x.target = "_blank"; x.rel = "noopener"; return x; }
+  function day(iso, long) {
+    return new Date(iso + "T12:00:00").toLocaleDateString("en-US", long ? { weekday: "long", month: "long", day: "numeric", year: "numeric" } : { month: "long", day: "numeric", year: "numeric" });
+  }
+
+  function latest(i) {
+    $("d").textContent = day(i.date, true);
+    $("cov").textContent = i.coverage ? "Covering " + i.coverage + "." : "";
+    var lead = $("lead"); lead.textContent = "";
+    (i.top || []).forEach(function (t) {
+      var li = el("li"); li.append(a(t.url, t.h, "h"));
+      li.append(el("div", "s", t.src || "")); lead.append(li);
+    });
+    var body = $("secs-body"); body.textContent = "";
+    SECTIONS.forEach(function (s) {
+      var wrap = el("div", "sec"); wrap.append(el("h3", null, s[1]));
+      var items = (i.items || []).filter(function (x) { return x.section === s[0]; });
+      if (!items.length) wrap.append(el("p", "nil", "Nothing notable."));
+      items.forEach(function (x) {
+        var st = el("div", "story");
+        st.append(a(x.url, x.h, "h"));
+        if (x.ctx) st.append(el("p", null, x.ctx));
+        st.append(el("span", "s", x.src || ""));
+        wrap.append(st);
+      });
+      body.append(wrap);
+    });
+  }
+
+  function mark(text, q) {
+    var f = document.createDocumentFragment();
+    if (!q) { f.append(text); return f; }
+    var lo = text.toLowerCase(), i = 0, k;
+    while ((k = lo.indexOf(q, i)) !== -1) { f.append(text.slice(i, k)); f.append(el("mark", null, text.slice(k, k + q.length))); i = k + q.length; }
+    f.append(text.slice(i)); return f;
+  }
+
+  function archive() {
+    var q = $("q").value.trim().toLowerCase(), box = $("days"), n = 0;
+    box.textContent = "";
+    data.forEach(function (i) {
+      var items = (i.items || []).filter(function (x) {
+        return (filter === "all" || x.section === filter) && (!q || (x.h + " " + (x.ctx || "") + " " + (x.src || "")).toLowerCase().indexOf(q) !== -1);
+      });
+      if (!items.length) return;
+      var d = el("div", "day"); d.id = i.date;
+      var h = el("h4"); var ha = el("a", null, day(i.date)); ha.href = "#" + i.date; h.append(ha); d.append(h);
+      var ul = el("ul");
+      items.forEach(function (x) {
+        var li = el("li"); var link = a(x.url, null); link.append(mark(x.h, q)); li.append(link);
+        li.append(el("small", null, NAMES[x.section] || "")); ul.append(li); n++;
+      });
+      d.append(ul); box.append(d);
+    });
+    $("none").hidden = n > 0 || !data.length;
+  }
+
+  function sections() {
+    var ul = $("secs"); ul.textContent = "";
+    [["all", "All sections"]].concat(SECTIONS).forEach(function (s) {
+      var li = el("li"), b = el("button", null, s[1]); b.type = "button"; b.id = "sec-" + s[0];
+      b.setAttribute("aria-pressed", String(filter === s[0]));
+      b.addEventListener("click", function () { filter = s[0]; sections(); archive(); $("past-h").scrollIntoView({ block: "start" }); });
+      li.append(b); ul.append(li);
+    });
+  }
+
+  fetch("issues.json", { cache: "no-store" }).then(function (r) { if (!r.ok) throw 0; return r.json(); }).then(function (j) {
+    data = (j.issues || []).slice().sort(function (x, y) { return y.date.localeCompare(x.date); });
+    if (j.updated) $("upd").textContent = "Last updated " + day(j.updated) + ".";
+    sections();
+    if (!data.length) { $("cov").textContent = "The first issue is on its way. Subscribe to get it."; return; }
+    latest(data[0]); archive();
+    var h = location.hash.slice(1); if (h && $(h)) $(h).scrollIntoView();
+  }).catch(function () {
+    $("cov").textContent = "Couldn't load the issues. Past issues are also at buttondown.com/thedailyretina/archive.";
+  });
+  $("q").addEventListener("input", archive);
+})();
+</script>
+</body>
+</html>
