@@ -2,6 +2,79 @@
   "updated": "2026-10-21",
   "issues": [
     {
+      "date": "2026-10-21",
+      "summary": "A quiet day: a CHMP positive opinion for the ranibizumab biosimilar Fovlussea, Surrozen's $95.1 million financing for SZN-8141, and a meta-analysis of factors associated with RPE tears.",
+      "coverage": "Oct 20–21, 2026, plus an Oct 15 EMA opinion and papers published online earlier but first indexed in PubMed Oct 19–21",
+      "top": [
+        {
+          "h": "CHMP recommends approval of Fovlussea, a ranibizumab biosimilar (earlier item: Oct 15 opinion)",
+          "url": "https://www.google.com/url?q=https://www.ema.europa.eu/en/news/meeting-highlights-committee-medicinal-products-human-use-chmp-12-15-october-2026&source=gmail&ust=1792667004939000&sa=E&utm_source=thedailyretina&utm_medium=email&utm_campaign=the-daily-retina-wednesday-october-21-2026",
+          "src": "EMA"
+        },
+        {
+          "h": "Surrozen closes approximately $95.1 million financing tranche after SZN-8141 IND clearance",
+          "url": "https://www.google.com/url?q=https://www.globenewswire.com/news-release/2026/10/20/3385015/0/en/surrozen-announces-closing-of-second-tranche-of-march-2025-private-placement-for-95-1-million.html&source=gmail&ust=1792667004939000&sa=E&utm_source=thedailyretina&utm_medium=email&utm_campaign=the-daily-retina-wednesday-october-21-2026",
+          "src": "Surrozen press release"
+        },
+        {
+          "h": "Baseline PED height is the most consistently reported association with RPE tears in nAMD (AJO meta-analysis)",
+          "url": "https://www.google.com/url?q=https://pubmed.ncbi.nlm.nih.gov/42896642/&source=gmail&ust=1792667004939000&sa=E&utm_source=thedailyretina&utm_medium=email&utm_campaign=the-daily-retina-wednesday-october-21-2026",
+          "src": "PubMed"
+        }
+      ],
+      "items": [
+        {
+          "section": "fda",
+          "h": "CHMP recommends approval of Fovlussea, a ranibizumab biosimilar (earlier item: Oct 15 opinion)",
+          "url": "https://www.google.com/url?q=https://www.ema.europa.eu/en/news/meeting-highlights-committee-medicinal-products-human-use-chmp-12-15-october-2026&source=gmail&ust=1792667004939000&sa=E&utm_source=thedailyretina&utm_medium=email&utm_campaign=the-daily-retina-wednesday-october-21-2026",
+          "src": "EMA",
+          "ctx": "The EMA committee adopted a positive opinion for Accord Healthcare's Lucentis biosimilar for nAMD, DMO, proliferative diabetic retinopathy, RVO-related macular oedema, and CNV; the European Commission decision is pending."
+        },
+        {
+          "section": "industry",
+          "h": "Surrozen closes approximately $95.1 million financing tranche after SZN-8141 IND clearance",
+          "url": "https://www.google.com/url?q=https://www.globenewswire.com/news-release/2026/10/20/3385015/0/en/surrozen-announces-closing-of-second-tranche-of-march-2025-private-placement-for-95-1-million.html&source=gmail&ust=1792667004939000&sa=E&utm_source=thedailyretina&utm_medium=email&utm_campaign=the-daily-retina-wednesday-october-21-2026",
+          "src": "Surrozen press release",
+          "ctx": "The second tranche of its March 2025 private placement, triggered by the Oct 2 FDA IND clearance for the intravitreal candidate SZN-8141, funds the DUET phase 1b/2a study in DME and initial phase 1b development of SZN-8143 (being developed for DME, wet AMD, and uveitic macular edema), with cash runway expected into 2029."
+        },
+        {
+          "section": "research",
+          "h": "Baseline PED height is the most consistently reported association with RPE tears in nAMD (AJO meta-analysis)",
+          "url": "https://www.google.com/url?q=https://pubmed.ncbi.nlm.nih.gov/42896642/&source=gmail&ust=1792667004939000&sa=E&utm_source=thedailyretina&utm_medium=email&utm_campaign=the-daily-retina-wednesday-october-21-2026",
+          "src": "PubMed",
+          "ctx": "In a review of 16 studies (4,043 eyes), eyes that tore had greater baseline PED height (5 studies, 425 eyes; MD 212.39 µm; 95% CI, 133.87–290.91) and area (4 studies, 1,360 eyes; MD 5.80 mm²; 95% CI, 3.48–8.12); anti-VEGF agent choice was not consistently associated, and certainty was very low, so these are associations rather than validated predictors."
+        },
+        {
+          "section": "research",
+          "h": "Long-term follow-up of EMAP in Japanese patients suggests involvement extending beyond the macula (Graefe's)",
+          "url": "https://www.google.com/url?q=https://pubmed.ncbi.nlm.nih.gov/42900412/&source=gmail&ust=1792667004939000&sa=E&utm_source=thedailyretina&utm_medium=email&utm_campaign=the-daily-retina-wednesday-october-21-2026",
+          "src": "PubMed",
+          "ctx": "In 8 genetically screened patients followed a mean 102.5 months, mean BCVA fell from 0.18 to 1.08 logMAR (right eye), 87.5% had peripheral paving-stone-like degeneration, and 62.5% had reduced rod responses; a small retrospective series."
+        },
+        {
+          "section": "research",
+          "h": "Liposomal encapsulation protects bevacizumab from silicone oil-induced aggregation in vitro (TVST)",
+          "url": "https://www.google.com/url?q=https://pubmed.ncbi.nlm.nih.gov/42895282/&source=gmail&ust=1792667004939000&sa=E&utm_source=thedailyretina&utm_medium=email&utm_campaign=the-daily-retina-wednesday-october-21-2026",
+          "src": "PubMed",
+          "ctx": "Liposomal bevacizumab stayed stable and unaggregated after up to 4 weeks of exposure to Siluron 1000 and Densiron Xtra, unlike non-formulated drug; in vivo efficacy and release kinetics are untested."
+        },
+        {
+          "section": "research",
+          "h": "German National Cohort describes fundus imaging and visual acuity data in 48,460 adults as an AI research resource (Ophthalmology Science)",
+          "url": "https://www.google.com/url?q=https://pubmed.ncbi.nlm.nih.gov/42894708/&source=gmail&ust=1792667004939000&sa=E&utm_source=thedailyretina&utm_medium=email&utm_campaign=the-daily-retina-wednesday-october-21-2026",
+          "src": "PubMed",
+          "ctx": "In this population-based baseline, 68.2% of nondilated fundus images were gradable and standard deep learning models predicted age with a mean absolute error of 2.96 years."
+        },
+        {
+          "section": "research",
+          "h": "Masked expert ratings of four consumer LLMs on anterior segment questions find quality differences and a post hoc severe-safety signal (Ophthalmology Science)",
+          "url": "https://www.google.com/url?q=https://pubmed.ncbi.nlm.nih.gov/42894879/&source=gmail&ust=1792667004939000&sa=E&utm_source=thedailyretina&utm_medium=email&utm_campaign=the-daily-retina-wednesday-october-21-2026",
+          "src": "PubMed",
+          "ctx": "Eleven cornea specialists rated Claude and Grok higher than ChatGPT and Gemini on quality across 45 questions, with no significant difference in mean safety, but post hoc more questions drew at least one severe safety rating for Claude (35.6%) and Grok (33.3%) than for ChatGPT (6.7%) or Gemini (11.1%); the authors call this hypothesis-generating."
+        }
+      ]
+    },
+    {
       "date": "2026-10-20",
       "summary": "EyePoint's Duravyu misses its second phase 3 wet AMD trial and the company pivots to DME, plus new data on uveal melanoma prognostication and longitudinal OCTA in diabetes.",
       "coverage": "Oct 19–20, 2026, plus two Oct 15 papers that earlier coverage missed",
