@@ -103,13 +103,16 @@ def parse_issue(body_html):
     blocks = Blocks()
     blocks.feed(body_html)
     blocks = blocks.close()
-    coverage, section, top, items = "", None, [], []
+    coverage, summary, section, top, items = "", "", None, [], []
     for b in blocks:
         text = clean(b["text"])
         if b["kind"] == "h" or (not b["links"] and section_of(text) and len(text) < 60 and text == clean(b["bold"] or text)):
             s = section_of(text)
             if s:
                 section = s
+            continue
+        if re.match(r"^(in brief|summary)\s*:", text, re.I):
+            summary = re.sub(r"^(in brief|summary)\s*:\s*", "", text, flags=re.I)
             continue
         if text.lower().startswith("coverage"):
             coverage = re.sub(r"^coverage:\s*", "", text, flags=re.I).rstrip(".")
@@ -135,7 +138,7 @@ def parse_issue(body_html):
             top.append(entry)
         else:
             items.append({"section": section, **entry, "ctx": ctx})
-    return coverage, top[:3], items
+    return coverage, summary, top[:3], items
 
 
 def issue_date(title, pub):
@@ -162,12 +165,12 @@ def main():
         if "daily retina" not in title.lower():
             continue
         body = it.findtext("{http://purl.org/rss/1.0/modules/content/}encoded") or it.findtext("description") or ""
-        coverage, top, items = parse_issue(html.unescape(body) if "&lt;" in body else body)
+        coverage, summary, top, items = parse_issue(html.unescape(body) if "&lt;" in body else body)
         if not items and not top:
             print("skipped (no items parsed):", title, file=sys.stderr)
             continue
         d = issue_date(title, it.findtext("pubDate") or "")
-        new = {"date": d, "coverage": coverage, "top": top, "items": items}
+        new = {"date": d, "summary": summary, "coverage": coverage, "top": top, "items": items}
         if by_date.get(d) != new:
             by_date[d] = new
             added += 1

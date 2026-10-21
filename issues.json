@@ -3,19 +3,68 @@
   "issues": [
     {
       "date": "2026-10-20",
+      "summary": "EyePoint's Duravyu misses its second phase 3 wet AMD trial and the company pivots to DME, plus new data on uveal melanoma prognostication and longitudinal OCTA in diabetes.",
       "coverage": "Oct 19–20, 2026, plus two Oct 15 papers that earlier coverage missed",
       "top": [
-        {"h": "Duravyu misses noninferiority again in LUCIA, its second phase 3 wet AMD trial", "url": "https://investors.eyepoint.bio/news-releases/news-release-details/eyepoint-announces-topline-results-lucia-second-pivotal-phase-3", "src": "EyePoint release"},
-        {"h": "EyePoint plans to end both wet AMD trials early, cut about 53% of staff, and prioritize DME", "url": "https://globenewswire.com/news-release/2026/10/19/3383318/0/en/eyepoint-announces-strategic-prioritization.html", "src": "EyePoint release"},
-        {"h": "COOG2: 15-GEP/PRAME stays prognostic for uveal melanoma metastasis without confirmatory cytopathology", "url": "https://doi.org/10.1001/jamaophthalmol.2026.4378", "src": "JAMA Ophthalmol"}
+        {
+          "h": "Duravyu misses noninferiority again in LUCIA, its second phase 3 wet AMD trial",
+          "url": "https://investors.eyepoint.bio/news-releases/news-release-details/eyepoint-announces-topline-results-lucia-second-pivotal-phase-3",
+          "src": "EyePoint release"
+        },
+        {
+          "h": "EyePoint plans to end both wet AMD trials early, cut about 53% of staff, and prioritize DME",
+          "url": "https://globenewswire.com/news-release/2026/10/19/3383318/0/en/eyepoint-announces-strategic-prioritization.html",
+          "src": "EyePoint release"
+        },
+        {
+          "h": "COOG2: 15-GEP/PRAME stays prognostic for uveal melanoma metastasis without confirmatory cytopathology",
+          "url": "https://doi.org/10.1001/jamaophthalmol.2026.4378",
+          "src": "JAMA Ophthalmol"
+        }
       ],
       "items": [
-        {"section": "industry", "h": "Duravyu misses noninferiority again in LUCIA, its second phase 3 wet AMD trial", "ctx": "The vorolanib insert (2.7 mg every 24 weeks; n=475) missed BCVA noninferiority vs aflibercept 2 mg every 8 weeks, as LUGANO did. Effect sizes were not disclosed.", "url": "https://investors.eyepoint.bio/news-releases/news-release-details/eyepoint-announces-topline-results-lucia-second-pivotal-phase-3", "src": "EyePoint release"},
-        {"section": "industry", "h": "LUCIA secondary endpoints: 38% lower treatment burden, 52% of eyes supplement-free through week 56", "ctx": "The 38% reduction vs aflibercept carried a nominal p<0.0001. EyePoint reports no drug-related safety signals across more than 630 patients in six trials.", "url": "https://investors.eyepoint.bio/news-releases/news-release-details/eyepoint-announces-topline-results-lucia-second-pivotal-phase-3", "src": "EyePoint release"},
-        {"section": "industry", "h": "EyePoint plans to end both wet AMD trials early, cut about 53% of staff, and prioritize DME", "ctx": "The COMO and CAPRI DME trials (n=551) are expected to read out in Q4 2027.", "url": "https://globenewswire.com/news-release/2026/10/19/3383318/0/en/eyepoint-announces-strategic-prioritization.html", "src": "EyePoint release"},
-        {"section": "research", "h": "COOG2: cytopathology does not modify 15-GEP/PRAME prognostic accuracy in uveal melanoma", "ctx": "In 1,537 patients, metastasis outcomes did not differ by cytopathology within any GEP/PRAME class. Published Oct 15.", "url": "https://jamanetwork.com/journals/jamaophthalmology/fullarticle/2854985", "src": "JAMA Ophthalmol"},
-        {"section": "research", "h": "Three-year prospective OCTA study in type 2 diabetes finds small but significant longitudinal microvascular changes", "ctx": "The study followed 328 eyes imaged every 4 months vs 33 control eyes imaged yearly. The severe NPDR finding is exploratory (6 eyes). Published July 9; covered by Healio Oct 19.", "url": "https://doi.org/10.3389/fopht.2026.1860036", "src": "Front Ophthalmol"},
-        {"section": "research", "h": "Sclerochoroidal Calcification and Choroidal Neovascularization", "ctx": "Ophthalmic Image, published Oct 15.", "url": "https://jamanetwork.com/journals/jamaophthalmology/fullarticle/2854987", "src": "JAMA Ophthalmol"}
+        {
+          "section": "industry",
+          "h": "Duravyu misses noninferiority again in LUCIA, its second phase 3 wet AMD trial",
+          "ctx": "The vorolanib insert (2.7 mg every 24 weeks; n=475) missed BCVA noninferiority vs aflibercept 2 mg every 8 weeks, as LUGANO did. Effect sizes were not disclosed.",
+          "url": "https://investors.eyepoint.bio/news-releases/news-release-details/eyepoint-announces-topline-results-lucia-second-pivotal-phase-3",
+          "src": "EyePoint release"
+        },
+        {
+          "section": "industry",
+          "h": "LUCIA secondary endpoints: 38% lower treatment burden, 52% of eyes supplement-free through week 56",
+          "ctx": "The 38% reduction vs aflibercept carried a nominal p<0.0001. EyePoint reports no drug-related safety signals across more than 630 patients in six trials.",
+          "url": "https://investors.eyepoint.bio/news-releases/news-release-details/eyepoint-announces-topline-results-lucia-second-pivotal-phase-3",
+          "src": "EyePoint release"
+        },
+        {
+          "section": "industry",
+          "h": "EyePoint plans to end both wet AMD trials early, cut about 53% of staff, and prioritize DME",
+          "ctx": "The COMO and CAPRI DME trials (n=551) are expected to read out in Q4 2027.",
+          "url": "https://globenewswire.com/news-release/2026/10/19/3383318/0/en/eyepoint-announces-strategic-prioritization.html",
+          "src": "EyePoint release"
+        },
+        {
+          "section": "research",
+          "h": "COOG2: cytopathology does not modify 15-GEP/PRAME prognostic accuracy in uveal melanoma",
+          "ctx": "In 1,537 patients, metastasis outcomes did not differ by cytopathology within any GEP/PRAME class. Published Oct 15.",
+          "url": "https://jamanetwork.com/journals/jamaophthalmology/fullarticle/2854985",
+          "src": "JAMA Ophthalmol"
+        },
+        {
+          "section": "research",
+          "h": "Three-year prospective OCTA study in type 2 diabetes finds small but significant longitudinal microvascular changes",
+          "ctx": "The study followed 328 eyes imaged every 4 months vs 33 control eyes imaged yearly. The severe NPDR finding is exploratory (6 eyes). Published July 9; covered by Healio Oct 19.",
+          "url": "https://doi.org/10.3389/fopht.2026.1860036",
+          "src": "Front Ophthalmol"
+        },
+        {
+          "section": "research",
+          "h": "Sclerochoroidal Calcification and Choroidal Neovascularization",
+          "ctx": "Ophthalmic Image, published Oct 15.",
+          "url": "https://jamanetwork.com/journals/jamaophthalmology/fullarticle/2854987",
+          "src": "JAMA Ophthalmol"
+        }
       ]
     }
   ]

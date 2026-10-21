@@ -58,6 +58,7 @@ aside { display: grid; gap: 28px; align-content: start; font-family: var(--sans)
 
 h2, h3 { font-family: var(--sans); }
 .date { font-family: var(--sans); font-size: 15px; font-weight: 600; color: var(--red); margin: 0 0 4px; }
+.sum { font-family: var(--serif); font-size: 18px; line-height: 1.45; color: var(--ink); margin: 2px 0 6px; max-width: 62ch; }
 .cov { font-family: var(--sans); font-size: 14px; color: var(--muted); margin: 0 0 18px; }
 
 .lead { margin: 0 0 8px; padding: 0; list-style: none; display: grid; gap: 14px; }
@@ -126,6 +127,7 @@ footer p { margin: 0 0 4px; }
 <div class="page">
   <main>
     <p class="date" id="d"></p>
+    <p class="sum" id="sum" hidden></p>
     <p class="cov" id="cov">Loading…</p>
     <ul class="lead" id="lead"></ul>
     <div id="secs-body"></div>
@@ -179,6 +181,7 @@ footer p { margin: 0 0 4px; }
 
   function latest(i) {
     $("d").textContent = day(i.date, true);
+    $("sum").textContent = i.summary || ""; $("sum").hidden = !i.summary;
     $("cov").textContent = i.coverage ? "Covering " + i.coverage + "." : "";
     var lead = $("lead"); lead.textContent = "";
     (i.top || []).forEach(function (t) {
