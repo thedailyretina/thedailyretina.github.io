@@ -1,6 +1,63 @@
 {
-  "updated": "2026-10-21",
+  "updated": "2026-10-22",
   "issues": [
+    {
+      "date": "2026-10-22",
+      "top": [
+        {
+          "h": "Brepocitinib meets primary endpoints in both phase 3 CLARITY trials in noninfectious uveitis",
+          "url": "https://investor.roivant.com/news-releases/news-release-details/roivant-and-priovant-announce-positive-results-clarity-1-and",
+          "src": "Roivant press release"
+        },
+        {
+          "h": "Alcon acquires Neurotech and Encelto, the only FDA-approved treatment for adults with idiopathic MacTel type 2",
+          "url": "https://www.businesswire.com/news/home/20261020072116/en/Alcon-Acquires-Neurotech-and-ENCELTO-the-Only-FDA-Approved-Treatment-for-MacTel-Type-2",
+          "src": "Alcon press release"
+        },
+        {
+          "h": "FDA clears IND for OPGx-RDH12, an AAV gene therapy for RDH12-associated LCA",
+          "url": "https://globenewswire.com/news-release/2026/10/21/3385381/0/en/opus-genetics-announces-fda-clearance-of-ind-application-for-opgx-rdh12-gene-therapy-for-inherited-childhood-blindness.html",
+          "src": "Opus Genetics press release"
+        }
+      ],
+      "items": [
+        {
+          "section": "fda",
+          "h": "FDA clears IND for OPGx-RDH12 gene therapy",
+          "url": "https://globenewswire.com/news-release/2026/10/21/3385381/0/en/opus-genetics-announces-fda-clearance-of-ind-application-for-opgx-rdh12-gene-therapy-for-inherited-childhood-blindness.html",
+          "src": "Opus Genetics press release",
+          "ctx": "The AAV-based therapy delivers a functional RDH12 gene to photoreceptors; trial enrollment size has not been disclosed."
+        },
+        {
+          "section": "fda",
+          "h": "Alvotech and Advanz submit the first known application for an aflibercept 8 mg biosimilar, to the EMA",
+          "url": "https://mfn.se/all/a/alvotech/alvotech-and-advanz-pharma-announce-first-known-regulatory-submission-worldwide-for-proposed-biosimilar-to-eylea-r-8-mg-50c80fd0",
+          "src": "Alvotech press release",
+          "ctx": "AVT29 was filed as a line extension of the EU authorization for Mynzepli, their aflibercept 2 mg biosimilar; the companies note that biosimilarity has not yet been established by regulators."
+        },
+        {
+          "section": "industry",
+          "h": "Brepocitinib CLARITY-1 and CLARITY-2 topline results",
+          "url": "https://investor.roivant.com/news-releases/news-release-details/roivant-and-priovant-announce-positive-results-clarity-1-and",
+          "src": "Roivant press release",
+          "ctx": "Treatment lasted 48 weeks (double-masked), starting with an 8-week oral corticosteroid regimen (60 mg/day for 2 weeks, then a mandatory 6-week taper to zero); benefits were reported as consistent across intermediate, posterior, and panuveitis, 3% discontinued for adverse events, and no new safety signals were identified."
+        },
+        {
+          "section": "industry",
+          "h": "Alcon to own Encelto for MacTel",
+          "url": "https://www.businesswire.com/news/home/20261020072116/en/Alcon-Acquires-Neurotech-and-ENCELTO-the-Only-FDA-Approved-Treatment-for-MacTel-Type-2",
+          "src": "Alcon press release",
+          "ctx": "Alcon expects the deal to be slightly dilutive to core diluted EPS in 2027 and accretive thereafter; milestone amounts were not disclosed."
+        },
+        {
+          "section": "research",
+          "h": "Silicone oil and gas tamponade show similar anatomical success in giant retinal tear detachments (Graefe's meta-analysis)",
+          "url": "https://doi.org/10.1007/s00417-026-07573-x",
+          "src": "DOI",
+          "ctx": "Across 9 studies (619 eyes), final anatomical success did not differ (RR 1.00; 95% CI, 0.96–1.03), nor did primary success (RR 1.08; 95% CI, 0.98–1.20), with certainty of evidence rated low to very low."
+        }
+      ]
+    },
     {
       "date": "2026-10-21",
       "top": [
