@@ -1,6 +1,63 @@
 {
-  "updated": "2026-10-22",
+  "updated": "2026-10-26",
   "issues": [
+    {
+      "date": "2026-10-26",
+      "top": [
+        {
+          "h": "Baseline anatomy and early fluid response are associated with longer faricimab intervals in nAMD (JAMA Ophthalmology post hoc analysis of TENAYA and LUCERNE)",
+          "url": "https://jamanetwork.com/journals/jamaophthalmology/fullarticle/2854986",
+          "src": "JAMA Ophthalmology"
+        },
+        {
+          "h": "Pre- or intraoperative conbercept is associated with less early, but not late, postoperative vitreous hemorrhage after vitrectomy for PDR (BJO, QILIN I)",
+          "url": "https://bjo.bmj.com/content/early/2026/10/23/bjo-2025-329066.abstract",
+          "src": "BJO"
+        },
+        {
+          "h": "No intracameral antibiotic regimen was superior for preventing endophthalmitis after cataract surgery in a Swedish national register study (BJO)",
+          "url": "https://bjo.bmj.com/content/early/2026/10/23/bjo-2026-330164",
+          "src": "BJO"
+        }
+      ],
+      "items": [
+        {
+          "section": "research",
+          "h": "Baseline anatomy and early fluid response are associated with longer faricimab intervals in nAMD (JAMA Ophthalmology post hoc analysis of TENAYA and LUCERNE)",
+          "url": "https://jamanetwork.com/journals/jamaophthalmology/fullarticle/2854986",
+          "src": "JAMA Ophthalmology",
+          "ctx": "Of 558 faricimab-treated participants analyzed, 310 always received every-12- or every-16-week dosing, which was associated with thinner baseline central subfield thickness (OR 1.87 per 100-μm decrease; 95% CI, 1.24–2.81), thinner maximum PED (OR 1.40 per 100-μm decrease; 95% CI, 1.25–1.57), and absence of subretinal fluid at week 12 (OR 2.48; 95% CI, 1.42–4.34); P values were nominal and the every-20-week analysis is exploratory."
+        },
+        {
+          "section": "research",
+          "h": "Pre- or intraoperative conbercept is associated with less early, but not late, postoperative vitreous hemorrhage after vitrectomy for PDR (BJO, QILIN I)",
+          "url": "https://bjo.bmj.com/content/early/2026/10/23/bjo-2025-329066.abstract",
+          "src": "BJO",
+          "ctx": "In a prospective, nonrandomized cohort of 425 eyes at 26 hospitals, early (7–30 day) postoperative vitreous hemorrhage occurred in 24.0% with preoperative and 23.2% with intraoperative conbercept vs 37.6% with vitrectomy alone, while late (30–180 day) rates and BCVA did not differ significantly between groups; no confidence intervals were reported."
+        },
+        {
+          "section": "research",
+          "h": "Adaptive optics cone metrics track ischemia severity in diabetic macular ischemia in a small pilot study (BJO)",
+          "url": "https://bjo.bmj.com/content/early/2026/10/22/bjo-2025-328224",
+          "src": "BJO",
+          "ctx": "In 7 eyes with diabetic macular ischemia, cone density index correlated with ETDRS ischemia grade (rs = −0.90) and retinal sensitivity (r = +0.94), with cone changes often present without ellipsoid zone disruption on OCT; the sample is very small (7 eyes from 5 patients), and the control eye count differs between the abstract (7) and the full text (6)"
+        },
+        {
+          "section": "research",
+          "h": "Zone I stage 3 ROP without plus accounted for a larger share of treated eyes in Ghana than in the US (BJO, GHANAROP and SUNDROP)",
+          "url": "https://bjo.bmj.com/content/early/2026/10/23/bjo-2025-328512",
+          "src": "BJO",
+          "ctx": "In prospective telemedicine screening of 1,164 premature infants, this phenotype made up 40% of treated eyes in Ghana vs 7.5% in the US, while plus disease drove 30% vs 82.5% of treatments, based on 60 treated eyes in a single-grader analysis; the authors argue for integrated zone, stage, and plus scoring in low- and middle-income settings."
+        },
+        {
+          "section": "research",
+          "h": "No intracameral antibiotic regimen was superior for preventing endophthalmitis after cataract surgery in a Swedish national register study (BJO)",
+          "url": "https://bjo.bmj.com/content/early/2026/10/23/bjo-2026-330164",
+          "src": "BJO",
+          "ctx": "Across 979,534 procedures from 2018 to 2024 there were 131 cases (0.013%), with rates of 0.017% for cefuroxime alone, 0.011% for cefuroxime plus ampicillin, and 0.010% for moxifloxacin, and 48% of affected patients had final visual acuity below 20/200."
+        }
+      ]
+    },
     {
       "date": "2026-10-22",
       "top": [
