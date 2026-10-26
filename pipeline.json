@@ -933,6 +933,18 @@
       "confirmed": "2026-10-26"
     },
     {
+      "id": "remigromig-brunello",
+      "status": "resolved",
+      "kind": "readout",
+      "disease": "DME/DR",
+      "date": "2026-09-24",
+      "outcome": "Met primary endpoint",
+      "title": "Remigromig BRUNELLO, DME",
+      "detail": "Both doses (0.5 mg and 0.8 mg) met Week 52 BCVA non-inferiority vs ranibizumab 0.5 mg (n=984); effect sizes not disclosed. Higher rates of PDR, vitreous hemorrhage and discontinuations due to adverse events vs ranibizumab.",
+      "src": "Merck",
+      "url": "https://www.merck.com/news/mercks-remigromig-a-tri-specific-agonist-of-the-wingless-related-integration-site-wnt-pathway-met-primary-endpoint-in-the-pivotal-phase-2b-3-brunello-study-of-adults-with-diabetic-macular/"
+    },
+    {
       "id": "laruzova-vista",
       "status": "resolved",
       "kind": "readout",
