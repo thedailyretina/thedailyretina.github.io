@@ -133,7 +133,7 @@ footer p { margin: 0 0 4px; }
     <section class="past" aria-labelledby="past-h">
       <h2 id="past-h">Past issues</h2>
       <label for="q" style="position:absolute;left:-9999px">Search past headlines</label>
-      <input id="q" type="search" placeholder="Search headlines (e.g. faricimab, PDUFA, GA)" autocomplete="off">
+      <input id="q" type="search" placeholder="Search the last 5 issues (e.g. faricimab, PDUFA, GA)" autocomplete="off">
       <div id="days"></div>
       <p class="nil" id="none" hidden>Nothing matches that search.</p>
     </section>
@@ -170,6 +170,7 @@ footer p { margin: 0 0 4px; }
   var SECTIONS = [["fda", "FDA & CMS"], ["industry", "Industry"], ["research", "Research"], ["guidelines", "Guidelines & other news"]];
   var NAMES = {}; SECTIONS.forEach(function (s) { NAMES[s[0]] = s[1]; });
   var data = [], filter = "all";
+  var PAST = 5; // past issues listed below today's issue
   function $(id) { return document.getElementById(id); }
   function el(t, c, txt) { var n = document.createElement(t); if (c) n.className = c; if (txt != null) n.textContent = txt; return n; }
   function a(url, txt, cls) { var x = el("a", cls, txt); x.href = url; x.target = "_blank"; x.rel = "noopener"; return x; }
@@ -212,7 +213,7 @@ footer p { margin: 0 0 4px; }
   function archive() {
     var q = $("q").value.trim().toLowerCase(), box = $("days"), n = 0;
     box.textContent = "";
-    data.forEach(function (i) {
+    data.slice(1, 1 + PAST).forEach(function (i) {
       var items = (i.items || []).filter(function (x) {
         return (filter === "all" || x.section === filter) && (!q || (x.h + " " + (x.ctx || "") + " " + (x.src || "")).toLowerCase().indexOf(q) !== -1);
       });
