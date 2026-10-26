@@ -132,8 +132,8 @@ footer p { margin: 0 0 4px; }
 
     <section class="past" aria-labelledby="past-h">
       <h2 id="past-h">Past issues</h2>
-      <label for="q" style="position:absolute;left:-9999px">Search past headlines</label>
-      <input id="q" type="search" placeholder="Search the last 5 issues (e.g. faricimab, PDUFA, GA)" autocomplete="off">
+      <label for="q" style="position:absolute;left:-9999px">Search all issues</label>
+      <input id="q" type="search" placeholder="Search all issues (e.g. faricimab, PDUFA, GA)" autocomplete="off">
       <div id="days"></div>
       <p class="nil" id="none" hidden>Nothing matches that search.</p>
     </section>
@@ -213,14 +213,14 @@ footer p { margin: 0 0 4px; }
   function archive() {
     var q = $("q").value.trim().toLowerCase(), box = $("days"), n = 0;
     box.textContent = "";
-    data.slice(1, 1 + PAST).forEach(function (i) {
-      // Past issues show only their top 3, with section and context taken from the matching item.
-      var tops = (i.top || []).slice(0, 3).map(function (t) {
+    // No search: the last PAST issues, top 3 each. With a search: every item in every issue.
+    (q ? data : data.slice(1, 1 + PAST)).forEach(function (i) {
+      var pool = q ? (i.items || []) : (i.top || []).slice(0, 3).map(function (t) {
         var m = (i.items || []).filter(function (x) { return x.h === t.h; })[0]
           || (i.items || []).filter(function (x) { return x.url === t.url; })[0] || {};
         return { h: t.h, url: t.url, src: t.src, section: m.section || "", ctx: m.ctx || "" };
       });
-      var items = tops.filter(function (x) {
+      var items = pool.filter(function (x) {
         return (filter === "all" || x.section === filter) && (!q || (x.h + " " + (x.ctx || "") + " " + (x.src || "")).toLowerCase().indexOf(q) !== -1);
       });
       if (!items.length) return;
