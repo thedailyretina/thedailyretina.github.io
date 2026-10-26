@@ -2,8 +2,10 @@ name: Update issues
 
 on:
   schedule:
-    # Weekdays, several times a day (UTC), so a newly sent issue shows up within a few hours.
-    - cron: "23 12,15,18,22 * * 1-5"
+    # Weekdays (UTC). Issues go out around 11:00 UTC, so check every 20 minutes through the
+    # morning (GitHub often starts scheduled runs late or skips one), then a few times later.
+    - cron: "7,27,47 11-14 * * 1-5"
+    - cron: "23 17,20,23 * * 1-5"
   workflow_dispatch:
 
 permissions:
