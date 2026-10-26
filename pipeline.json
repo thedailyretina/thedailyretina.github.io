@@ -1,6 +1,6 @@
 {
   "updated": "2026-10-26",
-  "note": "Only add dates from company releases, SEC filings, FDA or EMA (trade press only when it reports the primary source). 'confirmed' is the date of the source that last stated the timing. 'date' is set only for an exact day; 'when' is what the source says.",
+  "note": "Only add dates from company releases, SEC filings, FDA or EMA (trade press only when it reports the primary source). 'confirmed' is the date of the source that last stated the timing. 'date' is set only for an exact day; 'when' is what the source says. Trials: industry-sponsored phase 3 and pivotal phase 2/3 retina trials that are recruiting or active, plus large network trials (DRCR/Jaeb and major multicenter academic studies). 'kind': 'trial' entries are dated by the estimated primary completion on ClinicalTrials.gov; replace with company readout guidance ('kind': 'readout') when a company states one.",
   "items": [
     {
       "id": "fovlussea-ec",
@@ -15,7 +15,8 @@
       "detail": "CHMP adopted a positive opinion at its Oct 12–15 meeting. The European Commission decision is pending.",
       "src": "EMA",
       "url": "https://www.ema.europa.eu/en/news/meeting-highlights-committee-medicinal-products-human-use-chmp-12-15-october-2026",
-      "confirmed": "2026-10-16"
+      "confirmed": "2026-10-16",
+      "disease": "nAMD"
     },
     {
       "id": "szn8141-duet",
@@ -30,7 +31,8 @@
       "detail": "FDA cleared the IND Oct 2; the second tranche of Surrozen's private placement, about $95.1 million, funds the DUET study in DME.",
       "src": "Surrozen release",
       "url": "https://www.globenewswire.com/news-release/2026/10/20/3385015/0/en/surrozen-announces-closing-of-second-tranche-of-march-2025-private-placement-for-95-1-million.html",
-      "confirmed": "2026-10-20"
+      "confirmed": "2026-10-20",
+      "disease": "DME/DR"
     },
     {
       "id": "tinlarebant-pdufa",
@@ -45,7 +47,8 @@
       "detail": "PDUFA date for the NDA, which is under priority review.",
       "src": "Healio",
       "url": "https://www.healio.com/news/ophthalmology/20260925/stargardt-disease-therapy-granted-priority-review-pdufa-date",
-      "confirmed": "2026-09-25"
+      "confirmed": "2026-09-25",
+      "disease": "IRD"
     },
     {
       "id": "4dmt-4front1",
@@ -60,7 +63,11 @@
       "detail": "North American trial; randomization completed (N=523) in March 2026.",
       "src": "4DMT Q2 2026 report",
       "url": "https://www.globenewswire.com/news-release/2026/08/13/3344919/0/en/4dmt-reports-second-quarter-2026-financial-results-operational-highlights-and-expected-upcoming-milestones.html",
-      "confirmed": "2026-08-13"
+      "confirmed": "2026-08-13",
+      "disease": "nAMD",
+      "nct": [
+        "NCT06864988"
+      ]
     },
     {
       "id": "4dmt-4front2",
@@ -75,7 +82,11 @@
       "detail": "Global trial; enrollment completed in June 2026, with more than 500 patients expected to be randomized.",
       "src": "4DMT Q2 2026 report",
       "url": "https://www.globenewswire.com/news-release/2026/08/13/3344919/0/en/4dmt-reports-second-quarter-2026-financial-results-operational-highlights-and-expected-upcoming-milestones.html",
-      "confirmed": "2026-08-13"
+      "confirmed": "2026-08-13",
+      "disease": "nAMD",
+      "nct": [
+        "NCT07064759"
+      ]
     },
     {
       "id": "duravyu-dme",
@@ -90,7 +101,848 @@
       "detail": "Vorolanib insert in DME; the two trials enrolled 551 patients. EyePoint now prioritizes DME after ending its wet AMD trials early.",
       "src": "EyePoint release",
       "url": "https://globenewswire.com/news-release/2026/10/19/3383318/0/en/eyepoint-announces-strategic-prioritization.html",
-      "confirmed": "2026-10-19"
+      "confirmed": "2026-10-19",
+      "disease": "DME/DR",
+      "nct": [
+        "NCT07449923",
+        "NCT07449936"
+      ]
+    },
+    {
+      "id": "suravec-atmosphere-ascent",
+      "status": "upcoming",
+      "kind": "readout",
+      "group": "Q4 2026",
+      "sort": "2026-10-01",
+      "date": null,
+      "when": "Q4 2026",
+      "area": "nAMD · Gene therapy",
+      "disease": "nAMD",
+      "title": "Sura-vec (ABBV-RGX-314) ATMOSPHERE and ASCENT pivotal topline (AbbVie, REGENXBIO)",
+      "detail": "Subretinal gene therapy vs ranibizumab (ATMOSPHERE, n=671) and vs aflibercept (ASCENT, n=735) in nAMD.",
+      "src": "REGENXBIO Q2 2026 report",
+      "url": "https://ir.regenxbio.com/node/13886/pdf",
+      "nct": [
+        "NCT04704921",
+        "NCT05407636"
+      ],
+      "confirmed": "2026-08-06"
+    },
+    {
+      "id": "vonaprument-archer2",
+      "status": "upcoming",
+      "kind": "readout",
+      "group": "Q4 2026",
+      "sort": "2026-10-01",
+      "date": null,
+      "when": "Q4 2026",
+      "area": "GA · Complement",
+      "disease": "GA",
+      "title": "Vonaprument (ANX007) ARCHER II phase 3 topline (Annexon)",
+      "detail": "Intravitreal C1q inhibitor vs sham in GA (n=659).",
+      "src": "Annexon release",
+      "url": "https://ir.annexonbio.com/node/11086/pdf",
+      "nct": [
+        "NCT06510816"
+      ],
+      "confirmed": "2026-07-14"
+    },
+    {
+      "id": "ksi101-peak",
+      "status": "upcoming",
+      "kind": "readout",
+      "group": "Q4 2026",
+      "sort": "2026-12-01",
+      "date": null,
+      "when": "Dec 2026",
+      "area": "Uveitis · MESI",
+      "disease": "Uveitis",
+      "title": "Tabirafusp alfa (KSI-101) PEAK Pivotal Analysis 1 topline (Kodiak)",
+      "detail": "Intravitreal tabirafusp alfa vs sham in macular edema secondary to inflammation; Pivotal Analysis 1 covers the first 300 PEAK patients (PEAK total n=600).",
+      "src": "Kodiak Q2 2026 release (8-K Ex. 99.1)",
+      "url": "https://www.sec.gov/Archives/edgar/data/0001468748/000119312526349107/kod-ex99_1.htm",
+      "nct": [
+        "NCT06990399"
+      ],
+      "confirmed": "2026-08-13"
+    },
+    {
+      "id": "ksi101-pinnacle",
+      "status": "upcoming",
+      "kind": "readout",
+      "group": "Q2 2027",
+      "sort": "2027-04-01",
+      "date": null,
+      "when": "Q2 2027",
+      "area": "Uveitis · MESI",
+      "disease": "Uveitis",
+      "title": "Tabirafusp alfa (KSI-101) PEAK/PINNACLE Pivotal Analysis 2 topline (Kodiak)",
+      "detail": "Pivotal Analysis 2 pools PEAK patients 301–600 with PINNACLE (n=300), vs sham in macular edema secondary to inflammation.",
+      "src": "Kodiak Q2 2026 release (8-K Ex. 99.1)",
+      "url": "https://www.sec.gov/Archives/edgar/data/0001468748/000119312526349107/kod-ex99_1.htm",
+      "nct": [
+        "NCT06996080",
+        "NCT06990399"
+      ],
+      "confirmed": "2026-08-13"
+    },
+    {
+      "id": "ixovec-artemis",
+      "status": "upcoming",
+      "kind": "trial",
+      "group": "Q4 2026",
+      "sort": "2026-12-22",
+      "date": null,
+      "when": "Est. Dec 2026",
+      "area": "nAMD · Gene therapy",
+      "disease": "nAMD",
+      "title": "Ixo-vec ARTEMIS phase 3 (Adverum)",
+      "detail": "Intravitreal gene therapy vs aflibercept in nAMD (n=311); active, not recruiting.",
+      "src": "ClinicalTrials.gov NCT06856577",
+      "url": "https://clinicaltrials.gov/study/NCT06856577",
+      "nct": [
+        "NCT06856577"
+      ],
+      "confirmed": "2026-10-26"
+    },
+    {
+      "id": "ixovec-aquarius",
+      "status": "upcoming",
+      "kind": "trial",
+      "group": "Q4 2027",
+      "sort": "2027-11-15",
+      "date": null,
+      "when": "Est. Nov 2027",
+      "area": "nAMD · Gene therapy",
+      "disease": "nAMD",
+      "title": "Ixo-vec AQUARIUS phase 3 (Adverum)",
+      "detail": "Intravitreal gene therapy vs aflibercept in nAMD (n=534); recruiting.",
+      "src": "ClinicalTrials.gov NCT07482176",
+      "url": "https://clinicaltrials.gov/study/NCT07482176",
+      "nct": [
+        "NCT07482176"
+      ],
+      "confirmed": "2026-10-26"
+    },
+    {
+      "id": "axpaxli-solr",
+      "status": "upcoming",
+      "kind": "trial",
+      "group": "Q1 2027",
+      "sort": "2027-01-08",
+      "date": null,
+      "when": "Est. Jan 2027",
+      "area": "nAMD · TKI",
+      "disease": "nAMD",
+      "title": "Axitinib implant (OTX-TKI) phase 3 in nAMD (Ocular Therapeutix)",
+      "detail": "Intravitreal axitinib hydrogel implant vs aflibercept (n=825); active, not recruiting.",
+      "src": "ClinicalTrials.gov NCT06495918",
+      "url": "https://clinicaltrials.gov/study/NCT06495918",
+      "nct": [
+        "NCT06495918"
+      ],
+      "confirmed": "2026-10-26"
+    },
+    {
+      "id": "tiespectus-namd",
+      "status": "upcoming",
+      "kind": "trial",
+      "group": "Q2 2028",
+      "sort": "2028-06-30",
+      "date": null,
+      "when": "Est. Jun 2028",
+      "area": "nAMD",
+      "disease": "nAMD",
+      "title": "Tiespectus (EYE201/MK-8748) pivotal phase 2/3 trials in nAMD (EyeBiotech, Merck)",
+      "detail": "Two trials vs aflibercept 2 mg (n=960 each); recruiting. Second trial est. completion Jul 2028.",
+      "src": "ClinicalTrials.gov NCT07440225",
+      "url": "https://clinicaltrials.gov/study/NCT07440225",
+      "nct": [
+        "NCT07440225",
+        "NCT07496567"
+      ],
+      "confirmed": "2026-10-26"
+    },
+    {
+      "id": "oln324-namd",
+      "status": "upcoming",
+      "kind": "trial",
+      "group": "Q4 2028",
+      "sort": "2028-12-15",
+      "date": null,
+      "when": "Est. Dec 2028",
+      "area": "nAMD",
+      "disease": "nAMD",
+      "title": "OLN324 phase 3 trials in nAMD (Ollin Biosciences)",
+      "detail": "Two trials: vs aflibercept (n=500) and monthly vs ranibizumab (n=400); not yet recruiting.",
+      "src": "ClinicalTrials.gov NCT07816315",
+      "url": "https://clinicaltrials.gov/study/NCT07816315",
+      "nct": [
+        "NCT07816315",
+        "NCT07816289"
+      ],
+      "confirmed": "2026-10-26"
+    },
+    {
+      "id": "abp938-namd",
+      "status": "upcoming",
+      "kind": "trial",
+      "group": "Q3 2027",
+      "sort": "2027-07-31",
+      "date": null,
+      "when": "Est. Jul 2027",
+      "area": "nAMD · Biosimilars",
+      "disease": "nAMD",
+      "title": "ABP 938 8 mg vs Eylea HD in nAMD (Amgen)",
+      "detail": "Proposed aflibercept 8 mg biosimilar comparative trial (n=304); recruiting.",
+      "src": "ClinicalTrials.gov NCT07614776",
+      "url": "https://clinicaltrials.gov/study/NCT07614776",
+      "nct": [
+        "NCT07614776"
+      ],
+      "confirmed": "2026-10-26"
+    },
+    {
+      "id": "susvimo-velodrome",
+      "status": "upcoming",
+      "kind": "trial",
+      "group": "Q1 2027",
+      "sort": "2027-02-04",
+      "date": null,
+      "when": "Est. Feb 2027",
+      "area": "nAMD · Port delivery",
+      "disease": "nAMD",
+      "title": "Port Delivery System 36-week refill, Velodrome phase 3b (Roche)",
+      "detail": "36-week refill regimen of the ranibizumab port delivery system in nAMD (n=451); active, not recruiting.",
+      "src": "ClinicalTrials.gov NCT04657289",
+      "url": "https://clinicaltrials.gov/study/NCT04657289",
+      "nct": [
+        "NCT04657289"
+      ],
+      "confirmed": "2026-10-26"
+    },
+    {
+      "id": "efdamrofusp-namd",
+      "status": "upcoming",
+      "kind": "trial",
+      "group": "Q1 2027",
+      "sort": "2027-02-28",
+      "date": null,
+      "when": "Est. Feb 2027",
+      "area": "nAMD",
+      "disease": "nAMD",
+      "title": "Efdamrofusp alfa (IBI302) phase 3 in nAMD (Innovent)",
+      "detail": "Intravitreal anti-VEGF/complement fusion protein vs aflibercept (n=600); active, not recruiting.",
+      "src": "ClinicalTrials.gov NCT05972473",
+      "url": "https://clinicaltrials.gov/study/NCT05972473",
+      "nct": [
+        "NCT05972473"
+      ],
+      "confirmed": "2026-10-26"
+    },
+    {
+      "id": "lx102-stellar",
+      "status": "upcoming",
+      "kind": "trial",
+      "group": "Q1 2028",
+      "sort": "2028-03-01",
+      "date": null,
+      "when": "Est. Mar 2028",
+      "area": "nAMD · Gene therapy",
+      "disease": "nAMD",
+      "title": "LX102 STELLAR phase 3 (Innostellar)",
+      "detail": "Subretinal gene therapy vs aflibercept in nAMD (n=388); recruiting.",
+      "src": "ClinicalTrials.gov NCT07317934",
+      "url": "https://clinicaltrials.gov/study/NCT07317934",
+      "nct": [
+        "NCT07317934"
+      ],
+      "confirmed": "2026-10-26"
+    },
+    {
+      "id": "drcr-home-oct",
+      "status": "upcoming",
+      "kind": "trial",
+      "group": "Q3 2027",
+      "sort": "2027-07-30",
+      "date": null,
+      "when": "Est. Jul 2027",
+      "area": "nAMD · Home OCT",
+      "disease": "nAMD",
+      "title": "Home OCT-guided vs treat-and-extend faricimab (Jaeb Center)",
+      "detail": "Phase 3 comparing home OCT-guided dosing with treat-and-extend in nAMD (n=603); active, not recruiting.",
+      "src": "ClinicalTrials.gov NCT05904028",
+      "url": "https://clinicaltrials.gov/study/NCT05904028",
+      "nct": [
+        "NCT05904028"
+      ],
+      "confirmed": "2026-10-26"
+    },
+    {
+      "id": "tiger-smh",
+      "status": "upcoming",
+      "kind": "trial",
+      "group": "Q4 2028",
+      "sort": "2028-12-01",
+      "date": null,
+      "when": "Est. Dec 2028",
+      "area": "nAMD · Surgery",
+      "disease": "Surgery",
+      "title": "TIGER: vitrectomy, subretinal tPA and gas for submacular hemorrhage (King's College Hospital)",
+      "detail": "Phase 3 surgical trial in submacular hemorrhage from nAMD (n=210); recruiting.",
+      "src": "ClinicalTrials.gov NCT04663750",
+      "url": "https://clinicaltrials.gov/study/NCT04663750",
+      "nct": [
+        "NCT04663750"
+      ],
+      "confirmed": "2026-10-26"
+    },
+    {
+      "id": "axpaxli-npdr",
+      "status": "upcoming",
+      "kind": "trial",
+      "group": "Q1 2027",
+      "sort": "2027-03-01",
+      "date": null,
+      "when": "Est. Mar 2027",
+      "area": "DR · TKI",
+      "disease": "DME/DR",
+      "title": "Axitinib implant (OTX-TKI) phase 3 in NPDR (Ocular Therapeutix)",
+      "detail": "One or two axitinib implant doses vs sham in nonproliferative diabetic retinopathy (n=930); recruiting.",
+      "src": "ClinicalTrials.gov NCT07235085",
+      "url": "https://clinicaltrials.gov/study/NCT07235085",
+      "nct": [
+        "NCT07235085"
+      ],
+      "confirmed": "2026-10-26"
+    },
+    {
+      "id": "tiespectus-dme",
+      "status": "upcoming",
+      "kind": "trial",
+      "group": "Q4 2028",
+      "sort": "2028-10-31",
+      "date": null,
+      "when": "Est. Oct 2028",
+      "area": "DME",
+      "disease": "DME/DR",
+      "title": "Tiespectus (MK-8748) pivotal phase 3 trials in DME (Merck)",
+      "detail": "Two trials vs aflibercept 2 mg (n=960 and n=1,104); recruiting. Second trial est. completion Nov 2028.",
+      "src": "ClinicalTrials.gov NCT07705555",
+      "url": "https://clinicaltrials.gov/study/NCT07705555",
+      "nct": [
+        "NCT07705555",
+        "NCT07705607"
+      ],
+      "confirmed": "2026-10-26"
+    },
+    {
+      "id": "oln324-dme",
+      "status": "upcoming",
+      "kind": "trial",
+      "group": "Q4 2028",
+      "sort": "2028-12-15",
+      "date": null,
+      "when": "Est. Dec 2028",
+      "area": "DME",
+      "disease": "DME/DR",
+      "title": "OLN324 ATACAMA and GOBI phase 3 trials in DME (Ollin Biosciences)",
+      "detail": "Two trials vs aflibercept (n=450 each); not yet recruiting.",
+      "src": "ClinicalTrials.gov NCT07841899",
+      "url": "https://clinicaltrials.gov/study/NCT07841899",
+      "nct": [
+        "NCT07841899",
+        "NCT07842016"
+      ],
+      "confirmed": "2026-10-26"
+    },
+    {
+      "id": "remigromig-dme2",
+      "status": "upcoming",
+      "kind": "trial",
+      "group": "Q1 2027",
+      "sort": "2027-03-01",
+      "date": null,
+      "when": "Est. Mar 2027",
+      "area": "DME",
+      "disease": "DME/DR",
+      "title": "Remigromig (EYE103) pivotal phase 2/3 trial in DME (EyeBiotech)",
+      "detail": "Remigromig vs ranibizumab 0.5 mg (n=1,054); active, not recruiting.",
+      "src": "ClinicalTrials.gov NCT06957080",
+      "url": "https://clinicaltrials.gov/study/NCT06957080",
+      "nct": [
+        "NCT06957080"
+      ],
+      "confirmed": "2026-10-26"
+    },
+    {
+      "id": "4dmt-4sight",
+      "status": "upcoming",
+      "kind": "trial",
+      "group": "Q1 2029",
+      "sort": "2029-01-01",
+      "date": null,
+      "when": "Est. Jan 2029",
+      "area": "DME · Gene therapy",
+      "disease": "DME/DR",
+      "title": "4D-150 4SIGHT phase 3 in DME (4DMT)",
+      "detail": "Single intravitreal gene therapy injection vs aflibercept (n=514); recruiting.",
+      "src": "ClinicalTrials.gov NCT07867080",
+      "url": "https://clinicaltrials.gov/study/NCT07867080",
+      "nct": [
+        "NCT07867080"
+      ],
+      "confirmed": "2026-10-26"
+    },
+    {
+      "id": "tabirafusp-alto",
+      "status": "upcoming",
+      "kind": "trial",
+      "group": "Q3 2028",
+      "sort": "2028-08-31",
+      "date": null,
+      "when": "Est. Aug 2028",
+      "area": "DME",
+      "disease": "DME/DR",
+      "title": "Tabirafusp tedromer ALTO phase 3 in DME (Kodiak)",
+      "detail": "Tabirafusp tedromer 5 mg vs aflibercept 2 mg (n=910); recruiting.",
+      "src": "ClinicalTrials.gov NCT07734844",
+      "url": "https://clinicaltrials.gov/study/NCT07734844",
+      "nct": [
+        "NCT07734844"
+      ],
+      "confirmed": "2026-10-26"
+    },
+    {
+      "id": "suravec-naavigate",
+      "status": "upcoming",
+      "kind": "trial",
+      "group": "Q2 2028",
+      "sort": "2028-06-01",
+      "date": null,
+      "when": "Est. Jun 2028",
+      "area": "DR · Gene therapy",
+      "disease": "DME/DR",
+      "title": "Sura-vec NAAVIGATE phase 2b/3 in diabetic retinopathy (AbbVie)",
+      "detail": "Suprachoroidal gene therapy vs sham in DR without center-involved DME (n=576); recruiting.",
+      "src": "ClinicalTrials.gov NCT07592273",
+      "url": "https://clinicaltrials.gov/study/NCT07592273",
+      "nct": [
+        "NCT07592273"
+      ],
+      "confirmed": "2026-10-26"
+    },
+    {
+      "id": "avt29-dme",
+      "status": "upcoming",
+      "kind": "trial",
+      "group": "Q3 2027",
+      "sort": "2027-07-01",
+      "date": null,
+      "when": "Est. Jul 2027",
+      "area": "DME · Biosimilars",
+      "disease": "DME/DR",
+      "title": "AVT29 vs Eylea HD in DME (Alvotech)",
+      "detail": "Proposed aflibercept 8 mg biosimilar comparative trial (n=256); recruiting.",
+      "src": "ClinicalTrials.gov NCT07489131",
+      "url": "https://clinicaltrials.gov/study/NCT07489131",
+      "nct": [
+        "NCT07489131"
+      ],
+      "confirmed": "2026-10-26"
+    },
+    {
+      "id": "bat5906-dme",
+      "status": "upcoming",
+      "kind": "trial",
+      "group": "Q2 2027",
+      "sort": "2027-04-30",
+      "date": null,
+      "when": "Est. Apr 2027",
+      "area": "DME",
+      "disease": "DME/DR",
+      "title": "BAT5906 phase 3 in DME (Bio-Thera)",
+      "detail": "BAT5906 vs ranibizumab (n=406); recruiting.",
+      "src": "ClinicalTrials.gov NCT07515079",
+      "url": "https://clinicaltrials.gov/study/NCT07515079",
+      "nct": [
+        "NCT07515079"
+      ],
+      "confirmed": "2026-10-26"
+    },
+    {
+      "id": "drcr-fenofibrate",
+      "status": "upcoming",
+      "kind": "trial",
+      "group": "Q4 2029",
+      "sort": "2029-12-01",
+      "date": null,
+      "when": "Est. Dec 2029",
+      "area": "DR",
+      "disease": "DME/DR",
+      "title": "Fenofibrate to prevent DR worsening (Jaeb Center)",
+      "detail": "Phase 3 fenofibrate vs placebo (n=563); active, not recruiting.",
+      "src": "ClinicalTrials.gov NCT04661358",
+      "url": "https://clinicaltrials.gov/study/NCT04661358",
+      "nct": [
+        "NCT04661358"
+      ],
+      "confirmed": "2026-10-26"
+    },
+    {
+      "id": "drcr-pdr-faricimab-ppv",
+      "status": "upcoming",
+      "kind": "trial",
+      "group": "Q3 2031",
+      "sort": "2031-08-01",
+      "date": null,
+      "when": "Est. Aug 2031",
+      "area": "PDR · Surgery",
+      "disease": "DME/DR",
+      "title": "Faricimab plus PRP vs vitrectomy with endolaser for PDR (Jaeb Center)",
+      "detail": "Phase 3 in proliferative diabetic retinopathy (n=426); recruiting.",
+      "src": "ClinicalTrials.gov NCT06790784",
+      "url": "https://clinicaltrials.gov/study/NCT06790784",
+      "nct": [
+        "NCT06790784"
+      ],
+      "confirmed": "2026-10-26"
+    },
+    {
+      "id": "semaglutide-dr",
+      "status": "upcoming",
+      "kind": "trial",
+      "group": "Q4 2027",
+      "sort": "2027-11-07",
+      "date": null,
+      "when": "Est. Nov 2027",
+      "area": "DR · GLP-1",
+      "disease": "DME/DR",
+      "title": "Semaglutide long-term diabetic retinopathy trial (Novo Nordisk)",
+      "detail": "Semaglutide vs placebo in type 2 diabetes, assessing effects on retinopathy (n=1,500); active, not recruiting.",
+      "src": "ClinicalTrials.gov NCT03811561",
+      "url": "https://clinicaltrials.gov/study/NCT03811561",
+      "nct": [
+        "NCT03811561"
+      ],
+      "confirmed": "2026-10-26"
+    },
+    {
+      "id": "pozelimab-cemdisiran-ga",
+      "status": "upcoming",
+      "kind": "trial",
+      "group": "Q3 2028",
+      "sort": "2028-07-31",
+      "date": null,
+      "when": "Est. Jul 2028",
+      "area": "GA · Complement",
+      "disease": "GA",
+      "title": "Pozelimab plus cemdisiran phase 3 in GA (Regeneron)",
+      "detail": "Subcutaneous pozelimab with cemdisiran, or cemdisiran alone, vs placebo (n=975); recruiting.",
+      "src": "ClinicalTrials.gov NCT06541704",
+      "url": "https://clinicaltrials.gov/study/NCT06541704",
+      "nct": [
+        "NCT06541704"
+      ],
+      "confirmed": "2026-10-26"
+    },
+    {
+      "id": "tinlarebant-phoenix",
+      "status": "upcoming",
+      "kind": "trial",
+      "group": "Q2 2027",
+      "sort": "2027-06-30",
+      "date": null,
+      "when": "Est. Jun 2027",
+      "area": "GA",
+      "disease": "GA",
+      "title": "Tinlarebant PHOENIX phase 3 in GA (Belite Bio)",
+      "detail": "Oral tinlarebant vs placebo (n=429); active, not recruiting.",
+      "src": "ClinicalTrials.gov NCT05949593",
+      "url": "https://clinicaltrials.gov/study/NCT05949593",
+      "nct": [
+        "NCT05949593"
+      ],
+      "confirmed": "2026-10-26"
+    },
+    {
+      "id": "elamipretide-renew",
+      "status": "upcoming",
+      "kind": "trial",
+      "group": "Q3 2027",
+      "sort": "2027-08-01",
+      "date": null,
+      "when": "Est. Aug 2027",
+      "area": "Dry AMD",
+      "disease": "GA",
+      "title": "Elamipretide ReNEW phase 3 in dry AMD (Stealth BioTherapeutics)",
+      "detail": "Subcutaneous elamipretide vs placebo (n=313); active, not recruiting.",
+      "src": "ClinicalTrials.gov NCT06373731",
+      "url": "https://clinicaltrials.gov/study/NCT06373731",
+      "nct": [
+        "NCT06373731"
+      ],
+      "confirmed": "2026-10-26"
+    },
+    {
+      "id": "ocu410-ga",
+      "status": "upcoming",
+      "kind": "trial",
+      "group": "Q3 2028",
+      "sort": "2028-07-30",
+      "date": null,
+      "when": "Est. Jul 2028",
+      "area": "GA · Gene therapy",
+      "disease": "GA",
+      "title": "OCU410 phase 3 in GA (Ocugen)",
+      "detail": "Registrational trial of OCU410 in GA (n=237); recruiting.",
+      "src": "ClinicalTrials.gov NCT07770828",
+      "url": "https://clinicaltrials.gov/study/NCT07770828",
+      "nct": [
+        "NCT07770828"
+      ],
+      "confirmed": "2026-10-26"
+    },
+    {
+      "id": "ocu400-rp",
+      "status": "upcoming",
+      "kind": "trial",
+      "group": "Q1 2027",
+      "sort": "2027-02-12",
+      "date": null,
+      "when": "Est. Feb 2027",
+      "area": "RP · Gene therapy",
+      "disease": "IRD",
+      "title": "OCU400 phase 3 in retinitis pigmentosa (Ocugen)",
+      "detail": "Subretinal modifier gene therapy (n=140); active, not recruiting.",
+      "src": "ClinicalTrials.gov NCT06388200",
+      "url": "https://clinicaltrials.gov/study/NCT06388200",
+      "nct": [
+        "NCT06388200"
+      ],
+      "confirmed": "2026-10-26"
+    },
+    {
+      "id": "sepofarsen-lca10",
+      "status": "upcoming",
+      "kind": "trial",
+      "group": "Q4 2027",
+      "sort": "2027-11-01",
+      "date": null,
+      "when": "Est. Nov 2027",
+      "area": "LCA · RNA therapy",
+      "disease": "IRD",
+      "title": "Sepofarsen phase 3 in CEP290 LCA10 (Laboratoires Théa)",
+      "detail": "Intravitreal RNA therapy vs placebo, paired-eye design (n=32); recruiting.",
+      "src": "ClinicalTrials.gov NCT06891443",
+      "url": "https://clinicaltrials.gov/study/NCT06891443",
+      "nct": [
+        "NCT06891443"
+      ],
+      "confirmed": "2026-10-26"
+    },
+    {
+      "id": "atsn201-lighthouse",
+      "status": "upcoming",
+      "kind": "trial",
+      "group": "Q2 2028",
+      "sort": "2028-04-01",
+      "date": null,
+      "when": "Est. Apr 2028",
+      "area": "XLRS · Gene therapy",
+      "disease": "IRD",
+      "title": "ATSN-201 LIGHTHOUSE in X-linked retinoschisis (Atsena)",
+      "detail": "Phase 1/2/3 gene therapy trial with a randomized controlled part (n=97); recruiting.",
+      "src": "ClinicalTrials.gov NCT05878860",
+      "url": "https://clinicaltrials.gov/study/NCT05878860",
+      "nct": [
+        "NCT05878860"
+      ],
+      "confirmed": "2026-10-26"
+    },
+    {
+      "id": "tinlarebant-stgd-japan",
+      "status": "upcoming",
+      "kind": "trial",
+      "group": "Q1 2028",
+      "sort": "2028-02-01",
+      "date": null,
+      "when": "Est. Feb 2028",
+      "area": "Stargardt",
+      "disease": "IRD",
+      "title": "Tinlarebant phase 2/3 in Stargardt disease (Belite Bio)",
+      "detail": "Phase 1b in Japanese patients, then a randomized placebo-controlled phase 2/3 (n=60); active, not recruiting.",
+      "src": "ClinicalTrials.gov NCT06388083",
+      "url": "https://clinicaltrials.gov/study/NCT06388083",
+      "nct": [
+        "NCT06388083"
+      ],
+      "confirmed": "2026-10-26"
+    },
+    {
+      "id": "gildeuretinol-stgd",
+      "status": "upcoming",
+      "kind": "trial",
+      "group": "Q4 2029",
+      "sort": "2029-10-01",
+      "date": null,
+      "when": "Est. Oct 2029",
+      "area": "Stargardt",
+      "disease": "IRD",
+      "title": "Gildeuretinol (ALK-001) phase 3 in Stargardt disease (Alkeus)",
+      "detail": "Oral gildeuretinol vs placebo (n=230); recruiting.",
+      "src": "ClinicalTrials.gov NCT07419334",
+      "url": "https://clinicaltrials.gov/study/NCT07419334",
+      "nct": [
+        "NCT07419334"
+      ],
+      "confirmed": "2026-10-26"
+    },
+    {
+      "id": "nac-attack",
+      "status": "upcoming",
+      "kind": "trial",
+      "group": "Q2 2029",
+      "sort": "2029-05-01",
+      "date": null,
+      "when": "Est. May 2029",
+      "area": "RP",
+      "disease": "IRD",
+      "title": "NAC Attack: oral N-acetylcysteine in retinitis pigmentosa (Johns Hopkins)",
+      "detail": "Phase 3 vs placebo (n=485); active, not recruiting.",
+      "src": "ClinicalTrials.gov NCT05537220",
+      "url": "https://clinicaltrials.gov/study/NCT05537220",
+      "nct": [
+        "NCT05537220"
+      ],
+      "confirmed": "2026-10-26"
+    },
+    {
+      "id": "npi001-usher",
+      "status": "upcoming",
+      "kind": "trial",
+      "group": "Q2 2029",
+      "sort": "2029-04-01",
+      "date": null,
+      "when": "Est. Apr 2029",
+      "area": "RP · Usher",
+      "disease": "IRD",
+      "title": "NPI-001 phase 3 trials in Usher syndrome RP (Nacuity)",
+      "detail": "Two 24-month trials of NPI-001 vs placebo (n=80 each); one recruiting, one not yet. Second est. completion Jul 2029.",
+      "src": "ClinicalTrials.gov NCT07710196",
+      "url": "https://clinicaltrials.gov/study/NCT07710196",
+      "nct": [
+        "NCT07710196",
+        "NCT07290530"
+      ],
+      "confirmed": "2026-10-26"
+    },
+    {
+      "id": "serine-mactel",
+      "status": "upcoming",
+      "kind": "trial",
+      "group": "Q4 2029",
+      "sort": "2029-11-01",
+      "date": null,
+      "when": "Est. Nov 2029",
+      "area": "MacTel",
+      "disease": "IRD",
+      "title": "L-serine phase 3 in MacTel type 2 (Lowy Medical Research Institute)",
+      "detail": "Oral serine vs placebo (n=120); not yet recruiting.",
+      "src": "ClinicalTrials.gov NCT07342439",
+      "url": "https://clinicaltrials.gov/study/NCT07342439",
+      "nct": [
+        "NCT07342439"
+      ],
+      "confirmed": "2026-10-26"
+    },
+    {
+      "id": "vgrr01-bietti",
+      "status": "upcoming",
+      "kind": "trial",
+      "group": "Q4 2026",
+      "sort": "2026-12-01",
+      "date": null,
+      "when": "Est. Dec 2026",
+      "area": "Bietti · Gene therapy",
+      "disease": "IRD",
+      "title": "VGR-R01 phase 3 in Bietti crystalline dystrophy (Vitalgen)",
+      "detail": "Gene therapy, randomized controlled (n=45); active, not recruiting.",
+      "src": "ClinicalTrials.gov NCT06699108",
+      "url": "https://clinicaltrials.gov/study/NCT06699108",
+      "nct": [
+        "NCT06699108"
+      ],
+      "confirmed": "2026-10-26"
+    },
+    {
+      "id": "belsar-choroidal-melanoma",
+      "status": "upcoming",
+      "kind": "trial",
+      "group": "Q4 2027",
+      "sort": "2027-11-15",
+      "date": null,
+      "when": "Est. Nov 2027",
+      "area": "Choroidal melanoma",
+      "disease": "Oncology",
+      "title": "Belzupacap sarotalocan (bel-sar) phase 3 in small choroidal melanoma (Aura)",
+      "detail": "Suprachoroidal bel-sar vs sham in indeterminate lesions or small choroidal melanoma (n=108); active, not recruiting.",
+      "src": "ClinicalTrials.gov NCT06007690",
+      "url": "https://clinicaltrials.gov/study/NCT06007690",
+      "nct": [
+        "NCT06007690"
+      ],
+      "confirmed": "2026-10-26"
+    },
+    {
+      "id": "darovasertib-optimum10",
+      "status": "upcoming",
+      "kind": "trial",
+      "group": "Q4 2030",
+      "sort": "2030-10-01",
+      "date": null,
+      "when": "Est. Oct 2030",
+      "area": "Uveal melanoma",
+      "disease": "Oncology",
+      "title": "Neoadjuvant darovasertib OptimUM-10 phase 3 in uveal melanoma (IDEAYA)",
+      "detail": "Neoadjuvant darovasertib before primary local therapy in non-metastatic uveal melanoma (n=520); recruiting.",
+      "src": "ClinicalTrials.gov NCT07015190",
+      "url": "https://clinicaltrials.gov/study/NCT07015190",
+      "nct": [
+        "NCT07015190"
+      ],
+      "confirmed": "2026-10-26"
+    },
+    {
+      "id": "rrd-phacovit",
+      "status": "upcoming",
+      "kind": "trial",
+      "group": "Q2 2028",
+      "sort": "2028-05-08",
+      "date": null,
+      "when": "Est. May 2028",
+      "area": "RRD · Surgery",
+      "disease": "Surgery",
+      "title": "Sequential vs combined phacovitrectomy for RRD (Queen's University Belfast)",
+      "detail": "Phase 3 equivalence trial in rhegmatogenous retinal detachment (n=276); recruiting.",
+      "src": "ClinicalTrials.gov NCT06997874",
+      "url": "https://clinicaltrials.gov/study/NCT06997874",
+      "nct": [
+        "NCT06997874"
+      ],
+      "confirmed": "2026-10-26"
+    },
+    {
+      "id": "laruzova-vista",
+      "status": "resolved",
+      "kind": "readout",
+      "disease": "IRD",
+      "date": "2026-09-21",
+      "outcome": "Met primary endpoint",
+      "title": "Laru-zova VISTA, X-linked RP (Beacon)",
+      "detail": "The pivotal VISTA trial met its primary endpoint; a rolling BLA is planned.",
+      "src": "Ophthalmology Times",
+      "url": "https://www.ophthalmologytimes.com/view/laru-zova-meets-primary-endpoint-in-pivotal-vista-trial-for-x-linked-retinitis-pigmentosa"
     },
     {
       "id": "duravyu-lucia",
@@ -101,7 +953,8 @@
       "title": "Duravyu LUCIA, wet AMD",
       "detail": "Missed BCVA noninferiority vs aflibercept 2 mg; effect sizes not disclosed.",
       "src": "EyePoint",
-      "url": "https://investors.eyepoint.bio/news-releases/news-release-details/eyepoint-announces-topline-results-lucia-second-pivotal-phase-3"
+      "url": "https://investors.eyepoint.bio/news-releases/news-release-details/eyepoint-announces-topline-results-lucia-second-pivotal-phase-3",
+      "disease": "nAMD"
     },
     {
       "id": "fovlussea-chmp",
@@ -112,7 +965,8 @@
       "title": "Fovlussea (ranibizumab biosimilar), CHMP",
       "detail": "CHMP recommends approval; the European Commission decision is pending.",
       "src": "EMA",
-      "url": "https://www.ema.europa.eu/en/news/meeting-highlights-committee-medicinal-products-human-use-chmp-12-15-october-2026"
+      "url": "https://www.ema.europa.eu/en/news/meeting-highlights-committee-medicinal-products-human-use-chmp-12-15-october-2026",
+      "disease": "nAMD"
     }
   ]
 }

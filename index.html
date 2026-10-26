@@ -173,7 +173,7 @@
     var row = $("clock-row");
     up.forEach(function (x) {
       var p = el("p"), when = x.date ? fmt(x.date, { month: "short", day: "numeric", year: "numeric" }) : x.when;
-      p.append(el("strong", null, when), " · " + x.title.replace(/\s*\(.*\)$/, ""));
+      p.append(el("strong", null, when), " · " + x.title.replace(/\s*\([^()]*\)$/, ""));
       row.append(p);
     });
     var more = el("a", "more", "Full calendar →"); more.href = "pipeline.html"; row.append(more);
