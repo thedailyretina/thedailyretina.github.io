@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//The Daily Retina//Pipeline calendar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:The Daily Retina — retina pipeline
+X-WR-CALDESC:FDA dates\, EU decisions and trial readouts in retina. thedai
+ lyretina.github.io/pipeline.html
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+X-PUBLISHED-TTL:PT12H
+BEGIN:VEVENT
+UID:tinlarebant-pdufa@thedailyretina.github.io
+DTSTAMP:20261026T000000Z
+DTSTART;VALUE=DATE:20270212
+DTEND;VALUE=DATE:20270213
+SUMMARY:FDA decision: Tinlarebant for Stargardt disease type 1 (Belite Bio
+ )
+DESCRIPTION:PDUFA date for the NDA\, which is under priority review. Sourc
+ e: Healio https://www.healio.com/news/ophthalmology/20260925/stargardt-di
+ sease-therapy-granted-priority-review-pdufa-date
+URL:https://www.healio.com/news/ophthalmology/20260925/stargardt-disease-t
+ herapy-granted-priority-review-pdufa-date
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR

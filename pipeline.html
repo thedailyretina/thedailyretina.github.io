@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Pipeline calendar — The Daily Retina</title>
+<meta name="description" content="FDA dates, EU decisions and trial readouts in retina, each with its source.">
+<meta property="og:title" content="Retina pipeline calendar — The Daily Retina">
+<meta property="og:description" content="FDA dates, EU decisions and trial readouts in retina, each with its source.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='14' fill='%23c8102e'/%3E%3Ccircle cx='16' cy='16' r='5' fill='%23fff'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;600;700;800;900&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap">
+<link rel="stylesheet" href="site.css">
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <a class="logo" href="./">The Daily Retina<span>.</span></a>
+    <nav class="nav" aria-label="Main">
+      <a href="./">Today</a>
+      <a href="pipeline.html" aria-current="page">Pipeline calendar</a>
+      <a href="./#archive">Archive</a>
+      <a class="pill" href="./#subscribe">Subscribe free</a>
+    </nav>
+  </div>
+</header>
+
+<section class="pipehero">
+  <div class="wrap">
+    <div style="flex: 1 1 480px; min-width: 0;">
+      <p class="kicker">Pipeline calendar</p>
+      <h1>What's coming in retina.</h1>
+      <p class="lede">FDA dates, EU decisions and trial readouts, each with its source. Updated when a company or regulator announces a change.</p>
+    </div>
+    <div class="countdown" id="countdown" hidden>
+      <p class="kicker">Next decision date</p>
+      <b id="cd-days"></b>
+      <p id="cd-what"></p>
+    </div>
+  </div>
+</section>
+
+<div class="wrap page">
+  <main class="main" style="gap: 0;">
+    <div class="chips" role="group" aria-label="Filter by type" id="types"></div>
+    <div id="groups"><p class="empty">Loading…</p></div>
+  </main>
+
+  <aside class="side">
+    <section class="card" aria-labelledby="ics-h">
+      <h2 id="ics-h" style="margin: 0 0 6px; font-family: var(--sans); font-weight: 900; font-size: 20px;">Put it in your calendar</h2>
+      <p style="margin: 0 0 14px; font-size: 16px; color: var(--soft);">Subscribe once and exact dates appear in your calendar, updating when they change.</p>
+      <a class="btn round" id="ics-sub" href="pipeline.ics">Subscribe to the calendar</a>
+      <p class="fine" style="margin-top: 10px;">Google Calendar: Other calendars › From URL, then paste <span id="ics-url">thedailyretina.github.io/pipeline.ics</span> <button type="button" class="addcal" id="ics-copy" style="padding: 6px 10px;">Copy</button><span class="copied" id="ics-copied" aria-live="polite"></span></p>
+    </section>
+
+    <section class="card resolved" aria-labelledby="done-h">
+      <h2 id="done-h" class="kicker" style="color: var(--red-dark); margin-bottom: 6px;">Recently resolved</h2>
+      <div id="resolved"></div>
+    </section>
+
+    <section class="howbox" aria-labelledby="how-h">
+      <h2 id="how-h">How dates get here</h2>
+      <p>Only from company releases, SEC filings, FDA and EMA. Company timelines are guidance, not guarantees, and they slip. Each item shows when its timing was last confirmed.</p>
+    </section>
+  </aside>
+</div>
+
+<footer class="foot">
+  <div class="wrap">
+    <p>Spot a wrong date? Reply to any issue.</p>
+    <p id="upd"></p>
+  </div>
+</footer>
+
+<script>
+(function () {
+  var KINDS = [["all", "All"], ["fda", "FDA"], ["eu", "EU"], ["readout", "Readouts"], ["start", "Trial starts"]];
+  var KIND_NAME = { fda: "FDA decision", eu: "EU decision", readout: "Readout", start: "Trial start" };
+  var KIND_CLASS = { fda: "fda", eu: "guidelines", readout: "research", start: "industry" };
+  var items = [], sel = "all";
+  try { sel = sessionStorage.getItem("pipe-filter") || "all"; } catch (e) {}
+
+  function $(id) { return document.getElementById(id); }
+  function el(t, c, txt) { var n = document.createElement(t); if (c) n.className = c; if (txt != null) n.textContent = txt; return n; }
+  function ext(url, txt) { var x = el("a", null, txt); x.href = url; x.target = "_blank"; x.rel = "noopener"; return x; }
+  function parse(iso) { var p = iso.split("-"); return new Date(+p[0], +p[1] - 1, +p[2]); }
+  function fmt(iso, opts) { return parse(iso).toLocaleDateString("en-US", opts || { month: "short", day: "numeric", year: "numeric" }); }
+  function today() { var d = new Date(); return new Date(d.getFullYear(), d.getMonth(), d.getDate()); }
+
+  function whenBlock(it) {
+    var w = el("div", "when");
+    if (it.date) {
+      w.append(el("small", null, fmt(it.date, { month: "short" })));
+      w.append(el("b", null, String(parse(it.date).getDate())));
+    } else {
+      var m = /^(Q[1-4]|H[12])\s+(\d{4})$/.exec(it.when || "");
+      if (m) { w.append(el("small", null, m[1])); w.append(el("b", null, m[2])); }
+      else { w.append(el("small", null, "Status")); w.append(el("b", null, it.when || "TBD")); w.lastChild.style.fontSize = "18px"; }
+    }
+    return w;
+  }
+
+  function icsFor(it) {
+    var d = parse(it.date), e = new Date(d); e.setDate(e.getDate() + 1);
+    function ymd(x) { return x.getFullYear() + String(x.getMonth() + 1).padStart(2, "0") + String(x.getDate()).padStart(2, "0"); }
+    function esc(s) { return String(s || "").replace(/\\/g, "\\\\").replace(/;/g, "\\;").replace(/,/g, "\\,"); }
+    return ["BEGIN:VCALENDAR", "VERSION:2.0", "PRODID:-//The Daily Retina//Pipeline//EN", "BEGIN:VEVENT",
+      "UID:" + it.id + "@thedailyretina.github.io", "DTSTAMP:" + ymd(new Date()) + "T000000Z",
+      "DTSTART;VALUE=DATE:" + ymd(d), "DTEND;VALUE=DATE:" + ymd(e),
+      "SUMMARY:" + esc(KIND_NAME[it.kind] + ": " + it.title),
+      "DESCRIPTION:" + esc(it.detail + " Source: " + it.src + " " + it.url), "URL:" + it.url,
+      "END:VEVENT", "END:VCALENDAR"].join("\r\n") + "\r\n";
+  }
+
+  function addCal(it) {
+    var blob = new Blob([icsFor(it)], { type: "text/calendar" });
+    var a = document.createElement("a"); a.href = URL.createObjectURL(blob); a.download = it.id + ".ics";
+    document.body.append(a); a.click(); setTimeout(function () { URL.revokeObjectURL(a.href); a.remove(); }, 0);
+  }
+
+  function chips() {
+    var box = $("types"); box.textContent = "";
+    KINDS.forEach(function (k) {
+      var b = el("button", "chip", k[1]); b.type = "button"; b.setAttribute("aria-pressed", String(sel === k[0]));
+      b.addEventListener("click", function () { sel = k[0]; try { sessionStorage.setItem("pipe-filter", sel); } catch (e) {} chips(); render(); });
+      box.append(b);
+    });
+  }
+
+  function render() {
+    var up = items.filter(function (i) { return i.status === "upcoming" && (sel === "all" || i.kind === sel); })
+      .sort(function (a, b) { return (a.sort || "").localeCompare(b.sort || ""); });
+    var box = $("groups"); box.textContent = "";
+    if (!up.length) { box.append(el("p", "empty", "Nothing scheduled of this type yet.")); return; }
+    var order = [];
+    up.forEach(function (i) { if (order.indexOf(i.group) === -1) order.push(i.group); });
+    order.forEach(function (g) {
+      var sec = el("section", "qgroup"); sec.append(el("h2", null, g));
+      up.filter(function (i) { return i.group === g; }).forEach(function (it) {
+        var art = el("article", "ev"); art.append(whenBlock(it));
+        var body = el("div", "evbody"), tags = el("div", "tags");
+        tags.append(el("span", "tag " + KIND_CLASS[it.kind], KIND_NAME[it.kind]));
+        if (it.area) tags.append(el("span", "tag", it.area));
+        body.append(tags, el("h3", null, it.title), el("p", null, it.detail));
+        var meta = el("p", "meta"); meta.append("Source: ", ext(it.url, it.src));
+        if (it.confirmed) meta.append(" · timing confirmed " + fmt(it.confirmed));
+        body.append(meta); art.append(body);
+        if (it.date) {
+          var b = el("button", "addcal", "Add to calendar"); b.type = "button";
+          b.setAttribute("aria-label", "Add " + it.title + " to your calendar");
+          b.addEventListener("click", function () { addCal(it); });
+          art.append(b);
+        }
+        sec.append(art);
+      });
+      box.append(sec);
+    });
+  }
+
+  function resolved() {
+    var box = $("resolved"); box.textContent = "";
+    var done = items.filter(function (i) { return i.status === "resolved"; })
+      .sort(function (a, b) { return (b.date || "").localeCompare(a.date || ""); }).slice(0, 6);
+    if (!done.length) { box.append(el("p", "empty", "Nothing yet.")); return; }
+    done.forEach(function (it) {
+      var d = el("div", "item");
+      d.append(el("small", null, fmt(it.date, { month: "short", day: "numeric" }) + " · " + (it.outcome || "")));
+      var p = el("p"); p.append(it.title + ": " + it.detail + " ", ext(it.url, it.src)); d.append(p);
+      box.append(d);
+    });
+  }
+
+  function countdown() {
+    var t = today();
+    var next = items.filter(function (i) { return i.status === "upcoming" && i.date && (i.kind === "fda" || i.kind === "eu") && parse(i.date) >= t; })
+      .sort(function (a, b) { return a.date.localeCompare(b.date); })[0];
+    if (!next) return;
+    var days = Math.round((parse(next.date) - t) / 86400000);
+    $("cd-days").textContent = days === 0 ? "Today" : days === 1 ? "Tomorrow" : days + " days";
+    $("cd-what").textContent = next.title.replace(/\s*\(.*\)$/, "") + ", " + (KIND_NAME[next.kind] === "FDA decision" ? "PDUFA " : "decision ") + fmt(next.date, { month: "short", day: "numeric", year: "numeric" });
+    $("countdown").hidden = false;
+  }
+
+  var icsUrl = "https://thedailyretina.github.io/pipeline.ics";
+  $("ics-sub").href = "webcal://thedailyretina.github.io/pipeline.ics";
+  $("ics-copy").addEventListener("click", function () {
+    var done = function () { $("ics-copied").textContent = "Copied"; setTimeout(function () { $("ics-copied").textContent = ""; }, 2000); };
+    if (navigator.clipboard) navigator.clipboard.writeText(icsUrl).then(done, function () { $("ics-copied").textContent = icsUrl; });
+    else $("ics-copied").textContent = icsUrl;
+  });
+
+  fetch("pipeline.json", { cache: "no-store" }).then(function (r) { if (!r.ok) throw 0; return r.json(); }).then(function (j) {
+    items = j.items || [];
+    if (j.updated) $("upd").textContent = "Last checked " + fmt(j.updated, { month: "long", day: "numeric", year: "numeric" }) + ".";
+    chips(); render(); resolved(); countdown();
+  }).catch(function () {
+    $("groups").textContent = ""; $("groups").append(el("p", "empty", "Couldn't load the calendar. Try again in a moment."));
+  });
+})();
+</script>
+</body>
+</html>

@@ -9,197 +9,175 @@
 <meta property="og:description" content="Retina news every weekday morning. Headlines and links, readable in two minutes.">
 <meta property="og:type" content="website">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='14' fill='%23c8102e'/%3E%3Ccircle cx='16' cy='16' r='5' fill='%23fff'/%3E%3C/svg%3E">
+<link rel="alternate" type="application/rss+xml" title="The Daily Retina" href="https://buttondown.com/thedailyretina/rss">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;600;800&display=swap">
-<style>
-/* Layout: plain news site. Header bar, then a two-column page (stories left, sidebar right) that stacks on phones. */
-:root {
-  --bg: #ffffff;
-  --ink: #141414;
-  --muted: #5f5f5f;
-  --line: #e4e4e4;
-  --red: #c8102e;
-  --soft: #f4f4f4;
-  --sans: "Libre Franklin", "Franklin Gothic Medium", "Helvetica Neue", Arial, sans-serif;
-  --serif: Georgia, "Times New Roman", serif;
-}
-:root { color-scheme: light; }
-
-* { box-sizing: border-box; }
-body {
-  margin: 0;
-  background: var(--bg); color: var(--ink);
-  font-family: var(--serif); font-size: 17px; line-height: 1.5;
-  padding-left: max(16px, env(safe-area-inset-left, 0px));
-  padding-right: max(16px, env(safe-area-inset-right, 0px));
-}
-a { color: inherit; }
-a:focus-visible, button:focus-visible, input:focus-visible { outline: 2px solid var(--red); outline-offset: 2px; }
-
-.top { max-width: 1040px; margin: 0 auto; padding-block: 18px 14px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px; border-bottom: 3px solid var(--ink); }
-.logo { font-family: var(--sans); font-weight: 800; font-size: 30px; letter-spacing: -0.02em; line-height: 1; margin: 0; }
-.logo span { color: var(--red); }
-.tag { font-family: var(--sans); font-size: 14px; color: var(--muted); margin: 6px 0 0; }
-.btn { font-family: var(--sans); font-weight: 600; font-size: 15px; background: var(--red); color: #fff; text-decoration: none; padding: 9px 16px; border-radius: 2px; display: inline-block; }
-.btn:hover { opacity: .9; }
-button.btn { border: 0; cursor: pointer; }
-.sub { display: flex; flex-wrap: wrap; gap: 8px; }
-.sub input[type=email] { flex: 1 1 200px; min-width: 0; font: inherit; font-family: var(--sans); font-size: 15px; padding: 8px 10px; border: 1px solid #c9c9c9; border-radius: 2px; background: #fff; color: var(--ink); }
-.box .sub input[type=email] { flex-basis: 100%; width: 100%; }
-aside > *, .sub { min-width: 0; }
-.sr { position: absolute; left: -9999px; }
-.acts { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; flex: 0 1 380px; }
-.acts .sub { width: 100%; }
-
-.page { max-width: 1040px; margin: 0 auto; padding-block: 24px 48px; display: grid; grid-template-columns: minmax(0, 1fr) 280px; gap: 40px; }
-main { min-width: 0; }
-aside { display: grid; gap: 28px; align-content: start; font-family: var(--sans); font-size: 15px; }
-
-h2, h3 { font-family: var(--sans); }
-.date { font-family: var(--sans); font-size: 15px; font-weight: 600; color: var(--red); margin: 0 0 4px; }
-.cov { font-family: var(--sans); font-size: 14px; color: var(--muted); margin: 0 0 18px; }
-
-.lead { margin: 0 0 8px; padding: 0; list-style: none; display: grid; gap: 14px; }
-.lead li { padding-bottom: 14px; border-bottom: 1px solid var(--line); }
-.lead a.h { font-family: var(--sans); font-weight: 800; font-size: 23px; line-height: 1.2; text-decoration: none; letter-spacing: -0.01em; }
-.lead a.h:hover { text-decoration: underline; }
-.lead .s { font-family: var(--sans); font-size: 13px; color: var(--muted); margin-top: 4px; }
-
-.sec h3 { font-size: 17px; font-weight: 800; margin: 26px 0 10px; padding-top: 10px; border-top: 1px solid var(--ink); }
-.story { margin: 0 0 14px; }
-.story a.h { font-weight: 700; text-decoration: none; font-family: var(--serif); }
-.story a.h:hover { text-decoration: underline; }
-.story p { margin: 2px 0 0; color: var(--muted); font-size: 16px; }
-.story .s { font-family: var(--sans); font-size: 13px; color: var(--muted); }
-.nil { color: var(--muted); margin: 0; }
-
-.past { margin-top: 44px; }
-.past h2 { font-size: 22px; font-weight: 800; margin: 0 0 12px; }
-#q { width: 100%; font: inherit; font-family: var(--sans); font-size: 16px; padding: 9px 10px; border: 1px solid var(--line); border-radius: 2px; background: var(--bg); color: var(--ink); }
-.day { margin-top: 20px; }
-.day h4 { font-family: var(--sans); font-size: 14px; font-weight: 600; margin: 0 0 6px; color: var(--muted); }
-.day h4 a { text-decoration: none; }
-.day ul { margin: 0; padding-left: 18px; }
-.day li { margin: 3px 0; }
-.day li a { text-decoration: none; }
-.day li a:hover { text-decoration: underline; }
-.day li small { font-family: var(--sans); color: var(--muted); font-size: 12.5px; margin-left: 4px; }
-mark { background: #ffe58a; color: #141414; }
-
-.box { background: var(--soft); padding: 16px; }
-.box h3 { margin: 0 0 6px; font-size: 17px; font-weight: 800; }
-.box p { margin: 0 0 12px; color: var(--muted); line-height: 1.45; }
-aside h3 { margin: 0 0 8px; font-size: 15px; font-weight: 800; }
-aside p { margin: 0; color: var(--muted); line-height: 1.45; }
-.secs { list-style: none; margin: 0; padding: 0; display: grid; gap: 4px; }
-.secs button { font: inherit; background: none; border: 0; padding: 2px 0; color: var(--ink); cursor: pointer; text-align: left; }
-.secs button[aria-pressed="true"] { color: var(--red); font-weight: 600; }
-.secs button:hover { text-decoration: underline; }
-
-footer { max-width: 1040px; margin: 0 auto; padding-block: 16px 32px; border-top: 1px solid var(--line); font-family: var(--sans); font-size: 13px; color: var(--muted); }
-footer p { margin: 0 0 4px; }
-
-@media (max-width: 800px) {
-  .page { grid-template-columns: 1fr; gap: 28px; }
-  aside .box { display: none; }
-  .lead a.h { font-size: 20px; }
-}
-</style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;600;700;800;900&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap">
+<link rel="stylesheet" href="site.css">
 </head>
 <body>
 <header class="top">
-  <div>
-    <p class="logo">The Daily Retina<span>.</span></p>
-    <p class="tag">Retina news every weekday morning. Headlines and links, readable in two minutes.</p>
-  </div>
-  <div class="acts">
-    <form class="sub" action="https://buttondown.com/api/emails/embed-subscribe/thedailyretina" method="post" target="_blank">
-      <label for="bd-email-top" class="sr">Email address</label>
-      <input type="email" name="email" id="bd-email-top" placeholder="Your email" required autocomplete="email">
-      <input type="hidden" value="1" name="embed">
-      <button type="submit" class="btn">Subscribe free</button>
-    </form>
+  <div class="wrap">
+    <a class="logo" href="./">The Daily Retina<span>.</span></a>
+    <nav class="nav" aria-label="Main">
+      <a href="./" aria-current="page">Today</a>
+      <a href="pipeline.html">Pipeline calendar</a>
+      <a href="#archive">Archive</a>
+      <a class="pill" href="#subscribe">Subscribe free</a>
+    </nav>
   </div>
 </header>
 
-<div class="page">
-  <main>
-    <p class="date" id="d"></p>
-    <p class="cov" id="cov">Loading…</p>
-    <ul class="lead" id="lead"></ul>
-    <div id="secs-body"></div>
+<section class="hero">
+  <div class="wrap">
+    <div class="hero-text">
+      <p class="kicker" id="d">&nbsp;</p>
+      <h1>Good morning.</h1>
+      <p class="hero-sub" id="sub">What changed in retina, with a link to every source.</p>
+    </div>
+    <form class="subcard" id="subscribe" action="https://buttondown.com/api/emails/embed-subscribe/thedailyretina" method="post" target="_blank">
+      <label for="hero-email">Get it every weekday morning</label>
+      <div class="subrow">
+        <input id="hero-email" type="email" name="email" placeholder="you@practice.com" required autocomplete="email">
+        <input type="hidden" value="1" name="embed">
+        <button type="submit" class="btn">Subscribe</button>
+      </div>
+      <p class="fine">Free. No ads. Two-minute read.</p>
+    </form>
+  </div>
+</section>
 
-    <section class="past" aria-labelledby="past-h">
-      <h2 id="past-h">Past issues</h2>
-      <label for="q" style="position:absolute;left:-9999px">Search all issues</label>
-      <input id="q" type="search" placeholder="Search all issues (e.g. faricimab, PDUFA, GA)" autocomplete="off">
-      <div id="days"></div>
-      <p class="nil" id="none" hidden>Nothing matches that search.</p>
+<section class="clock" id="clock" aria-labelledby="clock-h" hidden>
+  <div class="wrap" id="clock-row">
+    <h2 class="kicker" id="clock-h">On the clock</h2>
+  </div>
+</section>
+
+<div class="wrap page">
+  <main class="main">
+    <article class="card lead" id="lead" hidden>
+      <p class="kicker">The big one</p>
+      <h2><a id="lead-h" target="_blank" rel="noopener"></a></h2>
+      <p id="lead-ctx"></p>
+      <div class="why" id="lead-why" hidden><b>Why it matters</b><p></p></div>
+      <a class="srclink" id="lead-src" target="_blank" rel="noopener"></a>
+    </article>
+
+    <section aria-labelledby="hits-h" id="hits-sec" hidden>
+      <h2 class="sec" id="hits-h">Quick hits</h2>
+      <div class="hits" id="hits"></div>
+      <p class="nonew" id="nonew" hidden></p>
+    </section>
+
+    <p class="empty" id="status">Loading…</p>
+
+    <section id="archive" aria-labelledby="past-h">
+      <div class="past-head">
+        <h2 class="sec" id="past-h">Past issues</h2>
+        <label for="q" class="sr">Search all issues</label>
+        <input id="q" type="search" placeholder="Search all issues (e.g. faricimab, PDUFA, GA)" autocomplete="off">
+      </div>
+      <div class="chips" role="group" aria-label="Filter by topic" id="chips"></div>
+      <div id="past"></div>
+      <p class="empty" id="none" hidden>Nothing matches that search.</p>
     </section>
   </main>
 
-  <aside>
-    <div class="box">
-      <h3>Get it by email</h3>
-      <p>One short email each weekday. Free, no ads, unsubscribe anytime.</p>
-      <form class="sub" action="https://buttondown.com/api/emails/embed-subscribe/thedailyretina" method="post" target="_blank">
-      <label for="bd-email-side" class="sr">Email address</label>
-      <input type="email" name="email" id="bd-email-side" placeholder="Your email" required autocomplete="email">
-      <input type="hidden" value="1" name="embed">
-      <button type="submit" class="btn">Subscribe</button>
-    </form>
-    </div>
-    <div>
-      <h3>Sections</h3>
-      <ul class="secs" id="secs"></ul>
-    </div>
-    <div class="side-extra">
-      <h3>About</h3>
+  <aside class="side">
+    <section class="nums" id="nums" aria-labelledby="nums-h" hidden>
+      <h2 class="kicker" id="nums-h">By the numbers</h2>
+      <div id="nums-list"></div>
+    </section>
+
+    <section class="share" aria-labelledby="share-h">
+      <h2 id="share-h">Know a retina colleague?</h2>
+      <p>Forward today's issue, or send them the link.</p>
+      <button type="button" class="btn round" id="copy">Copy link</button><span class="copied" id="copied" aria-live="polite"></span>
+    </section>
+
+    <section class="card about" aria-labelledby="about-h">
+      <h2 id="about-h">About</h2>
       <p>FDA and CMS actions, pipeline and trial news, and new papers that matter to retina specialists. Each item links to the original source.</p>
-    </div>
+    </section>
   </aside>
 </div>
 
-<footer>
-  <p id="upd"></p>
+<footer class="foot">
+  <div class="wrap">
+    <p>Every item links to its original source. Spot an error? Reply to any issue.</p>
+    <p id="upd"></p>
+  </div>
 </footer>
 
 <script>
 (function () {
-  var SECTIONS = [["fda", "FDA & CMS"], ["industry", "Industry"], ["research", "Research"], ["guidelines", "Guidelines & other news"]];
-  var NAMES = {}; SECTIONS.forEach(function (s) { NAMES[s[0]] = s[1]; });
+  var TOPICS = [["fda", "FDA & CMS"], ["industry", "Industry"], ["research", "Research"], ["guidelines", "Guidelines"]];
+  var NAME = {}; TOPICS.forEach(function (t) { NAME[t[0]] = t[1]; });
+  var PAST = 5; // past issues listed below today's
   var data = [], filter = "all";
-  var PAST = 5; // past issues listed below today's issue
+
   function $(id) { return document.getElementById(id); }
   function el(t, c, txt) { var n = document.createElement(t); if (c) n.className = c; if (txt != null) n.textContent = txt; return n; }
-  function a(url, txt, cls) { var x = el("a", cls, txt); x.href = url; x.target = "_blank"; x.rel = "noopener"; return x; }
-  function day(iso, long) {
-    return new Date(iso + "T12:00:00").toLocaleDateString("en-US", long ? { weekday: "long", month: "long", day: "numeric", year: "numeric" } : { month: "long", day: "numeric", year: "numeric" });
+  function ext(url, txt, cls) { var x = el("a", cls, txt); x.href = url; x.target = "_blank"; x.rel = "noopener"; return x; }
+  function parse(iso) { var p = iso.split("-"); return new Date(+p[0], +p[1] - 1, +p[2]); }
+  function fmt(iso, opts) { return parse(iso).toLocaleDateString("en-US", opts); }
+  function list(xs) { return xs.length < 2 ? xs.join("") : xs.length === 2 ? xs.join(" or ") : xs.slice(0, -1).join(", ") + ", or " + xs[xs.length - 1]; }
+  function tag(x) {
+    var t = el("span", "tag " + (x.section || ""), (NAME[x.section] || "News") + (x.tag ? " · " + x.tag : ""));
+    return t;
   }
 
-  function latest(i) {
-    $("d").textContent = day(i.date, true);
-    $("cov").textContent = ""; $("cov").hidden = true;
-    var lead = $("lead"); lead.textContent = "";
-    (i.top || []).forEach(function (t) {
-      var li = el("li"); li.append(a(t.url, t.h, "h"));
-      li.append(el("div", "s", t.src || "")); lead.append(li);
+  // Older issues have no lead story: use the first of their top 3, with its section and context.
+  function leadOf(i) {
+    if (i.lead) return i.lead;
+    var t = (i.top || [])[0]; if (!t) return null;
+    var m = (i.items || []).filter(function (x) { return x.h === t.h || x.url === t.url; })[0] || {};
+    return { h: t.h, url: t.url, src: t.src, ctx: m.ctx || "", section: m.section || "", tag: m.tag };
+  }
+  function topOf(i) {
+    return (i.top || []).slice(0, 3);
+  }
+
+  function today(i) {
+    $("d").textContent = fmt(i.date, { weekday: "long", month: "long", day: "numeric", year: "numeric" });
+    $("sub").textContent = "What changed in retina since " + (parse(i.date).getDay() === 1 ? "Friday" : "yesterday") + ", with a link to every source.";
+    var L = leadOf(i);
+    if (L) {
+      $("lead-h").textContent = L.h; $("lead-h").href = L.url;
+      $("lead-ctx").textContent = L.ctx || ""; $("lead-ctx").hidden = !L.ctx;
+      if (L.why) { $("lead-why").querySelector("p").textContent = L.why; $("lead-why").hidden = false; }
+      $("lead-src").textContent = "Read at " + (L.src || "the source") + " →"; $("lead-src").href = L.url;
+      $("lead").hidden = false;
+    }
+    var hits = (i.items || []).filter(function (x) { return !x.lead && !(L && (x.h === L.h || x.url === L.url)); });
+    var box = $("hits"); box.textContent = "";
+    hits.forEach(function (x) {
+      var d = el("div", "hit"); d.append(tag(x), ext(x.url, x.h, "h"));
+      var p = el("p", null, (x.ctx ? x.ctx + " " : "")); p.append(el("span", "src", x.src || "")); d.append(p);
+      box.append(d);
     });
-    var body = $("secs-body"); body.textContent = "";
-    SECTIONS.forEach(function (s) {
-      var wrap = el("div", "sec"); wrap.append(el("h3", null, s[1]));
-      var items = (i.items || []).filter(function (x) { return x.section === s[0]; });
-      if (!items.length) wrap.append(el("p", "nil", "Nothing notable."));
-      items.forEach(function (x) {
-        var st = el("div", "story");
-        st.append(a(x.url, x.h, "h"));
-        if (x.ctx) st.append(el("p", null, x.ctx));
-        st.append(el("span", "s", x.src || ""));
-        wrap.append(st);
-      });
-      body.append(wrap);
+    var have = {}; (i.items || []).concat(L ? [L] : []).forEach(function (x) { have[x.section] = 1; });
+    var missing = TOPICS.filter(function (t) { return !have[t[0]]; }).map(function (t) { return t[1]; });
+    $("nonew").textContent = missing.length ? "Nothing new today in " + list(missing) + "." : "";
+    $("nonew").hidden = !missing.length;
+    $("hits-sec").hidden = !hits.length && !missing.length;
+    var nums = i.numbers || [], nl = $("nums-list"); nl.textContent = "";
+    nums.forEach(function (n) { var d = el("div", "num"); d.append(el("b", null, n.big), el("span", null, n.label)); nl.append(d); });
+    $("nums").hidden = !nums.length;
+  }
+
+  function clock(items) {
+    var up = (items || []).filter(function (x) { return x.status === "upcoming"; })
+      .sort(function (a, b) { return (a.sort || "").localeCompare(b.sort || ""); }).slice(0, 3);
+    if (!up.length) return;
+    var row = $("clock-row");
+    up.forEach(function (x) {
+      var p = el("p"), when = x.date ? fmt(x.date, { month: "short", day: "numeric", year: "numeric" }) : x.when;
+      p.append(el("strong", null, when), " · " + x.title.replace(/\s*\(.*\)$/, ""));
+      row.append(p);
     });
+    var more = el("a", "more", "Full calendar →"); more.href = "pipeline.html"; row.append(more);
+    $("clock").hidden = false;
   }
 
   function mark(text, q) {
@@ -210,53 +188,76 @@ footer p { margin: 0 0 4px; }
     f.append(text.slice(i)); return f;
   }
 
-  function archive() {
-    var q = $("q").value.trim().toLowerCase(), box = $("days"), n = 0;
-    box.textContent = "";
-    // No search: the last PAST issues, top 3 each. With a search: every item in every issue.
-    (q ? data : data.slice(1, 1 + PAST)).forEach(function (i) {
-      var pool = q ? (i.items || []) : (i.top || []).slice(0, 3).map(function (t) {
-        var m = (i.items || []).filter(function (x) { return x.h === t.h; })[0]
-          || (i.items || []).filter(function (x) { return x.url === t.url; })[0] || {};
-        return { h: t.h, url: t.url, src: t.src, section: m.section || "", ctx: m.ctx || "" };
-      });
-      var items = pool.filter(function (x) {
-        return (filter === "all" || x.section === filter) && (!q || (x.h + " " + (x.ctx || "") + " " + (x.src || "")).toLowerCase().indexOf(q) !== -1);
-      });
-      if (!items.length) return;
-      var d = el("div", "day"); d.id = i.date;
-      var h = el("h4"); var ha = el("a", null, day(i.date)); ha.href = "#" + i.date; h.append(ha); d.append(h);
-      var ul = el("ul");
-      items.forEach(function (x) {
-        var li = el("li"); var link = a(x.url, null); link.append(mark(x.h, q)); li.append(link);
-        li.append(el("small", null, NAMES[x.section] || "")); ul.append(li); n++;
-      });
-      d.append(ul); box.append(d);
+  function chips() {
+    var box = $("chips"); box.textContent = "";
+    [["all", "All topics"]].concat(TOPICS).forEach(function (t) {
+      var b = el("button", "chip", t[1]); b.type = "button"; b.setAttribute("aria-pressed", String(filter === t[0]));
+      b.addEventListener("click", function () { filter = t[0]; chips(); past(); });
+      box.append(b);
     });
-    $("none").hidden = n > 0 || !data.length;
   }
 
-  function sections() {
-    var ul = $("secs"); ul.textContent = "";
-    [["all", "All sections"]].concat(SECTIONS).forEach(function (s) {
-      var li = el("li"), b = el("button", null, s[1]); b.type = "button"; b.id = "sec-" + s[0];
-      b.setAttribute("aria-pressed", String(filter === s[0]));
-      b.addEventListener("click", function () { filter = s[0]; sections(); archive(); $("past-h").scrollIntoView({ block: "start" }); });
-      li.append(b); ul.append(li);
+  // No search and no topic filter: the last PAST issues, top 3 each. Otherwise: every item in every issue.
+  function past() {
+    var q = $("q").value.trim().toLowerCase(), box = $("past"), n = 0;
+    box.textContent = "";
+    if (!q && filter === "all") {
+      var grid = el("div", "pastgrid");
+      data.slice(1, 1 + PAST).forEach(function (i) {
+        var c = el("div", "pastcard"); c.id = i.date;
+        c.append(el("h3", null, fmt(i.date, { weekday: "short", month: "short", day: "numeric" })));
+        var ul = el("ul");
+        topOf(i).forEach(function (t) { var li = el("li"); li.append(ext(t.url, t.h)); ul.append(li); n++; });
+        c.append(ul); grid.append(c);
+      });
+      if (n) box.append(grid);
+      $("none").hidden = true;
+      $("past-h").textContent = "Past issues";
+      return;
+    }
+    $("past-h").textContent = q ? "Search results" : "Past issues: " + NAME[filter];
+    data.forEach(function (i) {
+      var L = leadOf(i), seen = {};
+      var all = (i.items || []).slice();
+      if (L && !(i.items || []).some(function (x) { return x.h === L.h || x.url === L.url; })) all.unshift(L);
+      var hits = all.filter(function (x) {
+        if (seen[x.url + x.h]) return false; seen[x.url + x.h] = 1;
+        return (filter === "all" || x.section === filter) &&
+          (!q || (x.h + " " + (x.ctx || "") + " " + (x.src || "") + " " + (x.tag || "")).toLowerCase().indexOf(q) !== -1);
+      });
+      if (!hits.length) return;
+      var day = el("div", "resday"); day.id = i.date;
+      day.append(el("h3", null, fmt(i.date, { weekday: "short", month: "short", day: "numeric", year: "numeric" })));
+      hits.forEach(function (x) {
+        var r = el("div", "res"); r.append(tag(x));
+        var a = ext(x.url, null, "h"); a.append(mark(x.h, q)); r.append(a);
+        r.append(" ", el("span", "src", x.src || "")); day.append(r); n++;
+      });
+      box.append(day);
     });
+    $("none").hidden = n > 0;
   }
+
+  $("copy").addEventListener("click", function () {
+    var url = "https://thedailyretina.github.io/";
+    var done = function () { $("copied").textContent = "Link copied"; setTimeout(function () { $("copied").textContent = ""; }, 2000); };
+    if (navigator.clipboard) navigator.clipboard.writeText(url).then(done, function () { $("copied").textContent = url; });
+    else $("copied").textContent = url;
+  });
+  $("q").addEventListener("input", past);
 
   fetch("issues.json", { cache: "no-store" }).then(function (r) { if (!r.ok) throw 0; return r.json(); }).then(function (j) {
     data = (j.issues || []).slice().sort(function (x, y) { return y.date.localeCompare(x.date); });
-    if (j.updated) $("upd").textContent = "Last updated " + day(j.updated) + ".";
-    sections();
-    if (!data.length) { $("cov").textContent = "The first issue is on its way. Subscribe to get it."; return; }
-    latest(data[0]); archive();
+    if (j.updated) $("upd").textContent = "Last updated " + fmt(j.updated, { month: "long", day: "numeric", year: "numeric" }) + ".";
+    chips();
+    if (!data.length) { $("status").textContent = "The first issue is on its way. Subscribe to get it."; return; }
+    $("status").hidden = true;
+    today(data[0]); past();
     var h = location.hash.slice(1); if (h && $(h)) $(h).scrollIntoView();
   }).catch(function () {
-    $("cov").textContent = "Couldn't load the issues. Past issues are also at buttondown.com/thedailyretina/archive.";
+    $("status").textContent = "Couldn't load the issues. Past issues are also at buttondown.com/thedailyretina/archive.";
   });
-  $("q").addEventListener("input", archive);
+  fetch("pipeline.json", { cache: "no-store" }).then(function (r) { if (!r.ok) throw 0; return r.json(); }).then(function (j) { clock(j.items); }).catch(function () {});
 })();
 </script>
 </body>

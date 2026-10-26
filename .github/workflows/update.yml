@@ -7,6 +7,9 @@ on:
     - cron: "7,27,47 11-14 * * 1-5"
     - cron: "23 17,20,23 * * 1-5"
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths: [pipeline.json]
 
 permissions:
   contents: write
@@ -21,14 +24,17 @@ jobs:
           python-version: "3.12"
       - name: Pull sent issues from the Buttondown feed
         run: python scripts/update_issues.py
+      - name: Rebuild the pipeline calendar file
+        run: python scripts/build_ics.py
       - name: Commit if changed
         run: |
-          if git diff --quiet -- issues.json; then
-            echo "No new issues."
+          git add -N pipeline.ics 2>/dev/null || true
+          if git diff --quiet -- issues.json pipeline.ics; then
+            echo "Nothing changed."
           else
             git config user.name "github-actions[bot]"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            git add issues.json
-            git commit -m "Add new issues"
+            git add issues.json pipeline.ics
+            git commit -m "Update issues and pipeline calendar"
             git push
           fi

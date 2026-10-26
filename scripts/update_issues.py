@@ -19,12 +19,21 @@ FEED = "https://buttondown.com/thedailyretina/rss"
 OUT = "issues.json"
 
 SECTION_KEYS = [
+    # Current layout (Oct 27, 2026 onward)
+    ("lead", re.compile(r"\bbig one\b", re.I)),
+    ("hits", re.compile(r"quick hits", re.I)),
+    ("numbers", re.compile(r"by the numbers", re.I)),
+    ("clock", re.compile(r"on the clock", re.I)),
+    # Original layout
     ("top", re.compile(r"\btop\b", re.I)),
     ("fda", re.compile(r"\bfda\b|regulatory|\bcms\b", re.I)),
     ("industry", re.compile(r"industry|treatments|trials", re.I)),
     ("research", re.compile(r"research|papers", re.I)),
     ("guidelines", re.compile(r"guideline|big news|other news", re.I)),
 ]
+# Topic tag line above each item in the current layout: "Research · Surgery", "FDA & CMS", ...
+TOPICS = {"fda & cms": "fda", "fda": "fda", "industry": "industry", "research": "research", "guidelines": "guidelines"}
+TAG_LINE = re.compile(r"^(FDA\s*&\s*CMS|FDA|Industry|Research|Guidelines)\s*(?:[·•|–-]\s*(.{1,40}))?$", re.I)
 MONTHS = "January February March April May June July August September October November December".split()
 
 
@@ -132,11 +141,19 @@ def normalize(issue):
         if with_ctx:
             out["ctx"] = strip_earlier(e.get("ctx", ""))
         return out
-    return {
+    out = {
         "date": issue["date"],
         "top": [fix(t, False) for t in issue.get("top", [])],
         "items": [fix(x, True) for x in issue.get("items", [])],
     }
+    if issue.get("lead"):
+        lead = fix(issue["lead"], True)
+        if lead.get("why"):
+            lead["why"] = strip_earlier(lead["why"])
+        out["lead"] = lead
+    if issue.get("numbers"):
+        out["numbers"] = [{"big": clean(n.get("big")), "label": clean(n.get("label"))} for n in issue["numbers"]]
+    return out
 
 
 def section_of(heading):
@@ -147,31 +164,46 @@ def section_of(heading):
 
 
 def parse_issue(body_html):
+    """Return (lead, top, items, numbers). Handles the current layout and the original five-section one."""
     blocks = Blocks()
     blocks.feed(body_html)
     blocks = blocks.close()
-    coverage, summary, section, top, items = "", "", None, [], []
+    section, lead, top, items, numbers, pending_tag = None, None, [], [], [], None
     for b in blocks:
         text = clean(b["text"])
-        if b["kind"] == "h" or (not b["links"] and section_of(text) and len(text) < 60 and text == clean(b["bold"] or text)):
+        bold = clean(b["bold"])
+        # Topic tag line ("Research · Surgery") before an item in the current layout.
+        if section in ("lead", "hits") and not b["links"]:
+            m = TAG_LINE.match(text)
+            if m:
+                pending_tag = (TOPICS[re.sub(r"\s+", " ", m.group(1).lower())], clean(m.group(2) or ""))
+                continue
+        if not b["links"] and re.match(r"^nothing (new|notable)", text, re.I):
+            continue
+        if b["kind"] == "h" or (not b["links"] and section_of(text) and len(text) < 60 and text == (bold or text)):
             s = section_of(text)
             if s:
                 section = s
             continue
-        if re.match(r"^(in brief|summary)\s*:", text, re.I):
-            summary = re.sub(r"^(in brief|summary)\s*:\s*", "", text, flags=re.I)
+        if section == "lead" and re.match(r"^why it matters\s*:?", text, re.I) and not b["links"]:
+            if lead is not None:
+                lead["why"] = re.sub(r"^why it matters\s*:?\s*", "", text, flags=re.I)
             continue
-        if text.lower().startswith("coverage"):
-            coverage = re.sub(r"^coverage:\s*", "", text, flags=re.I).rstrip(".")
+        if section == "numbers" and not b["links"] and bold:
+            label = clean(text.replace(bold, "", 1)).lstrip(" :–—-")
+            if label:
+                numbers.append({"big": bold.rstrip(" :"), "label": label})
             continue
-        if section is None or not b["links"]:
+        if section is None or section == "clock" or not b["links"]:
             continue
-        if all("buttondown." in l["url"] for l in b["links"]) or "free subscription" in text.lower():
+        if all("buttondown." in l["url"] or "thedailyretina.github.io" in l["url"] for l in b["links"]):
             continue
-        head = clean(b["bold"]) or clean(b["links"][0]["text"])
+        if "free subscription" in text.lower():
+            continue
+        head = bold or clean(b["links"][0]["text"])
         if not head or "nothing notable" in text.lower():
             continue
-        link = b["links"][-1] if b["bold"] else b["links"][0]
+        link = b["links"][-1] if bold else b["links"][0]
         url = link["url"]
         src = clean(link["text"]) if clean(link["text"]) != head else ""
         ctx = text.replace(head, "", 1)
@@ -183,9 +215,23 @@ def parse_issue(body_html):
         entry = {"h": head, "url": url, "src": src or "Source"}
         if section == "top":
             top.append(entry)
-        else:
+        elif section in ("lead", "hits"):
+            topic, area = pending_tag or ("research", "")
+            pending_tag = None
+            item = {"section": topic, **entry, "ctx": ctx}
+            if area:
+                item["tag"] = area
+            if section == "lead" and lead is None:
+                lead = dict(item)
+                item["lead"] = True
+            items.append(item)
+        elif section in ("fda", "industry", "research", "guidelines"):
             items.append({"section": section, **entry, "ctx": ctx})
-    return coverage, summary, top[:3], items
+    if lead is not None:
+        # Past issues show three headlines: the lead story, then the first two quick hits.
+        rest = [x for x in items if not x.get("lead")]
+        top = [{"h": x["h"], "url": x["url"], "src": x["src"]} for x in [lead] + rest[:2]]
+    return lead, top[:3], items, numbers
 
 
 def issue_date(title, pub):
@@ -213,12 +259,12 @@ def main():
         if "daily retina" not in title.lower():
             continue
         body = it.findtext("{http://purl.org/rss/1.0/modules/content/}encoded") or it.findtext("description") or ""
-        coverage, summary, top, items = parse_issue(html.unescape(body) if "&lt;" in body else body)
+        lead, top, items, numbers = parse_issue(html.unescape(body) if "&lt;" in body else body)
         if not items and not top:
             print("skipped (no items parsed):", title, file=sys.stderr)
             continue
         d = issue_date(title, it.findtext("pubDate") or "")
-        new = normalize({"date": d, "top": top, "items": items})
+        new = normalize({"date": d, "lead": lead, "top": top, "items": items, "numbers": numbers})
         if by_date.get(d) != new:
             by_date[d] = new
             added += 1
