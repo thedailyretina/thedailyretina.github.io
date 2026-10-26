@@ -214,7 +214,13 @@ footer p { margin: 0 0 4px; }
     var q = $("q").value.trim().toLowerCase(), box = $("days"), n = 0;
     box.textContent = "";
     data.slice(1, 1 + PAST).forEach(function (i) {
-      var items = (i.items || []).filter(function (x) {
+      // Past issues show only their top 3, with section and context taken from the matching item.
+      var tops = (i.top || []).slice(0, 3).map(function (t) {
+        var m = (i.items || []).filter(function (x) { return x.h === t.h; })[0]
+          || (i.items || []).filter(function (x) { return x.url === t.url; })[0] || {};
+        return { h: t.h, url: t.url, src: t.src, section: m.section || "", ctx: m.ctx || "" };
+      });
+      var items = tops.filter(function (x) {
         return (filter === "all" || x.section === filter) && (!q || (x.h + " " + (x.ctx || "") + " " + (x.src || "")).toLowerCase().indexOf(q) !== -1);
       });
       if (!items.length) return;
