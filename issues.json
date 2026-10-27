@@ -1,6 +1,72 @@
 {
-  "updated": "2026-10-26",
+  "updated": "2026-10-27",
   "issues": [
+    {
+      "date": "2026-10-27",
+      "top": [
+        {
+          "h": "Oral belzutifan is associated with regression of retinal capillary hemangioblastomas in von Hippel-Lindau disease",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42918417/",
+          "src": "Ophthalmology Retina (PubMed)"
+        },
+        {
+          "h": "Subthreshold micropulse laser plus anti-VEGF for DME is associated with fewer injections than anti-VEGF alone in a meta-analysis",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42928376/",
+          "src": "Graefe's Archive (PubMed)"
+        },
+        {
+          "h": "AAO technology assessment links OCT pRNFL and GC-IPL metrics to multiple sclerosis progression",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42905039/",
+          "src": "Ophthalmology (PubMed)"
+        }
+      ],
+      "items": [
+        {
+          "section": "research",
+          "h": "Oral belzutifan is associated with regression of retinal capillary hemangioblastomas in von Hippel-Lindau disease",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42918417/",
+          "src": "Ophthalmology Retina (PubMed)",
+          "ctx": "In a retrospective National Eye Institute case series of 33 patients (42 eyes, 85 active lesions), mean total active lesion area per eye fell from 5.8 to 1.2 mm² at 1 year and to 0.5 mm² at 2 years, with no new lesions during treatment. Among patients who discontinued therapy, over 70% of eyes showed signs of relapse.",
+          "tag": "Oncology",
+          "lead": true
+        },
+        {
+          "section": "research",
+          "h": "Subthreshold micropulse laser plus anti-VEGF for DME is associated with fewer injections than anti-VEGF alone in a meta-analysis",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42928376/",
+          "src": "Graefe's Archive (PubMed)",
+          "ctx": "Across 9 studies (535 eyes), combination therapy required 2.1 fewer anti-VEGF injections over 12 months (MD, −2.1; 95% CI, −3.0 to −1.1), while the 12-month BCVA change marginally favored combination therapy (P = .0497) but was not significant when limited to RCTs, and certainty of evidence for the primary outcome was graded low.",
+          "tag": "DME"
+        },
+        {
+          "section": "guidelines",
+          "h": "AAO technology assessment links OCT pRNFL and GC-IPL metrics to multiple sclerosis progression",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42905039/",
+          "src": "Ophthalmology (PubMed)",
+          "ctx": "Across 21 studies (2 level I, 8 level II, 11 level III), lower baseline thickness, faster thinning and larger interocular differences in pRNFL and macular GC-IPL were associated with future disability, relapses and MRI changes.",
+          "tag": "Imaging"
+        }
+      ],
+      "lead": {
+        "section": "research",
+        "h": "Oral belzutifan is associated with regression of retinal capillary hemangioblastomas in von Hippel-Lindau disease",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/42918417/",
+        "src": "Ophthalmology Retina (PubMed)",
+        "ctx": "In a retrospective National Eye Institute case series of 33 patients (42 eyes, 85 active lesions), mean total active lesion area per eye fell from 5.8 to 1.2 mm² at 1 year and to 0.5 mm² at 2 years, with no new lesions during treatment. Among patients who discontinued therapy, over 70% of eyes showed signs of relapse.",
+        "tag": "Oncology",
+        "why": "The series supports the authors' view that belzutifan may have a role for juxtapapillary tumors and as adjunctive therapy for large or multifocal lesions, but frequent relapse after stopping suggests continued treatment may be needed to maintain control."
+      },
+      "numbers": [
+        {
+          "big": "75.0%",
+          "label": "Average decrease in total active lesion area per eye at 1 year on belzutifan."
+        },
+        {
+          "big": "2.1",
+          "label": "Fewer anti-VEGF injections over 12 months with micropulse laser plus anti-VEGF (pooled mean difference)."
+        }
+      ]
+    },
     {
       "date": "2026-10-26",
       "top": [
