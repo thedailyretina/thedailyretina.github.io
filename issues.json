@@ -1,6 +1,72 @@
 {
-  "updated": "2026-10-27",
+  "updated": "2026-10-28",
   "issues": [
+    {
+      "date": "2026-10-28",
+      "top": [
+        {
+          "h": "Most DME eyes treated with the Port Delivery Platform reached normal retinal thickness, but fluid resolution was slow in some (AJO, Pagoda post hoc analysis)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42946032/",
+          "src": "PubMed"
+        },
+        {
+          "h": "FDA grants orphan drug designation to Octant's oral OCT-980 for retinitis pigmentosa",
+          "url": "https://www.biospace.com/press-releases/octant-receives-fda-orphan-drug-designation-for-oct-980-for-the-treatment-of-retinitis-pigmentosa",
+          "src": "Octant (Business Wire via BioSpace)"
+        },
+        {
+          "h": "Private insurers reimbursed less than public insurers for pediatric vitreoretinal procedures in a Texas billing review (Retina)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42944618/",
+          "src": "PubMed"
+        }
+      ],
+      "items": [
+        {
+          "section": "research",
+          "h": "Most DME eyes treated with the Port Delivery Platform reached normal retinal thickness, but fluid resolution was slow in some (AJO, Pagoda post hoc analysis)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42946032/",
+          "src": "PubMed",
+          "ctx": "In the Pagoda trial's adjusted intent-to-treat population, 87.9% of eyes in the PDS arm (n=272) reached a central subfield thickness of 325 µm or less by the last visit, at a mean of 21.3 weeks; in a detailed OCT analysis of 56 PDS eyes from 8 sites, intraretinal fluid in the central 1 mm cleared in 84% at a median of 68 weeks. The retrospective analysis includes Genentech-employed coauthors.",
+          "tag": "DME",
+          "lead": true
+        },
+        {
+          "section": "fda",
+          "h": "FDA grants orphan drug designation to Octant's oral OCT-980 for retinitis pigmentosa",
+          "url": "https://www.biospace.com/press-releases/octant-receives-fda-orphan-drug-designation-for-oct-980-for-the-treatment-of-retinitis-pigmentosa",
+          "src": "Octant (Business Wire via BioSpace)",
+          "ctx": "The investigational small molecule is designed to correct rhodopsin protein misfolding in RHO-associated autosomal dominant retinitis pigmentosa and is being evaluated in a phase 1/2 study (NCT07408232)",
+          "tag": "IRD"
+        },
+        {
+          "section": "research",
+          "h": "Private insurers reimbursed less than public insurers for pediatric vitreoretinal procedures in a Texas billing review (Retina)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42944618/",
+          "src": "PubMed",
+          "ctx": "Across 394 visits from 282 patients, the median reimbursement percentage was 34.0% (equivalent to 85% of the Medicare rate), with 35.1% for public vs 26.5% for private insurers, and 24.1% of visits received zero payment.",
+          "tag": "Peds"
+        }
+      ],
+      "lead": {
+        "section": "research",
+        "h": "Most DME eyes treated with the Port Delivery Platform reached normal retinal thickness, but fluid resolution was slow in some (AJO, Pagoda post hoc analysis)",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/42946032/",
+        "src": "PubMed",
+        "ctx": "In the Pagoda trial's adjusted intent-to-treat population, 87.9% of eyes in the PDS arm (n=272) reached a central subfield thickness of 325 µm or less by the last visit, at a mean of 21.3 weeks; in a detailed OCT analysis of 56 PDS eyes from 8 sites, intraretinal fluid in the central 1 mm cleared in 84% at a median of 68 weeks. The retrospective analysis includes Genentech-employed coauthors.",
+        "tag": "DME",
+        "why": "The authors argue that, under sustained VEGF-A suppression, apparent nonresponse in DME may often be slow response and propose the term \"slowly responsive\" instead of \"unresponsive\", a conclusion drawn from a post hoc analysis of a single trial."
+      },
+      "numbers": [
+        {
+          "big": "84%",
+          "label": "Of 56 PDS-treated DME eyes with detailed OCT analysis, the share in which central intraretinal fluid cleared (median, 68 weeks)."
+        },
+        {
+          "big": "24.1%",
+          "label": "Pediatric vitreoretinal procedure visits that received zero payment in a 394-visit Texas review."
+        }
+      ]
+    },
     {
       "date": "2026-10-27",
       "top": [
