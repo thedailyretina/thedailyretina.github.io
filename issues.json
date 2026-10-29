@@ -1,6 +1,72 @@
 {
-  "updated": "2026-10-28",
+  "updated": "2026-10-29",
   "issues": [
+    {
+      "date": "2026-10-29",
+      "top": [
+        {
+          "h": "TWO-ROP’s single 36-week exam would have potentially missed 20 treatment-requiring ROP cases under US screening criteria in a 14,198-infant Chinese cohort (Ophthalmology Retina)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42951110/",
+          "src": "PubMed"
+        },
+        {
+          "h": "Nacuity doses first patient in phase 3 SLO-RP Preserve trial of oral NPI-001 for Usher syndrome–associated RP",
+          "url": "https://www.biospace.com/press-releases/nacuity-pharmaceuticals-announces-first-patient-dosed-in-global-confirmatory-phase-3-trial-of-npi-001-n-acetylcysteine-amide-tablets-for-the-treatment-of-retinitis-pigmentosa-associated-with-usher-syndrome",
+          "src": "Nacuity press release (BioSpace)"
+        },
+        {
+          "h": "Small pupils were associated with Plus disease grading in ROP telemedicine imaging (Ophthalmology Retina)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42951111/",
+          "src": "PubMed"
+        }
+      ],
+      "items": [
+        {
+          "section": "research",
+          "h": "TWO-ROP’s single 36-week exam would have potentially missed 20 treatment-requiring ROP cases under US screening criteria in a 14,198-infant Chinese cohort (Ophthalmology Retina)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42951110/",
+          "src": "PubMed",
+          "ctx": "Under US criteria, the 36-week rule identified 275 of 295 TR-ROP cases (sensitivity, 93.2%; 95% CI, 89.7%-95.8%), 14 of the 20 potentially missed cases had aggressive ROP, and moving the exam to 35 weeks raised sensitivity to 98.6%. Under Chinese criteria, the 36-week rule identified all 89 TR-ROP cases.",
+          "tag": "Peds",
+          "lead": true
+        },
+        {
+          "section": "industry",
+          "h": "Nacuity doses first patient in phase 3 SLO-RP Preserve trial of oral NPI-001 for Usher syndrome–associated RP",
+          "url": "https://www.biospace.com/press-releases/nacuity-pharmaceuticals-announces-first-patient-dosed-in-global-confirmatory-phase-3-trial-of-npi-001-n-acetylcysteine-amide-tablets-for-the-treatment-of-retinitis-pigmentosa-associated-with-usher-syndrome",
+          "src": "Nacuity press release (BioSpace)",
+          "ctx": "The randomized, double-masked, 24-month trial (NCT07710196) will enroll up to 80 adults in the US and Australia, who will take NPI-001 (N-acetylcysteine amide) or placebo tablets twice daily to test whether it slows disease progression by reducing photoreceptor loss.",
+          "tag": "IRD"
+        },
+        {
+          "section": "research",
+          "h": "Small pupils were associated with Plus disease grading in ROP telemedicine imaging (Ophthalmology Retina)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42951111/",
+          "src": "PubMed",
+          "ctx": "Across 10,503 eye-sessions from 1,131 infants in the SUNDROP program, small (≤5 mm) vs large pupils had an adjusted OR of 2.41 (95% CI, 1.36-4.29) for Plus disease, and among small pupils additional images did not improve detection of any ICROP3 parameter.",
+          "tag": "Peds"
+        }
+      ],
+      "lead": {
+        "section": "research",
+        "h": "TWO-ROP’s single 36-week exam would have potentially missed 20 treatment-requiring ROP cases under US screening criteria in a 14,198-infant Chinese cohort (Ophthalmology Retina)",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/42951110/",
+        "src": "PubMed",
+        "ctx": "Under US criteria, the 36-week rule identified 275 of 295 TR-ROP cases (sensitivity, 93.2%; 95% CI, 89.7%-95.8%), 14 of the 20 potentially missed cases had aggressive ROP, and moving the exam to 35 weeks raised sensitivity to 98.6%. Under Chinese criteria, the 36-week rule identified all 89 TR-ROP cases.",
+        "tag": "Peds",
+        "why": "In this retrospective multicenter cohort, the algorithm’s performance varied by which screening criteria defined the eligible population, and the authors say screening strategies should be adapted to local criteria, with screening timing individualized to clinical setting and level of care."
+      },
+      "numbers": [
+        {
+          "big": "93.2%",
+          "label": "Sensitivity of TWO-ROP’s 36-week rule for treatment-requiring ROP under US screening criteria (275 of 295 cases)."
+        },
+        {
+          "big": "10,503",
+          "label": "Telemedicine eye-sessions from 1,131 infants analyzed in the SUNDROP pupil-size study."
+        }
+      ]
+    },
     {
       "date": "2026-10-28",
       "top": [
