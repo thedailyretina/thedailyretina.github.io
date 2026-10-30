@@ -1,6 +1,88 @@
 {
-  "updated": "2026-10-29",
+  "updated": "2026-10-30",
   "issues": [
+    {
+      "date": "2026-10-30",
+      "top": [
+        {
+          "h": "Retinal imaging was rare in the year after tamoxifen initiation in a US cohort (JAMA Ophthalmology)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42955022/",
+          "src": "PubMed"
+        },
+        {
+          "h": "Kiora in-licenses oral calpain inhibitor KIO-401 from Senju and plans a multinational phase 3 trial in CRAO",
+          "url": "https://eyewire.news/news/kiora-plans-phase-3-crao-and-phase-2b-naion-trials-of-kio-401",
+          "src": "Eyewire+"
+        },
+        {
+          "h": "Bi-allelic PRKCZ loss-of-function variants were associated with adult-onset retinitis pigmentosa (JAMA Ophthalmology)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42955015/",
+          "src": "PubMed"
+        }
+      ],
+      "items": [
+        {
+          "section": "research",
+          "h": "Retinal imaging was rare in the year after tamoxifen initiation in a US cohort (JAMA Ophthalmology)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42955022/",
+          "src": "PubMed",
+          "ctx": "Among 2327 individuals starting tamoxifen in the All of Us program, 162 (7.0%) had an ophthalmic encounter within 12 months and 39 (1.7%) underwent retinal OCT or fundus photography. Among participants with breast cancer, tamoxifen use was not associated with greater adjusted 12-month ophthalmic use than aromatase inhibitor use (aOR, 1.10; 95% CI, 0.85-1.42)",
+          "tag": "Drug toxicity",
+          "lead": true
+        },
+        {
+          "section": "industry",
+          "h": "Kiora in-licenses oral calpain inhibitor KIO-401 from Senju and plans a multinational phase 3 trial in CRAO",
+          "url": "https://eyewire.news/news/kiora-plans-phase-3-crao-and-phase-2b-naion-trials-of-kio-401",
+          "src": "Eyewire+",
+          "ctx": "Kiora acquired rights outside Asia to KIO-401 (mitucapistat), which completed a randomized, double-masked phase 3 trial in CRAO in Japan, and plans a multinational phase 3 trial of more than 100 patients starting in 2027, contingent on funding and regulatory alignment.",
+          "tag": "CRAO"
+        },
+        {
+          "section": "research",
+          "h": "Bi-allelic PRKCZ loss-of-function variants were associated with adult-onset retinitis pigmentosa (JAMA Ophthalmology)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42955015/",
+          "src": "PubMed",
+          "ctx": "Among approximately 4500 individuals with unsolved retinal disease, 6 bi-allelic PRKCZ variants were identified in 13 affected individuals from 10 unrelated families, with onset at 18-49 years and adult-onset sensorineural hearing loss in 4.",
+          "tag": "IRD"
+        },
+        {
+          "section": "research",
+          "h": "Thicker choroid and shorter axial length were independently associated with early AMD in a Korean national survey (AJO)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42957012/",
+          "src": "PubMed",
+          "ctx": "In the Korea National Health and Nutrition Examination Survey 2017-2020 (15,388 adults aged 40 years or older; 13,807 in ocular analyses), greater subfoveal choroidal thickness (OR per 10 µm, 1.03; 95% CI, 1.02-1.03) and shorter axial length (OR per 1 mm, 0.76; 95% CI, 0.71-0.82) were associated with early AMD.",
+          "tag": "AMD"
+        },
+        {
+          "section": "industry",
+          "h": "New Swiss startup VisioSurgical Solutions begins developing a compact retinal surgery robot",
+          "url": "https://www.globenewswire.com/news-release/2026/10/29/3391574/0/en/retinal-robotics-pioneers-launch-visiosurgical-solutions-vss-to-bring-compact-surgical-robots-to-every-retina-surgeon.html",
+          "src": "GlobeNewswire",
+          "ctx": "The robotic head is designed to work with existing microscopes and intraoperative imaging, with gene and cell therapy delivery among first applications; the system is in development and not available for sale.",
+          "tag": "Surgery"
+        }
+      ],
+      "lead": {
+        "section": "research",
+        "h": "Retinal imaging was rare in the year after tamoxifen initiation in a US cohort (JAMA Ophthalmology)",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/42955022/",
+        "src": "PubMed",
+        "ctx": "Among 2327 individuals starting tamoxifen in the All of Us program, 162 (7.0%) had an ophthalmic encounter within 12 months and 39 (1.7%) underwent retinal OCT or fundus photography. Among participants with breast cancer, tamoxifen use was not associated with greater adjusted 12-month ophthalmic use than aromatase inhibitor use (aOR, 1.10; 95% CI, 0.85-1.42)",
+        "tag": "Drug toxicity",
+        "why": "With no formal US tamoxifen retinal screening guideline, the authors say additional evidence on retinopathy incidence, natural history, screening strategies, and clinical benefit is needed to inform guidance."
+      },
+      "numbers": [
+        {
+          "big": "1.7%",
+          "label": "Share of 2327 individuals starting tamoxifen who underwent retinal OCT or fundus photography within 12 months."
+        },
+        {
+          "big": "13",
+          "label": "Affected individuals from 10 unrelated families carrying bi-allelic PRKCZ variants."
+        }
+      ]
+    },
     {
       "date": "2026-10-29",
       "top": [
