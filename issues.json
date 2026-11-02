@@ -1,6 +1,72 @@
 {
-  "updated": "2026-10-30",
+  "updated": "2026-11-02",
   "issues": [
+    {
+      "date": "2026-11-02",
+      "top": [
+        {
+          "h": "Submacular hemorrhage requiring gas injection or vitrectomy occurred at 1.14 per 1,000 anti-VEGF injections for nAMD in a Japanese three-center study (Retina)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42961146/",
+          "src": "PubMed"
+        },
+        {
+          "h": "Reading speed declined in MacTel sham eyes even when BCVA stayed stable, in a secondary analysis of the revakinagene taroretcel-lwey (NT-501) phase 3 trials (Retina)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42961160/",
+          "src": "PubMed"
+        },
+        {
+          "h": "Prophylactic laser was not associated with fewer retinal detachments than observation for pediatric peripheral retinal lesions (Ophthalmology Retina)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42962856/",
+          "src": "PubMed"
+        }
+      ],
+      "items": [
+        {
+          "section": "research",
+          "h": "Submacular hemorrhage requiring gas injection or vitrectomy occurred at 1.14 per 1,000 anti-VEGF injections for nAMD in a Japanese three-center study (Retina)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42961146/",
+          "src": "PubMed",
+          "ctx": "Among 47,358 injections there were 54 events, 72.2% of them in PCV, with median BCVA of 0.46 logMAR before the hemorrhage and 1.00 logMAR after treatment. Exploratory drug-specific comparisons found no significant adjusted differences among anti-VEGF agents.",
+          "tag": "nAMD",
+          "lead": true
+        },
+        {
+          "section": "research",
+          "h": "Reading speed declined in MacTel sham eyes even when BCVA stayed stable, in a secondary analysis of the revakinagene taroretcel-lwey (NT-501) phase 3 trials (Retina)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42961160/",
+          "src": "PubMed",
+          "ctx": "Of 104 sham-treated eyes analyzed, 68 with stable BCVA (change of less than 5 letters) lost 19.4 words per minute over 24 months, and each 1-letter loss of BCVA corresponded to a 2.1 wpm decrease in reading speed.",
+          "tag": "MacTel"
+        },
+        {
+          "section": "research",
+          "h": "Prophylactic laser was not associated with fewer retinal detachments than observation for pediatric peripheral retinal lesions (Ophthalmology Retina)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42962856/",
+          "src": "PubMed",
+          "ctx": "In a retrospective cohort of 273 eyes followed for a median of 18.5 months, retinal detachment occurred in 5.0% of lasered eyes and 1.2% of observed eyes (P = .105), and lasered eyes had higher baseline risk features.",
+          "tag": "Peds"
+        }
+      ],
+      "lead": {
+        "section": "research",
+        "h": "Submacular hemorrhage requiring gas injection or vitrectomy occurred at 1.14 per 1,000 anti-VEGF injections for nAMD in a Japanese three-center study (Retina)",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/42961146/",
+        "src": "PubMed",
+        "ctx": "Among 47,358 injections there were 54 events, 72.2% of them in PCV, with median BCVA of 0.46 logMAR before the hemorrhage and 1.00 logMAR after treatment. Exploratory drug-specific comparisons found no significant adjusted differences among anti-VEGF agents.",
+        "tag": "nAMD",
+        "why": "The study puts a real-world incidence on an uncommon but visually severe complication during anti-VEGF therapy for nAMD, with most events occurring in PCV."
+      },
+      "numbers": [
+        {
+          "big": "1.14 per 1,000",
+          "label": "Anti-VEGF injections for nAMD followed by submacular hemorrhage requiring procedural intervention, across three Japanese centers."
+        },
+        {
+          "big": "19.4 wpm",
+          "label": "Reading speed lost over 24 months by MacTel sham eyes whose BCVA stayed stable."
+        }
+      ]
+    },
     {
       "date": "2026-10-30",
       "top": [
