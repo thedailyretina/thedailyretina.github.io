@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-26",
+  "updated": "2026-11-02",
   "note": "Only add dates from company releases, SEC filings, FDA or EMA (trade press only when it reports the primary source). 'confirmed' is the date of the source that last stated the timing. 'date' is set only for an exact day; 'when' is what the source says. Trials: industry-sponsored phase 3 and pivotal phase 2/3 retina trials that are recruiting or active, plus large network trials (DRCR/Jaeb and major multicenter academic studies). 'kind': 'trial' entries are dated by the estimated primary completion on ClinicalTrials.gov; replace with company readout guidance ('kind': 'readout') when a company states one. Before adding or keeping a trial, confirm it has not already reported results (company releases, SEC filings, trade press, registry results); if it has, drop it or move it to resolved. Every trial or readout title includes the trial acronym when one exists (registry acronym field, or the sponsor's name for the trial).",
   "items": [
     {
@@ -442,9 +442,9 @@
       "status": "upcoming",
       "kind": "trial",
       "group": "Q1 2027",
-      "sort": "2027-03-01",
+      "sort": "2027-01-11",
       "date": null,
-      "when": "Est. Mar 2027",
+      "when": "Est. Jan 2027",
       "area": "DME",
       "disease": "DME/DR",
       "title": "Remigromig (EYE103) BAROLO pivotal phase 2b/3 trial in DME (EyeBiotech, Merck)",
@@ -454,7 +454,7 @@
       "nct": [
         "NCT06957080"
       ],
-      "confirmed": "2026-10-26"
+      "confirmed": "2026-11-02"
     },
     {
       "id": "4dmt-4sight",
@@ -744,21 +744,21 @@
     {
       "id": "atsn201-lighthouse",
       "status": "upcoming",
-      "kind": "trial",
-      "group": "Q2 2028",
-      "sort": "2028-04-01",
+      "kind": "readout",
+      "group": "H1 2028",
+      "sort": "2028-01-01",
       "date": null,
-      "when": "Est. Apr 2028",
+      "when": "H1 2028",
       "area": "XLRS · Gene therapy",
       "disease": "IRD",
-      "title": "ATSN-201 LIGHTHOUSE in X-linked retinoschisis (Atsena)",
-      "detail": "Phase 1/2/3 gene therapy trial with a randomized controlled part (n=97); recruiting.",
-      "src": "ClinicalTrials.gov NCT05878860",
-      "url": "https://clinicaltrials.gov/study/NCT05878860",
+      "title": "ATSN-201 LIGHTHOUSE phase 3 pivotal cohort topline in X-linked retinoschisis (Atsena)",
+      "detail": "Subretinal gene therapy; first patient dosed in the phase 3 pivotal cohort, with topline results anticipated in the first half of 2028.",
+      "src": "Ophthalmology Times (Atsena announcement, Jun 22, 2026)",
+      "url": "https://www.ophthalmologytimes.com/view/first-patient-dosed-in-phase-3-pivotal-cohort-of-lighthouse-trial-evaluating-atsn-201-for-x-linked-retinoschisis",
       "nct": [
         "NCT05878860"
       ],
-      "confirmed": "2026-10-26"
+      "confirmed": "2026-06-22"
     },
     {
       "id": "tinlarebant-stgd-japan",
@@ -878,21 +878,21 @@
     {
       "id": "belsar-choroidal-melanoma",
       "status": "upcoming",
-      "kind": "trial",
-      "group": "Q4 2027",
-      "sort": "2027-11-15",
+      "kind": "readout",
+      "group": "H2 2027",
+      "sort": "2027-07-01",
       "date": null,
-      "when": "Est. Nov 2027",
+      "when": "H2 2027",
       "area": "Choroidal melanoma",
       "disease": "Oncology",
-      "title": "Belzupacap sarotalocan (bel-sar) CoMpass phase 3 in small choroidal melanoma (Aura)",
-      "detail": "Suprachoroidal bel-sar vs sham in indeterminate lesions or small choroidal melanoma (n=108); active, not recruiting.",
-      "src": "ClinicalTrials.gov NCT06007690",
-      "url": "https://clinicaltrials.gov/study/NCT06007690",
+      "title": "Belzupacap sarotalocan (bel-sar) CoMpass phase 3 topline in small choroidal melanoma (Aura)",
+      "detail": "Suprachoroidal bel-sar vs sham in indeterminate lesions or small choroidal melanoma (n=108); topline data from the 15-month primary endpoint expected in the second half of 2027.",
+      "src": "Aura Q2 2026 release (8-K Ex. 99.1, Aug 11, 2026)",
+      "url": "https://www.sec.gov/Archives/edgar/data/0001501796/000119312526343408/aura-ex99_1.htm",
       "nct": [
         "NCT06007690"
       ],
-      "confirmed": "2026-10-26"
+      "confirmed": "2026-08-11"
     },
     {
       "id": "darovasertib-optimum10",
@@ -931,6 +931,120 @@
         "NCT06997874"
       ],
       "confirmed": "2026-10-26"
+    },
+    {
+      "id": "ocul101-stat",
+      "status": "upcoming",
+      "kind": "trial",
+      "group": "Q1 2029",
+      "sort": "2029-02-01",
+      "date": null,
+      "when": "Est. Feb 2029",
+      "area": "nAMD · Bispecific",
+      "disease": "nAMD",
+      "title": "OCUL101 STAT phase 2/3 in nAMD (Shenzhen Oculgen)",
+      "detail": "Two doses of OCUL101, an anti-VEGF and anti-complement C5 bispecific, vs aflibercept 2 mg in nAMD with or without GA (n=255); first U.S. participant enrolled (Jun 2026, per Eyewire+); registry still lists not yet recruiting.",
+      "src": "ClinicalTrials.gov NCT07520318",
+      "url": "https://clinicaltrials.gov/study/NCT07520318",
+      "nct": [
+        "NCT07520318"
+      ],
+      "confirmed": "2026-11-02"
+    },
+    {
+      "id": "gnr139-namd",
+      "status": "upcoming",
+      "kind": "trial",
+      "group": "Q2 2028",
+      "sort": "2028-05-01",
+      "date": null,
+      "when": "Est. May 2028",
+      "area": "nAMD · Biosimilars",
+      "disease": "nAMD",
+      "title": "GNR-139 vs Eylea 8 mg in nAMD (Generium)",
+      "detail": "Randomized, double-blind equivalence comparison of GNR-139 vs reference Eylea 8 mg (114.3 mg/mL) in treatment-naive nAMD (n=180); recruiting.",
+      "src": "ClinicalTrials.gov NCT07844148",
+      "url": "https://clinicaltrials.gov/study/NCT07844148",
+      "nct": [
+        "NCT07844148"
+      ],
+      "confirmed": "2026-11-02"
+    },
+    {
+      "id": "ql1207h-namd",
+      "status": "upcoming",
+      "kind": "trial",
+      "group": "Q4 2026",
+      "sort": "2026-12-01",
+      "date": null,
+      "when": "Est. Dec 2026",
+      "area": "nAMD · Biosimilars",
+      "disease": "nAMD",
+      "title": "QL1207H vs Eylea 8 mg in nAMD (Qilu Pharmaceutical)",
+      "detail": "Randomized, double-masked comparison of QL1207H injection vs Eylea (aflibercept 8 mg) to assess similar efficacy and safety (n=356); not yet recruiting.",
+      "src": "ClinicalTrials.gov NCT07489586",
+      "url": "https://clinicaltrials.gov/study/NCT07489586",
+      "nct": [
+        "NCT07489586"
+      ],
+      "confirmed": "2026-11-02"
+    },
+    {
+      "id": "pds-hutong",
+      "status": "upcoming",
+      "kind": "trial",
+      "group": "Q2 2027",
+      "sort": "2027-06-30",
+      "date": null,
+      "when": "Est. Jun 2027",
+      "area": "nAMD · Port delivery",
+      "disease": "nAMD",
+      "title": "Port Delivery System HUTONG phase 3 in Chinese patients with nAMD (Roche)",
+      "detail": "Port delivery system with ranibizumab 100 mg/mL refilled every 24 weeks vs intravitreal ranibizumab 0.5 mg every 4 weeks (n=68); active, not recruiting.",
+      "src": "ClinicalTrials.gov NCT05562947",
+      "url": "https://clinicaltrials.gov/study/NCT05562947",
+      "nct": [
+        "NCT05562947"
+      ],
+      "confirmed": "2026-11-02"
+    },
+    {
+      "id": "dame-dme",
+      "status": "upcoming",
+      "kind": "trial",
+      "group": "Q4 2028",
+      "sort": "2028-11-30",
+      "date": null,
+      "when": "Est. Nov 2028",
+      "area": "DME · Laser",
+      "disease": "DME/DR",
+      "title": "DAME: anti-VEGF with or without subthreshold micropulse laser in severe DME (Belfast Health and Social Care Trust)",
+      "detail": "Phase 3 equivalence trial of continued anti-VEGF monotherapy vs anti-VEGF followed by subthreshold micropulse laser once central retinal thickness falls below 400 microns (n=264); recruiting.",
+      "src": "ClinicalTrials.gov NCT06985706",
+      "url": "https://clinicaltrials.gov/study/NCT06985706",
+      "nct": [
+        "NCT06985706"
+      ],
+      "confirmed": "2026-11-02"
+    },
+    {
+      "id": "darovasertib-optimum11",
+      "status": "upcoming",
+      "kind": "trial",
+      "group": "Q1 2034",
+      "sort": "2034-03-01",
+      "date": null,
+      "when": "Est. Mar 2034",
+      "area": "Uveal melanoma",
+      "disease": "Oncology",
+      "title": "Adjuvant darovasertib plus crizotinib OptimUM-11 phase 3 in uveal melanoma (IDEAYA, Servier)",
+      "detail": "Adjuvant darovasertib and crizotinib vs observation after primary local therapy in high-risk, non-metastatic uveal melanoma (n=450); recruiting.",
+      "src": "ClinicalTrials.gov NCT07804186",
+      "url": "https://clinicaltrials.gov/study/NCT07804186",
+      "nct": [
+        "NCT07804186"
+      ],
+      "confirmed": "2026-11-02"
     },
     {
       "id": "remigromig-brunello",
