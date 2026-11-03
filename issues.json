@@ -1,6 +1,59 @@
 {
-  "updated": "2026-11-02",
+  "updated": "2026-11-03",
   "issues": [
+    {
+      "date": "2026-11-03",
+      "top": [
+        {
+          "h": "EYLEA HD US net sales rose 62% to $699 million in the third quarter of 2026",
+          "url": "https://investor.regeneron.com/news-releases/news-release-details/regeneron-reports-third-quarter-2026-financial-and-operating",
+          "src": "Regeneron"
+        },
+        {
+          "h": "Geographic atrophy enlarged by a mean 1.35 mm² per year over 2 years in the Amish Eye Study (BJO)",
+          "url": "https://bjo.bmj.com/content/early/2026/11/01/bjo-2026-330584",
+          "src": "British Journal of Ophthalmology"
+        }
+      ],
+      "items": [
+        {
+          "section": "industry",
+          "h": "EYLEA HD US net sales rose 62% to $699 million in the third quarter of 2026",
+          "url": "https://investor.regeneron.com/news-releases/news-release-details/regeneron-reports-third-quarter-2026-financial-and-operating",
+          "src": "Regeneron",
+          "ctx": "Regeneron attributed the increase primarily to higher sales volumes driven by increased demand, partly offset by a lower net selling price. EYLEA US net sales fell 41% to $400 million, which the company attributed primarily to lower sales volumes from continued competitive pressures and the continued transition of patients to EYLEA HD.",
+          "tag": "Anti-VEGF",
+          "lead": true
+        },
+        {
+          "section": "research",
+          "h": "Geographic atrophy enlarged by a mean 1.35 mm² per year over 2 years in the Amish Eye Study (BJO)",
+          "url": "https://bjo.bmj.com/content/early/2026/11/01/bjo-2026-330584",
+          "src": "British Journal of Ophthalmology",
+          "ctx": "In 32 GA lesions from 19 subjects imaged with fundus autofluorescence, baseline foveal involvement was the only significant predictor of faster square-root growth and remained independently associated in multivariable analysis (β=0.139, p=0.042); baseline lesion size was not significant.",
+          "tag": "GA"
+        }
+      ],
+      "lead": {
+        "section": "industry",
+        "h": "EYLEA HD US net sales rose 62% to $699 million in the third quarter of 2026",
+        "url": "https://investor.regeneron.com/news-releases/news-release-details/regeneron-reports-third-quarter-2026-financial-and-operating",
+        "src": "Regeneron",
+        "ctx": "Regeneron attributed the increase primarily to higher sales volumes driven by increased demand, partly offset by a lower net selling price. EYLEA US net sales fell 41% to $400 million, which the company attributed primarily to lower sales volumes from continued competitive pressures and the continued transition of patients to EYLEA HD.",
+        "tag": "Anti-VEGF",
+        "why": "Regeneron says patients are continuing to move from EYLEA to EYLEA HD, with EYLEA HD's volume growth partly offset by a lower net selling price."
+      },
+      "numbers": [
+        {
+          "big": "$699 million",
+          "label": "EYLEA HD US net sales in the third quarter of 2026."
+        },
+        {
+          "big": "1.35 mm²/year",
+          "label": "Mean annual GA enlargement in the Amish Eye Study (32 lesions)."
+        }
+      ]
+    },
     {
       "date": "2026-11-02",
       "top": [
