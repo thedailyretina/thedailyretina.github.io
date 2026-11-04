@@ -1,6 +1,36 @@
 {
-  "updated": "2026-11-03",
+  "updated": "2026-11-04",
   "issues": [
+    {
+      "date": "2026-11-04",
+      "top": [
+        {
+          "h": "Liraglutide and semaglutide constricted retinal arterioles and dilated precapillary arterioles and capillaries in porcine retinas ex vivo (IOVS)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42975103/",
+          "src": "PubMed"
+        }
+      ],
+      "items": [
+        {
+          "section": "research",
+          "h": "Liraglutide and semaglutide constricted retinal arterioles and dilated precapillary arterioles and capillaries in porcine retinas ex vivo (IOVS)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42975103/",
+          "src": "PubMed",
+          "ctx": "Exendin-4 had no significant effect, and the nitric oxide synthase inhibitor L-NAME abolished the effects of both drugs; the authors suggest these vascular effects may contribute to the retinal and optic disc adverse effects of GLP-1 agonists.",
+          "tag": "Drug safety",
+          "lead": true
+        }
+      ],
+      "lead": {
+        "section": "research",
+        "h": "Liraglutide and semaglutide constricted retinal arterioles and dilated precapillary arterioles and capillaries in porcine retinas ex vivo (IOVS)",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/42975103/",
+        "src": "PubMed",
+        "ctx": "Exendin-4 had no significant effect, and the nitric oxide synthase inhibitor L-NAME abolished the effects of both drugs; the authors suggest these vascular effects may contribute to the retinal and optic disc adverse effects of GLP-1 agonists.",
+        "tag": "Drug safety",
+        "why": "The study offers a possible vascular mechanism, shown only in pig retinas ex vivo, for the retinal and optic disc adverse effects attributed to GLP-1 agonists in clinical practice; it does not test patients."
+      }
+    },
     {
       "date": "2026-11-03",
       "top": [
