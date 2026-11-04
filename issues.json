@@ -5,31 +5,64 @@
       "date": "2026-11-04",
       "top": [
         {
+          "h": "FDA approves Xbrane's Lucamzi (ranibizumab-blrz), a biosimilar to Lucentis",
+          "url": "https://www.xbrane.com/en/fda-approves-lucamzi-biosimilar-to-lucentis/",
+          "src": "Xbrane Biopharma"
+        },
+        {
           "h": "Liraglutide and semaglutide constricted retinal arterioles and dilated precapillary arterioles and capillaries in porcine retinas ex vivo (IOVS)",
           "url": "https://pubmed.ncbi.nlm.nih.gov/42975103/",
+          "src": "PubMed"
+        },
+        {
+          "h": "A real-world cost analysis compares intravitreal aflibercept 8 mg with 2 mg in retinal disease (BJO)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42977492/",
           "src": "PubMed"
         }
       ],
       "items": [
+        {
+          "section": "fda",
+          "h": "FDA approves Xbrane's Lucamzi (ranibizumab-blrz), a biosimilar to Lucentis",
+          "url": "https://www.xbrane.com/en/fda-approves-lucamzi-biosimilar-to-lucentis/",
+          "src": "Xbrane Biopharma",
+          "ctx": "Xbrane Biopharma said the approval covers neovascular (wet) AMD and other serious eye conditions and rests on a comparative analytical assessment and a phase 3 study of 582 patients with wet AMD. The company plans a US launch in 2027 with its partners.",
+          "tag": "Biosimilars",
+          "lead": true
+        },
         {
           "section": "research",
           "h": "Liraglutide and semaglutide constricted retinal arterioles and dilated precapillary arterioles and capillaries in porcine retinas ex vivo (IOVS)",
           "url": "https://pubmed.ncbi.nlm.nih.gov/42975103/",
           "src": "PubMed",
           "ctx": "Exendin-4 had no significant effect, and the nitric oxide synthase inhibitor L-NAME abolished the effects of both drugs; the authors suggest these vascular effects may contribute to the retinal and optic disc adverse effects of GLP-1 agonists.",
-          "tag": "Drug safety",
-          "lead": true
+          "tag": "Drug safety"
+        },
+        {
+          "section": "research",
+          "h": "A real-world cost analysis compares intravitreal aflibercept 8 mg with 2 mg in retinal disease (BJO)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42977492/",
+          "src": "PubMed",
+          "ctx": "The abstract was not yet available on PubMed.",
+          "tag": "Anti-VEGF"
         }
       ],
       "lead": {
-        "section": "research",
-        "h": "Liraglutide and semaglutide constricted retinal arterioles and dilated precapillary arterioles and capillaries in porcine retinas ex vivo (IOVS)",
-        "url": "https://pubmed.ncbi.nlm.nih.gov/42975103/",
-        "src": "PubMed",
-        "ctx": "Exendin-4 had no significant effect, and the nitric oxide synthase inhibitor L-NAME abolished the effects of both drugs; the authors suggest these vascular effects may contribute to the retinal and optic disc adverse effects of GLP-1 agonists.",
-        "tag": "Drug safety",
-        "why": "The study offers a possible vascular mechanism, shown only in pig retinas ex vivo, for the retinal and optic disc adverse effects attributed to GLP-1 agonists in clinical practice; it does not test patients."
-      }
+        "section": "fda",
+        "h": "FDA approves Xbrane's Lucamzi (ranibizumab-blrz), a biosimilar to Lucentis",
+        "url": "https://www.xbrane.com/en/fda-approves-lucamzi-biosimilar-to-lucentis/",
+        "src": "Xbrane Biopharma",
+        "ctx": "Xbrane Biopharma said the approval covers neovascular (wet) AMD and other serious eye conditions and rests on a comparative analytical assessment and a phase 3 study of 582 patients with wet AMD. The company plans a US launch in 2027 with its partners.",
+        "tag": "Biosimilars",
+        "why": "It adds another ranibizumab biosimilar option for US retina practices, although the company does not expect to launch it until 2027."
+      },
+      "numbers": [
+        {
+          "big": "582",
+          "label": "Patients with wet AMD in the phase 3 study supporting Lucamzi's approval."
+        }
+      ],
+      "manual": true
     },
     {
       "date": "2026-11-03",

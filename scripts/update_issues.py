@@ -1,7 +1,8 @@
 """Rebuild issues.json from the newsletter's public Buttondown RSS feed.
 
 Only issues that were actually sent appear in the feed, so only those reach the site.
-Existing entries in issues.json are kept; feed entries are added or replace the same date.
+Existing entries in issues.json are kept; feed entries are added or replace the same date,
+except entries marked "manual": true (hand-corrected issues), which the feed never overwrites.
 Standard library only.
 """
 import email.utils
@@ -153,6 +154,8 @@ def normalize(issue):
         out["lead"] = lead
     if issue.get("numbers"):
         out["numbers"] = [{"big": clean(n.get("big")), "label": clean(n.get("label"))} for n in issue["numbers"]]
+    if issue.get("manual"):
+        out["manual"] = True
     return out
 
 
@@ -264,6 +267,8 @@ def main():
             print("skipped (no items parsed):", title, file=sys.stderr)
             continue
         d = issue_date(title, it.findtext("pubDate") or "")
+        if old.get(d, {}).get("manual"):
+            continue  # hand-corrected issue: keep the manual version
         new = normalize({"date": d, "lead": lead, "top": top, "items": items, "numbers": numbers})
         if by_date.get(d) != new:
             by_date[d] = new
