@@ -1,6 +1,72 @@
 {
-  "updated": "2026-11-04",
+  "updated": "2026-11-05",
   "issues": [
+    {
+      "date": "2026-11-05",
+      "top": [
+        {
+          "h": "CMS finalizes the 2027 Physician Fee Schedule with conversion factors projected 1.83% to 2.31% below 2026",
+          "url": "https://www.cms.gov/newsroom/fact-sheets/calendar-year-cy-2027-medicare-physician-fee-schedule-final-rule",
+          "src": "CMS fact sheet"
+        },
+        {
+          "h": "CMS finalizes a 2.3% update to 2027 hospital outpatient and ASC payment rates for facilities meeting quality reporting requirements",
+          "url": "https://www.cms.gov/newsroom/fact-sheets/calendar-year-2027-hospital-outpatient-prospective-payment-system-opps-ambulatory-surgical-center-0",
+          "src": "CMS fact sheet"
+        },
+        {
+          "h": "FDA approves Lucamzi (ranibizumab-blrz), Xbrane's biosimilar to Lucentis",
+          "url": "https://www.xbrane.com/en/fda-approves-lucamzi-biosimilar-to-lucentis",
+          "src": "Xbrane"
+        }
+      ],
+      "items": [
+        {
+          "section": "fda",
+          "h": "CMS finalizes the 2027 Physician Fee Schedule with conversion factors projected 1.83% to 2.31% below 2026",
+          "url": "https://www.cms.gov/newsroom/fact-sheets/calendar-year-cy-2027-medicare-physician-fee-schedule-final-rule",
+          "src": "CMS fact sheet",
+          "ctx": "The nonqualifying APM conversion factor is projected to fall from $33.40 to $32.63 and the qualifying APM factor from $33.57 to $32.95, as a one-year 2.50% increase for 2026 expires. CMS also finalized that when a separately identifiable office/outpatient E/M visit is furnished on the same day as a 0-day global procedure, the most expensive service is paid at 100% and the other procedure(s) or E/M visit(s) at 80%.",
+          "tag": "Payment",
+          "lead": true
+        },
+        {
+          "section": "fda",
+          "h": "CMS finalizes a 2.3% update to 2027 hospital outpatient and ASC payment rates for facilities meeting quality reporting requirements",
+          "url": "https://www.cms.gov/newsroom/fact-sheets/calendar-year-2027-hospital-outpatient-prospective-payment-system-opps-ambulatory-surgical-center-0",
+          "src": "CMS fact sheet",
+          "ctx": "The OPPS/ASC final rule (CMS-1850-F) also sets payment for 340B-acquired drugs under the OPPS at ASP minus 28%.",
+          "tag": "Payment"
+        },
+        {
+          "section": "fda",
+          "h": "FDA approves Lucamzi (ranibizumab-blrz), Xbrane's biosimilar to Lucentis",
+          "url": "https://www.xbrane.com/en/fda-approves-lucamzi-biosimilar-to-lucentis",
+          "src": "Xbrane",
+          "ctx": "Xbrane cites a phase 3 study in 582 patients with wet AMD showing equivalent efficacy and comparable safety, and plans a US launch during 2027 with its partners.",
+          "tag": "Biosimilars"
+        }
+      ],
+      "lead": {
+        "section": "fda",
+        "h": "CMS finalizes the 2027 Physician Fee Schedule with conversion factors projected 1.83% to 2.31% below 2026",
+        "url": "https://www.cms.gov/newsroom/fact-sheets/calendar-year-cy-2027-medicare-physician-fee-schedule-final-rule",
+        "src": "CMS fact sheet",
+        "ctx": "The nonqualifying APM conversion factor is projected to fall from $33.40 to $32.63 and the qualifying APM factor from $33.57 to $32.95, as a one-year 2.50% increase for 2026 expires. CMS also finalized that when a separately identifiable office/outpatient E/M visit is furnished on the same day as a 0-day global procedure, the most expensive service is paid at 100% and the other procedure(s) or E/M visit(s) at 80%.",
+        "tag": "Payment",
+        "why": "The projected lower conversion factor applies to every Physician Fee Schedule service a retina practice bills in 2027, and the same-day policy changes payment when a separately identifiable office E/M visit and a 0-day global procedure are furnished on the same day."
+      },
+      "numbers": [
+        {
+          "big": "$32.63",
+          "label": "2027 Medicare Physician Fee Schedule conversion factor for clinicians not in qualifying APMs, down from $33.40."
+        },
+        {
+          "big": "2.3%",
+          "label": "Finalized 2027 payment rate update for ASCs meeting quality reporting requirements."
+        }
+      ]
+    },
     {
       "date": "2026-11-04",
       "top": [
