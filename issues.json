@@ -1,6 +1,96 @@
 {
-  "updated": "2026-11-05",
+  "updated": "2026-11-06",
   "issues": [
+    {
+      "date": "2026-11-06",
+      "top": [
+        {
+          "h": "Combined anti-VEGF and anti-complement therapy was not associated with higher overall rates of serious ocular adverse events than monotherapy across 54,983 eyes in a US retina-practice database (Ophthalmology Retina)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42988264/",
+          "src": "Ophthalmology Retina"
+        },
+        {
+          "h": "A genome-wide association meta-analysis of 2584 patients with central serous chorioretinopathy identified 10 risk loci, including 3 novel loci (JAMA Ophthalmology)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42986610/",
+          "src": "JAMA Ophthalmology"
+        },
+        {
+          "h": "No maculopathy resembling pentosan polysulfate toxicity was found in 218 patients exposed to other sulfated polysaccharides, including fondaparinux and enoxaparin (Retina)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42987191/",
+          "src": "Retina"
+        }
+      ],
+      "items": [
+        {
+          "section": "research",
+          "h": "Combined anti-VEGF and anti-complement therapy was not associated with higher overall rates of serious ocular adverse events than monotherapy across 54,983 eyes in a US retina-practice database (Ophthalmology Retina)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42988264/",
+          "src": "Ophthalmology Retina",
+          "ctx": "The retrospective study covered 1,103,299 intravitreal injections, with endophthalmitis at 1.21 per 10,000 injections overall and 2,292 eyes receiving dual therapy. Among 340 eyes with at least one same-day dual treatment, there was 1 endophthalmitis and 1 retinitis case (4.66 per 10,000 injections each)",
+          "tag": "AMD",
+          "lead": true
+        },
+        {
+          "section": "research",
+          "h": "A genome-wide association meta-analysis of 2584 patients with central serous chorioretinopathy identified 10 risk loci, including 3 novel loci (JAMA Ophthalmology)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42986610/",
+          "src": "JAMA Ophthalmology",
+          "ctx": "Single-cell mapping concentrated genetic risk in scleral tissue and vascular endothelial cells, and the authors conclude the evidence supports CSC as a primary disorder of the sclera and choroidal vasculature.",
+          "tag": "CSC"
+        },
+        {
+          "section": "research",
+          "h": "No maculopathy resembling pentosan polysulfate toxicity was found in 218 patients exposed to other sulfated polysaccharides, including fondaparinux and enoxaparin (Retina)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42987191/",
+          "src": "Retina",
+          "ctx": "Some patients in the single-center retrospective study showed subtle macular pigment alterations without a clear diagnosis, and the authors say larger studies may be warranted to detect a rare association.",
+          "tag": "Toxicity"
+        },
+        {
+          "section": "research",
+          "h": "Perimetry-OCT overlay analysis in the RUSH2A study found faster loss of sensitivity outside the ellipsoid zone margin in USH2A-related retinitis pigmentosa (TVST)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42986169/",
+          "src": "Translational Vision Science & Technology",
+          "ctx": "The analysis of 105 participants followed for 4 years is proposed as a source of novel structural and functional endpoints.",
+          "tag": "IRD"
+        },
+        {
+          "section": "research",
+          "h": "A Lancet Seminar reviews retinoblastoma biology, diagnosis, eye-preserving treatment, survivorship and global inequities",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42982077/",
+          "src": "The Lancet",
+          "ctx": "It describes aqueous humour liquid biopsy as an emerging diagnostic approach and notes that intra-arterial, intravitreal and intracameral chemotherapy have shown efficacy and safety.",
+          "tag": "Oncology"
+        },
+        {
+          "section": "research",
+          "h": "Retinal complications after cataract surgery in adult retinopathy of prematurity (Ophthalmology Retina)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42988263/",
+          "src": "Ophthalmology Retina",
+          "ctx": "The abstract is not yet publicly available; the findings will be covered in a future issue once it is.",
+          "tag": "ROP"
+        }
+      ],
+      "lead": {
+        "section": "research",
+        "h": "Combined anti-VEGF and anti-complement therapy was not associated with higher overall rates of serious ocular adverse events than monotherapy across 54,983 eyes in a US retina-practice database (Ophthalmology Retina)",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/42988264/",
+        "src": "Ophthalmology Retina",
+        "ctx": "The retrospective study covered 1,103,299 intravitreal injections, with endophthalmitis at 1.21 per 10,000 injections overall and 2,292 eyes receiving dual therapy. Among 340 eyes with at least one same-day dual treatment, there was 1 endophthalmitis and 1 retinitis case (4.66 per 10,000 injections each)",
+        "tag": "AMD",
+        "why": "For eyes treated with both anti-VEGF and complement inhibitor injections, these retrospective data did not show higher overall rates of serious ocular adverse events with combined therapy, although same-day dual-injection events were few and the authors call for larger prospective analyses."
+      },
+      "numbers": [
+        {
+          "big": "1,103,299",
+          "label": "Intravitreal injections analyzed in the real-world anti-VEGF and anti-complement safety study."
+        },
+        {
+          "big": "2584",
+          "label": "Patients with central serous chorioretinopathy in the GWAS meta-analysis."
+        }
+      ]
+    },
     {
       "date": "2026-11-05",
       "top": [
