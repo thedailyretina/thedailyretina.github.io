@@ -1,6 +1,104 @@
 {
-  "updated": "2026-11-06",
+  "updated": "2026-11-09",
   "issues": [
+    {
+      "date": "2026-11-09",
+      "top": [
+        {
+          "h": "Ocular Therapeutix has updated the SOL-R primary endpoint for Axpaxli to Week 40, with topline results on track for 1Q 2028",
+          "url": "https://www.globenewswire.com/news-release/2026/11/09/3398240/0/en/ocular-therapeutix-reports-third-quarter-2026-financial-results-and-business-highlights.html",
+          "src": "Ocular Therapeutix"
+        },
+        {
+          "h": "Medicare's 2027 ASC facility payment for vitrectomy (CPT 67036) falls to $2,160.65 from $2,203.87",
+          "url": "https://www.retinalphysician.com/news/2026/medicare-lowers-surgery-center-payment-for-vitrectomy-in-2027/",
+          "src": "Retinal Physician"
+        },
+        {
+          "h": "Systemic immunosuppression before vitrectomy was associated with higher endophthalmitis risk 43 to 365 days after surgery, but not in the first 42 days (Retina)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42993189/",
+          "src": "PubMed"
+        }
+      ],
+      "items": [
+        {
+          "section": "industry",
+          "h": "Ocular Therapeutix has updated the SOL-R primary endpoint for Axpaxli to Week 40, with topline results on track for 1Q 2028",
+          "url": "https://www.globenewswire.com/news-release/2026/11/09/3398240/0/en/ocular-therapeutix-reports-third-quarter-2026-financial-results-and-business-highlights.html",
+          "src": "Ocular Therapeutix",
+          "ctx": "The company says its wet AMD NDA remains on track for 4Q 2026 under the 505(b)(2) pathway, supported by SOL-1 Week 52 efficacy data and SOL-1 and interim SOL-R Week 52 safety data. SOL-R's primary endpoint is noninferiority in mean BCVA change from baseline versus aflibercept 2 mg dosed every 8 weeks.",
+          "tag": "nAMD",
+          "lead": true
+        },
+        {
+          "section": "fda",
+          "h": "Medicare's 2027 ASC facility payment for vitrectomy (CPT 67036) falls to $2,160.65 from $2,203.87",
+          "url": "https://www.retinalphysician.com/news/2026/medicare-lowers-surgery-center-payment-for-vitrectomy-in-2027/",
+          "src": "Retinal Physician",
+          "ctx": "The reduction of about 2.0%, reported by Retinal Physician from Outpatient Ophthalmic Surgery Society figures, applies to the facility payment rather than the surgeon's professional fee and comes despite a finalized 2.3% annual ASC update.",
+          "tag": "Payment"
+        },
+        {
+          "section": "research",
+          "h": "Systemic immunosuppression before vitrectomy was associated with higher endophthalmitis risk 43 to 365 days after surgery, but not in the first 42 days (Retina)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42993189/",
+          "src": "PubMed",
+          "ctx": "In a TriNetX propensity-matched cohort of 25,997 patients per group, the later-window relative risk was 1.74 (95% CI, 1.33-2.28) for any immunosuppressant and 1.81 (95% CI, 1.38-2.37) for corticosteroids, and the authors note some late events may reflect endogenous or inflammatory disease.",
+          "tag": "Surgery"
+        },
+        {
+          "section": "industry",
+          "h": "VeonGen reports FDA alignment at an RMAT Type B meeting on the pivotal phase 3 design for its VG801 gene therapy in Stargardt disease",
+          "url": "https://veongen.com/press/veongen-announces-fda-alignment-on-pivotal-phase-3-development-and-clinical-progress-of-vg801-for-stargardt-disease/",
+          "src": "VeonGen",
+          "ctx": "In the ongoing phase 1/2 study, the company reports that 11 of 13 patients with measurable baseline BCVA gained at least 5 ETDRS letters at Month 6 or Month 12; the data are company-reported and no adverse-event counts were given.",
+          "tag": "IRD"
+        },
+        {
+          "section": "research",
+          "h": "Evidence was insufficient to establish a protective or harmful effect of statins on AMD in a meta-analysis of 28 studies with 1,918,120 participants (AJO)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42998694/",
+          "src": "PubMed",
+          "ctx": "The authors rated the evidence as very low certainty and state that the findings do not support prescribing statins specifically for AMD or discontinuing otherwise indicated therapy.",
+          "tag": "AMD"
+        },
+        {
+          "section": "research",
+          "h": "Eyes that were dry after 4 faricimab loading injections received fewer injections over 2 years than eyes with persistent fluid (Graefe's)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42995256/",
+          "src": "PubMed",
+          "ctx": "In this retrospective series of 91 treatment-naive eyes on treat-and-extend, 73 eyes (80.2%) were dry at Week 16 and received a median of 11 vs 14 injections over 2 years.",
+          "tag": "nAMD"
+        },
+        {
+          "section": "research",
+          "h": "Epiretinal membrane developed in 60.0% of evaluable eyes after vitrectomy for giant retinal tear-related detachment (Graefe's)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42988981/",
+          "src": "PubMed",
+          "ctx": "In the single-center Manchester GRT Study, cystoid macular edema occurred in 28.9% of 90 evaluable eyes, and discharge BCVA did not differ significantly between eyes with and without ERM or CMO.",
+          "tag": "Surgery"
+        }
+      ],
+      "lead": {
+        "section": "industry",
+        "h": "Ocular Therapeutix has updated the SOL-R primary endpoint for Axpaxli to Week 40, with topline results on track for 1Q 2028",
+        "url": "https://www.globenewswire.com/news-release/2026/11/09/3398240/0/en/ocular-therapeutix-reports-third-quarter-2026-financial-results-and-business-highlights.html",
+        "src": "Ocular Therapeutix",
+        "ctx": "The company says its wet AMD NDA remains on track for 4Q 2026 under the 505(b)(2) pathway, supported by SOL-1 Week 52 efficacy data and SOL-1 and interim SOL-R Week 52 safety data. SOL-R's primary endpoint is noninferiority in mean BCVA change from baseline versus aflibercept 2 mg dosed every 8 weeks.",
+        "tag": "nAMD",
+        "why": "The planned filing would rely on SOL-1 Week 52 efficacy data plus confirmatory evidence, while SOL-R's noninferiority comparison against aflibercept 2 mg is not expected until 1Q 2028."
+      },
+      "numbers": [
+        {
+          "big": "$2,160.65",
+          "label": "Final 2027 Medicare ASC facility payment for vitrectomy (CPT 67036)."
+        },
+        {
+          "big": "25,997",
+          "label": "Patients per matched cohort in the immunosuppression and post-vitrectomy endophthalmitis study."
+        }
+      ]
+    },
     {
       "date": "2026-11-06",
       "top": [
