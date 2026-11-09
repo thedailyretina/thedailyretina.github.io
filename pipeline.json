@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-02",
+  "updated": "2026-11-09",
   "note": "Only add dates from company releases, SEC filings, FDA or EMA (trade press only when it reports the primary source). 'confirmed' is the date of the source that last stated the timing. 'date' is set only for an exact day; 'when' is what the source says. Trials: industry-sponsored phase 3 and pivotal phase 2/3 retina trials that are recruiting or active, plus large network trials (DRCR/Jaeb and major multicenter academic studies). 'kind': 'trial' entries are dated by the estimated primary completion on ClinicalTrials.gov; replace with company readout guidance ('kind': 'readout') when a company states one. Before adding or keeping a trial, confirm it has not already reported results (company releases, SEC filings, trade press, registry results); if it has, drop it or move it to resolved. Every trial or readout title includes the trial acronym when one exists (registry acronym field, or the sponsor's name for the trial).",
   "items": [
     {
@@ -235,13 +235,13 @@
       "area": "nAMD · TKI",
       "disease": "nAMD",
       "title": "Axitinib implant (OTX-TKI) SOL-R phase 3 topline in nAMD (Ocular Therapeutix)",
-      "detail": "Primary endpoint: Week 56 BCVA non-inferiority vs aflibercept 2 mg (640 randomized); sponsor masking extended to Week 96 with a new key secondary endpoint of superiority vs aflibercept 8 mg.",
-      "src": "Ocular Therapeutix Q2 2026 release (Aug 3, 2026)",
-      "url": "https://www.sec.gov/Archives/edgar/data/0001393434/000110465926089443/tm2621618d1_ex99-1.htm",
+      "detail": "Primary endpoint updated to Week 40 (previously Week 56): non-inferiority in mean BCVA change from baseline vs aflibercept 2 mg every 8 weeks; topline on track for 1Q 2028.",
+      "src": "Ocular Therapeutix Q3 2026 release (Nov 9, 2026)",
+      "url": "https://www.globenewswire.com/news-release/2026/11/09/3398240/0/en/ocular-therapeutix-reports-third-quarter-2026-financial-results-and-business-highlights.html",
       "nct": [
         "NCT06495918"
       ],
-      "confirmed": "2026-10-26"
+      "confirmed": "2026-11-09"
     },
     {
       "id": "tiespectus-namd",
@@ -1045,6 +1045,25 @@
         "NCT07804186"
       ],
       "confirmed": "2026-11-02"
+    },
+    {
+      "id": "drcr-radiation-retinopathy",
+      "status": "upcoming",
+      "kind": "trial",
+      "group": "Q4 2029",
+      "sort": "2029-12-26",
+      "date": null,
+      "when": "Est. Dec 2029",
+      "area": "Radiation retinopathy",
+      "disease": "Oncology",
+      "title": "DRCR Protocol AL: faricimab or fluocinolone acetonide implant vs observation to prevent vision loss from radiation retinopathy (Jaeb Center)",
+      "detail": "Phase 3 after plaque brachytherapy for choroidal melanoma (n=600); recruiting.",
+      "src": "ClinicalTrials.gov NCT05844982",
+      "url": "https://clinicaltrials.gov/study/NCT05844982",
+      "nct": [
+        "NCT05844982"
+      ],
+      "confirmed": "2026-11-09"
     },
     {
       "id": "remigromig-brunello",
