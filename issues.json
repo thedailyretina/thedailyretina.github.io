@@ -1,6 +1,72 @@
 {
-  "updated": "2026-11-09",
+  "updated": "2026-11-10",
   "issues": [
+    {
+      "date": "2026-11-10",
+      "top": [
+        {
+          "h": "FDA is requiring safety labeling changes for all GLP-1 receptor agonists to add a potential increased risk of nonarteritic anterior ischemic optic neuropathy (NAION)",
+          "url": "https://www.fda.gov/drugs/drug-safety-communications/fda-requires-safety-labeling-changes-glucagon-peptide-1-receptor-agonists-glp-1-ras-due-potential",
+          "src": "FDA"
+        },
+        {
+          "h": "Fenofibrate added to a statin was associated with a lower hazard of a DME-related composite after cataract surgery in type 2 diabetes (Retina)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/43002646/",
+          "src": "PubMed"
+        },
+        {
+          "h": "An open-source multimodal imaging data set of 645 eyes with uveal melanoma, choroidal nevi, or congenital hypertrophy of the retinal pigment epithelium has been released (Ophthalmology Science)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42997692/",
+          "src": "PubMed"
+        }
+      ],
+      "items": [
+        {
+          "section": "fda",
+          "h": "FDA is requiring safety labeling changes for all GLP-1 receptor agonists to add a potential increased risk of nonarteritic anterior ischemic optic neuropathy (NAION)",
+          "url": "https://www.fda.gov/drugs/drug-safety-communications/fda-requires-safety-labeling-changes-glucagon-peptide-1-receptor-agonists-glp-1-ras-due-potential",
+          "src": "FDA",
+          "ctx": "In an FDA meta-analysis of 126 randomized trials with 134,253 patients, NAION incidence was 6.4 events per 100,000 person-years with GLP-1 RAs vs 3.8 with comparators (placebo or non-GLP-1 RA glucose-lowering drugs); FDA identified 15 probable NAION events. In Sentinel data on adults with type 2 diabetes, the hazard ratio was 1.43 (95% CI, 1.02-2.01) vs DPP-4 inhibitors and 1.19 (95% CI, 0.91-1.54; not statistically significant) vs SGLT-2 inhibitors.",
+          "tag": "Drug safety",
+          "lead": true
+        },
+        {
+          "section": "research",
+          "h": "Fenofibrate added to a statin was associated with a lower hazard of a DME-related composite after cataract surgery in type 2 diabetes (Retina)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/43002646/",
+          "src": "PubMed",
+          "ctx": "In a TriNetX cohort of 2,521 matched pairs, the hazard ratio was 0.486 (95% CI, 0.324-0.728) at 1 year and 0.678 (95% CI, 0.515-0.892) at 5 years; findings for the PDR-related composite were inconclusive, and the authors state that prospective validation is needed.",
+          "tag": "DME"
+        },
+        {
+          "section": "research",
+          "h": "An open-source multimodal imaging data set of 645 eyes with uveal melanoma, choroidal nevi, or congenital hypertrophy of the retinal pigment epithelium has been released (Ophthalmology Science)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42997692/",
+          "src": "PubMed",
+          "ctx": "The single-center collection pairs ultra-widefield fundus photographs with standardized B-scan ultrasonography and structured annotations, and prior AI models built on it reached an AUC of up to 0.98 for distinguishing uveal melanoma from choroidal nevus.",
+          "tag": "Oncology"
+        }
+      ],
+      "lead": {
+        "section": "fda",
+        "h": "FDA is requiring safety labeling changes for all GLP-1 receptor agonists to add a potential increased risk of nonarteritic anterior ischemic optic neuropathy (NAION)",
+        "url": "https://www.fda.gov/drugs/drug-safety-communications/fda-requires-safety-labeling-changes-glucagon-peptide-1-receptor-agonists-glp-1-ras-due-potential",
+        "src": "FDA",
+        "ctx": "In an FDA meta-analysis of 126 randomized trials with 134,253 patients, NAION incidence was 6.4 events per 100,000 person-years with GLP-1 RAs vs 3.8 with comparators (placebo or non-GLP-1 RA glucose-lowering drugs); FDA identified 15 probable NAION events. In Sentinel data on adults with type 2 diabetes, the hazard ratio was 1.43 (95% CI, 1.02-2.01) vs DPP-4 inhibitors and 1.19 (95% CI, 0.91-1.54; not statistically significant) vs SGLT-2 inhibitors.",
+        "tag": "Drug safety",
+        "why": "FDA advises clinicians to tell patients on GLP-1 RAs to report sudden, painless vision loss or other visual disturbances in one eye immediately, to promptly refer patients with suspected NAION to an ophthalmologist, and to consider discontinuing the drug in patients who develop NAION unless the benefits clearly outweigh the risk."
+      },
+      "numbers": [
+        {
+          "big": "134,253",
+          "label": "Patients in the 126 randomized trials in FDA's GLP-1 RA NAION meta-analysis."
+        },
+        {
+          "big": "2,521",
+          "label": "Matched patient pairs in the fenofibrate-plus-statin cataract surgery cohort."
+        }
+      ]
+    },
     {
       "date": "2026-11-09",
       "top": [
