@@ -1,6 +1,88 @@
 {
-  "updated": "2026-11-10",
+  "updated": "2026-11-11",
   "issues": [
+    {
+      "date": "2026-11-11",
+      "top": [
+        {
+          "h": "IMVIONIX has acquired the US and Canadian rights to Beovu (brolucizumab) from Novartis",
+          "url": "https://www.prnewswire.com/news-releases/imvionix-acquires-us-and-canadian-rights-to-beovu-brolucizumab-dbll-marking-the-companys-official-launch-302934563.html",
+          "src": "PR Newswire"
+        },
+        {
+          "h": "Atrophy arising from subretinal drusenoid deposits or acquired vitelliform lesions grew faster than atrophy arising from drusen in intermediate AMD (AJO)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/43009086/",
+          "src": "PubMed"
+        },
+        {
+          "h": "Opus Genetics reports visual function gains in all five participants in the first cohort of its OPGx-BEST1 gene therapy trial and FDA alignment on a potential pivotal endpoint",
+          "url": "https://www.globenewswire.com/news-release/2026/11/10/3399299/0/en/opus-genetics-announces-financial-results-for-third-quarter-2026-and-provides-corporate-update.html",
+          "src": "Opus Genetics (GlobeNewswire)"
+        }
+      ],
+      "items": [
+        {
+          "section": "industry",
+          "h": "IMVIONIX has acquired the US and Canadian rights to Beovu (brolucizumab) from Novartis",
+          "url": "https://www.prnewswire.com/news-releases/imvionix-acquires-us-and-canadian-rights-to-beovu-brolucizumab-dbll-marking-the-companys-official-launch-302934563.html",
+          "src": "PR Newswire",
+          "ctx": "IMVIONIX will hold exclusive commercial rights and become the marketing authorization holder in both countries; financial terms were not disclosed. The company describes the deal as a first step in building a company focused on serving retina specialists.",
+          "tag": "nAMD",
+          "lead": true
+        },
+        {
+          "section": "research",
+          "h": "Atrophy arising from subretinal drusenoid deposits or acquired vitelliform lesions grew faster than atrophy arising from drusen in intermediate AMD (AJO)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/43009086/",
+          "src": "PubMed",
+          "ctx": "In a retrospective OCT cohort of 109 eyes (88 patients) progressing to cRORA, model-estimated growth of square-root-transformed atrophy area was 0.197 mm/year for drusenoid, 0.383 mm/year for SDD, and 0.429 mm/year for AVL precursors, with SDD-derived atrophy accelerating later and AVL-derived atrophy growing fastest early.",
+          "tag": "GA"
+        },
+        {
+          "section": "industry",
+          "h": "Opus Genetics reports visual function gains in all five participants in the first cohort of its OPGx-BEST1 gene therapy trial and FDA alignment on a potential pivotal endpoint",
+          "url": "https://www.globenewswire.com/news-release/2026/11/10/3399299/0/en/opus-genetics-announces-financial-results-for-third-quarter-2026-and-provides-corporate-update.html",
+          "src": "Opus Genetics (GlobeNewswire)",
+          "ctx": "Microperimetry improved in 3 of 4 evaluable participants with no serious adverse events, the potential pivotal endpoint is a ≥3 dB microperimetry improvement in ≥5 prespecified loci, and cohort 2 topline data are expected in Q1 2027.",
+          "tag": "IRD"
+        },
+        {
+          "section": "industry",
+          "h": "Kalaris has pushed preliminary TH103 data in nAMD to the second half of 2027 after a drug batch failed a release specification for aggregation",
+          "url": "https://www.globenewswire.com/news-release/2026/11/10/3399359/0/en/kalaris-reports-third-quarter-2026-financial-results-and-provides-business-update.html",
+          "src": "Kalaris Therapeutics (GlobeNewswire)",
+          "ctx": "The company attributes the delay to a batch-specific operational issue, expects a replacement batch in Q2 2027, and now expects to start Phase 3 in 2028.",
+          "tag": "nAMD"
+        },
+        {
+          "section": "research",
+          "h": "High-dose (100 μg) intravitreal topotecan achieved a 93% globe salvage rate in refractory or recurrent retinoblastoma (AJO)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/43009085/",
+          "src": "PubMed",
+          "ctx": "In a prospective, noncomparative series of 15 eyes followed for a median of 9 months after the final injection, intraocular seeds were controlled in all eyes, ERG amplitude did not change significantly, and no severe ocular or systemic adverse events were reported.",
+          "tag": "Oncology"
+        }
+      ],
+      "lead": {
+        "section": "industry",
+        "h": "IMVIONIX has acquired the US and Canadian rights to Beovu (brolucizumab) from Novartis",
+        "url": "https://www.prnewswire.com/news-releases/imvionix-acquires-us-and-canadian-rights-to-beovu-brolucizumab-dbll-marking-the-companys-official-launch-302934563.html",
+        "src": "PR Newswire",
+        "ctx": "IMVIONIX will hold exclusive commercial rights and become the marketing authorization holder in both countries; financial terms were not disclosed. The company describes the deal as a first step in building a company focused on serving retina specialists.",
+        "tag": "nAMD",
+        "why": "Commercial responsibility for brolucizumab in the US and Canada is shifting from Novartis to IMVIONIX, which will become the marketing authorization holder; the release gives no transition timeline."
+      },
+      "numbers": [
+        {
+          "big": "0.429 mm/year",
+          "label": "Model-estimated growth rate of square-root-transformed atrophy area arising from acquired vitelliform lesions, vs 0.197 mm/year from drusenoid lesions."
+        },
+        {
+          "big": "93%",
+          "label": "Globe salvage rate with 100-μg intravitreal topotecan for refractory or recurrent retinoblastoma (15 eyes)."
+        }
+      ]
+    },
     {
       "date": "2026-11-10",
       "top": [
