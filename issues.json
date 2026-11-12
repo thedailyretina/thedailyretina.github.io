@@ -1,6 +1,100 @@
 {
-  "updated": "2026-11-11",
+  "updated": "2026-11-12",
   "issues": [
+    {
+      "date": "2026-11-12",
+      "top": [
+        {
+          "h": "Rhegmatogenous retinal detachment developed in 5.5% of eyes after vitrectomy for symptomatic floaters (Retina)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/43012660/",
+          "src": "PubMed"
+        },
+        {
+          "h": "Belite Bio says FDA will not convene an advisory committee for its tinlarebant NDA in Stargardt disease type 1 (STGD1), with a PDUFA target action date of February 12, 2027",
+          "url": "https://www.globenewswire.com/news-release/2026/11/12/3401341/0/en/belite-bio-reports-unaudited-third-quarter-2026-financial-results-and-provides-a-corporate-update.html",
+          "src": "Belite Bio"
+        },
+        {
+          "h": "Ocular hypertension (IOP >25 mm Hg) developed in 9.3% of eyes after the 0.19-mg fluocinolone acetonide implant for DME (Retina)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/43012659/",
+          "src": "PubMed"
+        }
+      ],
+      "items": [
+        {
+          "section": "research",
+          "h": "Rhegmatogenous retinal detachment developed in 5.5% of eyes after vitrectomy for symptomatic floaters (Retina)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/43012660/",
+          "src": "PubMed",
+          "ctx": "In a retrospective consecutive series of 256 eyes of 205 patients followed for a mean of 31.8 months, 14 eyes developed a detachment at a median of 19 days, 78.6% of detachments were macula-on, and all were reattached. Three of the 14 eyes, 1.2% of the full cohort, lost 3 or more lines of vision.",
+          "tag": "Surgery",
+          "lead": true
+        },
+        {
+          "section": "industry",
+          "h": "Belite Bio says FDA will not convene an advisory committee for its tinlarebant NDA in Stargardt disease type 1 (STGD1), with a PDUFA target action date of February 12, 2027",
+          "url": "https://www.globenewswire.com/news-release/2026/11/12/3401341/0/en/belite-bio-reports-unaudited-third-quarter-2026-financial-results-and-provides-a-corporate-update.html",
+          "src": "Belite Bio",
+          "ctx": "The company says FDA review is ongoing and that its phase 3 PHOENIX trial of tinlarebant in geographic atrophy has completed enrollment with 530 subjects, with an interim analysis planned but not dated.",
+          "tag": "IRD"
+        },
+        {
+          "section": "research",
+          "h": "Ocular hypertension (IOP >25 mm Hg) developed in 9.3% of eyes after the 0.19-mg fluocinolone acetonide implant for DME (Retina)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/43012659/",
+          "src": "PubMed",
+          "ctx": "In a retrospective review of 118 eyes of 90 patients followed for a mean of 33.1 months, 11 eyes developed ocular hypertension, higher baseline IOP was associated with higher odds (OR per 1 mm Hg, 1.32), and 1 eye (0.8% of the cohort) required incisional glaucoma surgery.",
+          "tag": "DME"
+        },
+        {
+          "section": "industry",
+          "h": "Annexon says an independent data monitoring committee (DMC) will assess the Month 15 primary endpoint of its phase 3 ARCHER II trial of vonaprument in geographic atrophy in the fourth quarter of 2026",
+          "url": "https://www.globenewswire.com/news-release/2026/11/09/3398918/0/en/annexon-reports-third-quarter-2026-financial-results-business-updates-and-key-anticipated-milestones.html",
+          "src": "Annexon",
+          "ctx": "If the DMC recommends that the endpoint has been met, it will evaluate two prespecified sub-studies, with results anticipated in the first quarter of 2027; alternatively, the DMC may recommend continuing the trial through the Month 24 primary endpoint analysis, and trial completion, including Month 24 analyses, is expected in the third quarter of 2027.",
+          "tag": "GA"
+        },
+        {
+          "section": "research",
+          "h": "Complete posterior vitreous detachment at presentation was associated with less cystoid macular edema and fewer injections at 1 year in branch retinal vein occlusion (Retina)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/43012918/",
+          "src": "PubMed",
+          "ctx": "In a retrospective cohort of 88 treatment-naive eyes, CME at 1 year occurred in 65.6% of eyes with complete PVD vs 88.9% without, and median injections were 4.0 vs 7.0 (adjusted for baseline CME and CST but not for hypertension); the injection association reversed at higher baseline central subfield thickness.",
+          "tag": "RVO"
+        },
+        {
+          "section": "research",
+          "h": "Fourteen-year changes in operative time and reimbursement for ophthalmic surgery (Ophthalmology)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/43014481/",
+          "src": "PubMed",
+          "ctx": "The abstract is not yet publicly available; the findings will be covered in a future issue once it is.",
+          "tag": "Payment"
+        }
+      ],
+      "lead": {
+        "section": "research",
+        "h": "Rhegmatogenous retinal detachment developed in 5.5% of eyes after vitrectomy for symptomatic floaters (Retina)",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/43012660/",
+        "src": "PubMed",
+        "ctx": "In a retrospective consecutive series of 256 eyes of 205 patients followed for a mean of 31.8 months, 14 eyes developed a detachment at a median of 19 days, 78.6% of detachments were macula-on, and all were reattached. Three of the 14 eyes, 1.2% of the full cohort, lost 3 or more lines of vision.",
+        "tag": "Surgery",
+        "why": "The series gives retina surgeons a concrete, single-series estimate of detachment risk and of 3-line vision loss to use when counseling patients considering vitrectomy for floaters."
+      },
+      "numbers": [
+        {
+          "big": "5.5%",
+          "label": "Eyes (14 of 256) that developed rhegmatogenous retinal detachment after vitrectomy for symptomatic floaters."
+        },
+        {
+          "big": "9.3%",
+          "label": "Eyes (11 of 118) with IOP >25 mm Hg after the 0.19-mg fluocinolone acetonide implant for DME."
+        },
+        {
+          "big": "530",
+          "label": "Subjects enrolled in Belite Bio's phase 3 PHOENIX trial of tinlarebant in geographic atrophy."
+        }
+      ]
+    },
     {
       "date": "2026-11-11",
       "top": [
