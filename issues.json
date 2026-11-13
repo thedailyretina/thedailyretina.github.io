@@ -1,6 +1,80 @@
 {
-  "updated": "2026-11-12",
+  "updated": "2026-11-13",
   "issues": [
+    {
+      "date": "2026-11-13",
+      "top": [
+        {
+          "h": "Drusen-driven disease progressed to advanced AMD substantially more often than pachychoroid-driven disease over 5 years in a Korean prospective cohort (Ophthalmology Science)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/43022085/",
+          "src": "PubMed"
+        },
+        {
+          "h": "Disease severity varied substantially among patients sharing identical primary EYS or USH2A genotypes in autosomal-recessive retinitis pigmentosa (TVST)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/43018415/",
+          "src": "PubMed"
+        },
+        {
+          "h": "The RHO p.(Met216Lys) variant is associated with a slowly progressive chorioretinal dystrophy that can closely mimic choroideremia (IOVS)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/43018422/",
+          "src": "PubMed"
+        }
+      ],
+      "items": [
+        {
+          "section": "research",
+          "h": "Drusen-driven disease progressed to advanced AMD substantially more often than pachychoroid-driven disease over 5 years in a Korean prospective cohort (Ophthalmology Science)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/43022085/",
+          "src": "PubMed",
+          "ctx": "In the multicenter Korean Age-Related Maculopathy Study of 868 participants (335 completed 5-year follow-up), the complete-case 5-year incidence was 20.4% for exudative AMD and 12.2% for geographic atrophy in drusen-driven disease vs 5.0% and 2.2% in pachychoroid-driven disease. Within drusen-driven disease, reticular pseudodrusen were associated with geographic atrophy (OR, 10.21; 95% CI, 3.02-34.49), while in pachychoroid-driven disease pachydrusen were not associated with progression and exudative conversion was confined to eyes with both pigmentary abnormality and the double-layer sign.",
+          "tag": "AMD",
+          "lead": true
+        },
+        {
+          "section": "research",
+          "h": "Disease severity varied substantially among patients sharing identical primary EYS or USH2A genotypes in autosomal-recessive retinitis pigmentosa (TVST)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/43018415/",
+          "src": "PubMed",
+          "ctx": "In 90 patients (41 EYS, 49 USH2A), several genotype-matched comparisons showed younger individuals with substantially smaller ellipsoid zone widths than older counterparts, and the authors say this variability has implications for prognosis, trial stratification, and interpretation of treatment response.",
+          "tag": "IRD"
+        },
+        {
+          "section": "research",
+          "h": "The RHO p.(Met216Lys) variant is associated with a slowly progressive chorioretinal dystrophy that can closely mimic choroideremia (IOVS)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/43018422/",
+          "src": "PubMed",
+          "ctx": "In 17 patients from eight families at four centers (follow-up available for 13, median 159 months), findings included enlarging pericentral scotomas, coalescing patches of autofluorescence loss, outer retinal tubulations, a thinned choroid, and a median ellipsoid zone width loss of 176 µm per year.",
+          "tag": "IRD"
+        },
+        {
+          "section": "research",
+          "h": "Safety of anti-VEGF injections in eyes with uveitis (Ophthalmology Retina)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/43020374/",
+          "src": "PubMed",
+          "ctx": "The abstract is not yet publicly available; the findings will be covered in a future issue once it is.",
+          "tag": "Uveitis"
+        }
+      ],
+      "lead": {
+        "section": "research",
+        "h": "Drusen-driven disease progressed to advanced AMD substantially more often than pachychoroid-driven disease over 5 years in a Korean prospective cohort (Ophthalmology Science)",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/43022085/",
+        "src": "PubMed",
+        "ctx": "In the multicenter Korean Age-Related Maculopathy Study of 868 participants (335 completed 5-year follow-up), the complete-case 5-year incidence was 20.4% for exudative AMD and 12.2% for geographic atrophy in drusen-driven disease vs 5.0% and 2.2% in pachychoroid-driven disease. Within drusen-driven disease, reticular pseudodrusen were associated with geographic atrophy (OR, 10.21; 95% CI, 3.02-34.49), while in pachychoroid-driven disease pachydrusen were not associated with progression and exudative conversion was confined to eyes with both pigmentary abnormality and the double-layer sign.",
+        "tag": "AMD",
+        "why": "The study gives phenotype-specific 5-year risk estimates and imaging biomarkers that the authors say may inform risk stratification of preadvanced macular disease, although only 335 of 868 participants completed 5-year follow-up."
+      },
+      "numbers": [
+        {
+          "big": "20.4%",
+          "label": "Five-year incidence of exudative AMD in drusen-driven nonadvanced AMD (complete-case cohort), vs 5.0% in pachychoroid-driven disease."
+        },
+        {
+          "big": "176 µm per year",
+          "label": "Median rate of ellipsoid zone width loss with the RHO p.(Met216Lys) variant."
+        }
+      ]
+    },
     {
       "date": "2026-11-12",
       "top": [
