@@ -1,6 +1,92 @@
 {
-  "updated": "2026-11-13",
+  "updated": "2026-11-16",
   "issues": [
+    {
+      "date": "2026-11-16",
+      "top": [
+        {
+          "h": "After 15 years of anti-VEGF therapy for nAMD, eyes had lost a mean of 8.5 letters from baseline in a real-world cohort (Eye)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/43035550/",
+          "src": "PubMed"
+        },
+        {
+          "h": "Kodiak plans to submit a three-indication BLA for Zenkuda (tarcocimab tedromer) in wet AMD, diabetic retinopathy, and retinal vein occlusion in the fourth quarter of 2026",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001468748/000119312526458248/kod-ex99_1.htm",
+          "src": "Kodiak Sciences (SEC filing)"
+        },
+        {
+          "h": "An interpretable machine-learning model flagged 31.5% of infants as screen-positive while identifying all 21 type 1 ROP cases in a single-center retrospective study (TVST)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/43023979/",
+          "src": "PubMed"
+        }
+      ],
+      "items": [
+        {
+          "section": "research",
+          "h": "After 15 years of anti-VEGF therapy for nAMD, eyes had lost a mean of 8.5 letters from baseline in a real-world cohort (Eye)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/43035550/",
+          "src": "PubMed",
+          "ctx": "Of 1,202 eyes that began ranibizumab in 2006-2009, 107 had at least 15 years of continuous follow-up; at year 15, 32% had VA of 20/40 or better and 31% had VA of 20/200 or worse. Macular atrophy was present in 74% of eyes (subfoveal in 67% of those) and subretinal fibrosis in 43%, and fibrosis, subfoveal atrophy, and treatment discontinuation were each associated with final VA.",
+          "tag": "nAMD",
+          "lead": true
+        },
+        {
+          "section": "industry",
+          "h": "Kodiak plans to submit a three-indication BLA for Zenkuda (tarcocimab tedromer) in wet AMD, diabetic retinopathy, and retinal vein occlusion in the fourth quarter of 2026",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001468748/000119312526458248/kod-ex99_1.htm",
+          "src": "Kodiak Sciences (SEC filing)",
+          "ctx": "The company says the filing will include five positive phase 3 studies, and it expects topline results from the first pivotal analysis of its PEAK trial of KSI-101 in December 2026.",
+          "tag": "nAMD"
+        },
+        {
+          "section": "research",
+          "h": "An interpretable machine-learning model flagged 31.5% of infants as screen-positive while identifying all 21 type 1 ROP cases in a single-center retrospective study (TVST)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/43023979/",
+          "src": "PubMed",
+          "ctx": "Among 184 infants, the 5-variable model reduced screen-positive classifications by 68.5% vs local criteria and 57.7% vs G-ROP, a birth-only model performed similarly (29.9% screen-positive), and the authors call for prospective validation.",
+          "tag": "Peds"
+        },
+        {
+          "section": "research",
+          "h": "Machine-learning models using only routinely collected tabular data identified low-risk veterans with diabetes who may be candidates for biennial DR screening (Ophthalmology Science)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/43034723/",
+          "src": "PubMed",
+          "ctx": "In VA teleophthalmology data on veterans with no baseline DR (16,606 in the 1-year cohort and 15,397 in the 2-year cohort), a deep learning model reached an AUROC of 0.91 (95% CI, 0.85-0.96) at 1 year, and with sensitivity fixed at 90% an XGBoost model classified 53% of nonprogressors as low risk at 1 year and 52% at 2 years.",
+          "tag": "DR"
+        },
+        {
+          "section": "industry",
+          "h": "City Therapeutics has dosed the first participant in a phase 1 trial of CITY-RBP4, a subcutaneous RNAi therapy that silences RBP4, for Stargardt disease type 1",
+          "url": "https://investors.citytx.com/news-releases/news-release-details/city-therapeutics-announces-first-participant-dosed-phase-1",
+          "src": "City Therapeutics",
+          "ctx": "The randomized, double-masked, placebo-controlled first-in-human trial enrolls healthy volunteers and people with Stargardt disease, with safety, tolerability, pharmacokinetic, and pharmacodynamic end points and initial data expected in mid-2027.",
+          "tag": "IRD"
+        }
+      ],
+      "lead": {
+        "section": "research",
+        "h": "After 15 years of anti-VEGF therapy for nAMD, eyes had lost a mean of 8.5 letters from baseline in a real-world cohort (Eye)",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/43035550/",
+        "src": "PubMed",
+        "ctx": "Of 1,202 eyes that began ranibizumab in 2006-2009, 107 had at least 15 years of continuous follow-up; at year 15, 32% had VA of 20/40 or better and 31% had VA of 20/200 or worse. Macular atrophy was present in 74% of eyes (subfoveal in 67% of those) and subretinal fibrosis in 43%, and fibrosis, subfoveal atrophy, and treatment discontinuation were each associated with final VA.",
+        "tag": "nAMD",
+        "why": "The study offers long-horizon, real-world outcome benchmarks for counseling patients starting anti-VEGF therapy, although it reflects only the 107 of 1,202 eyes that remained in continuous follow-up for 15 years."
+      },
+      "numbers": [
+        {
+          "big": "-8.5 letters",
+          "label": "Mean change in VA from baseline at year 15 of anti-VEGF therapy for nAMD (107 eyes)."
+        },
+        {
+          "big": "74%",
+          "label": "Eyes with macular atrophy after 15 years of anti-VEGF therapy for nAMD."
+        },
+        {
+          "big": "31.5%",
+          "label": "Infants (58 of 184) classified screen-positive by the machine-learning ROP model, vs 74.5% with modified G-ROP criteria."
+        }
+      ]
+    },
     {
       "date": "2026-11-13",
       "top": [
