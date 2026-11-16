@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-09",
+  "updated": "2026-11-16",
   "note": "Only add dates from company releases, SEC filings, FDA or EMA (trade press only when it reports the primary source). 'confirmed' is the date of the source that last stated the timing. 'date' is set only for an exact day; 'when' is what the source says. Trials: industry-sponsored phase 3 and pivotal phase 2/3 retina trials that are recruiting or active, plus large network trials (DRCR/Jaeb and major multicenter academic studies). 'kind': 'trial' entries are dated by the estimated primary completion on ClinicalTrials.gov; replace with company readout guidance ('kind': 'readout') when a company states one. Before adding or keeping a trial, confirm it has not already reported results (company releases, SEC filings, trade press, registry results); if it has, drop it or move it to resolved. Every trial or readout title includes the trial acronym when one exists (registry acronym field, or the sponsor's name for the trial).",
   "items": [
     {
@@ -17,22 +17,6 @@
       "url": "https://www.ema.europa.eu/en/news/meeting-highlights-committee-medicinal-products-human-use-chmp-12-15-october-2026",
       "confirmed": "2026-10-16",
       "disease": "nAMD"
-    },
-    {
-      "id": "szn8141-duet",
-      "status": "upcoming",
-      "kind": "start",
-      "group": "Coming up",
-      "sort": "2026-10-20",
-      "date": null,
-      "when": "Planned",
-      "area": "DME",
-      "title": "SZN-8141 DUET phase 1b/2a (Surrozen)",
-      "detail": "FDA cleared the IND Oct 2; the second tranche of Surrozen's private placement, about $95.1 million, funds the DUET study in DME.",
-      "src": "Surrozen release",
-      "url": "https://www.globenewswire.com/news-release/2026/10/20/3385015/0/en/surrozen-announces-closing-of-second-tranche-of-march-2025-private-placement-for-95-1-million.html",
-      "confirmed": "2026-10-20",
-      "disease": "DME/DR"
     },
     {
       "id": "tinlarebant-pdufa",
@@ -61,9 +45,9 @@
       "area": "nAMD · Gene therapy",
       "title": "4D-150 4FRONT-1 phase 3 topline (4DMT)",
       "detail": "North American trial; randomization completed (N=523) in March 2026.",
-      "src": "4DMT Q2 2026 report",
-      "url": "https://www.globenewswire.com/news-release/2026/08/13/3344919/0/en/4dmt-reports-second-quarter-2026-financial-results-operational-highlights-and-expected-upcoming-milestones.html",
-      "confirmed": "2026-08-13",
+      "src": "4DMT Q3 2026 report",
+      "url": "https://www.sec.gov/Archives/edgar/data/0001650648/000119312526458394/fdmt-ex99_1.htm",
+      "confirmed": "2026-11-12",
       "disease": "nAMD",
       "nct": [
         "NCT06864988"
@@ -79,10 +63,10 @@
       "when": "H2 2027",
       "area": "nAMD · Gene therapy",
       "title": "4D-150 4FRONT-2 phase 3 topline (4DMT)",
-      "detail": "Global trial; enrollment completed in June 2026, with more than 500 patients expected to be randomized.",
-      "src": "4DMT Q2 2026 report",
-      "url": "https://www.globenewswire.com/news-release/2026/08/13/3344919/0/en/4dmt-reports-second-quarter-2026-financial-results-operational-highlights-and-expected-upcoming-milestones.html",
-      "confirmed": "2026-08-13",
+      "detail": "Global trial; enrollment completed in June 2026 and randomization completed (N=531) in August 2026.",
+      "src": "4DMT Q3 2026 report",
+      "url": "https://www.sec.gov/Archives/edgar/data/0001650648/000119312526458394/fdmt-ex99_1.htm",
+      "confirmed": "2026-11-12",
       "disease": "nAMD",
       "nct": [
         "NCT07064759"
@@ -92,16 +76,16 @@
       "id": "duravyu-dme",
       "status": "upcoming",
       "kind": "readout",
-      "group": "H2 2027",
+      "group": "Q4 2027",
       "sort": "2027-10-01",
       "date": null,
-      "when": "Q4 2027",
+      "when": "Early Q4 2027",
       "area": "DME",
       "title": "Duravyu COMO and CAPRI phase 3 topline (EyePoint)",
-      "detail": "Vorolanib insert in DME; the two trials enrolled 551 patients. EyePoint now prioritizes DME after ending its wet AMD trials early.",
-      "src": "EyePoint release",
-      "url": "https://globenewswire.com/news-release/2026/10/19/3383318/0/en/eyepoint-announces-strategic-prioritization.html",
-      "confirmed": "2026-10-19",
+      "detail": "Vorolanib insert in DME; the two trials are fully enrolled with over 550 patients. EyePoint is prioritizing DME and will conclude its wet AMD program before completion of the full second year of the Phase 3 studies.",
+      "src": "EyePoint Q3 2026 report (8-K Ex. 99.1)",
+      "url": "https://www.sec.gov/Archives/edgar/data/0001314102/000119312526456889/eypt-ex99_1.htm",
+      "confirmed": "2026-11-12",
       "disease": "DME/DR",
       "nct": [
         "NCT07449923",
@@ -138,14 +122,14 @@
       "when": "Q4 2026",
       "area": "GA · Complement",
       "disease": "GA",
-      "title": "Vonaprument (ANX007) ARCHER II phase 3 topline (Annexon)",
-      "detail": "Intravitreal C1q inhibitor vs sham in GA (n=659); Month 15 primary analysis topline expected Q4 2026, with a Month 24 dual primary endpoint added (completion expected Q3 2027).",
-      "src": "Annexon release, Aug 12, 2026",
-      "url": "https://ir.annexonbio.com/news-releases/news-release-details/annexon-expands-vonaprument-phase-3-program-geographic-atrophy",
+      "title": "Vonaprument (ANX007) ARCHER II phase 3 Month 15 primary endpoint DMC assessment (Annexon)",
+      "detail": "An independent Data Monitoring Committee will assess the Month 15 primary endpoint in Q4 2026; if it recommends the endpoint has been met, sub-study results are anticipated in Q1 2027, otherwise the trial may continue to the Month 24 analysis, with completion expected in Q3 2027. Vonaprument vs sham in GA (n=659).",
+      "src": "Annexon Q3 2026 release (8-K Ex. 99.1, Nov 9, 2026)",
+      "url": "https://www.sec.gov/Archives/edgar/data/0001528115/000119312526453557/annx-ex99_1.htm",
       "nct": [
         "NCT06510816"
       ],
-      "confirmed": "2026-08-12"
+      "confirmed": "2026-11-09"
     },
     {
       "id": "ksi101-peak",
@@ -159,12 +143,12 @@
       "disease": "Uveitis",
       "title": "Tabirafusp alfa (KSI-101) PEAK Pivotal Analysis 1 topline (Kodiak)",
       "detail": "Intravitreal tabirafusp alfa vs sham in macular edema secondary to inflammation; Pivotal Analysis 1 covers the first 300 PEAK patients (PEAK total n=600).",
-      "src": "Kodiak Q2 2026 release (8-K Ex. 99.1)",
-      "url": "https://www.sec.gov/Archives/edgar/data/0001468748/000119312526349107/kod-ex99_1.htm",
+      "src": "Kodiak Q3 2026 release (8-K Ex. 99.1)",
+      "url": "https://www.sec.gov/Archives/edgar/data/0001468748/000119312526458248/kod-ex99_1.htm",
       "nct": [
         "NCT06990399"
       ],
-      "confirmed": "2026-08-13"
+      "confirmed": "2026-11-12"
     },
     {
       "id": "ksi101-pinnacle",
@@ -177,14 +161,14 @@
       "area": "Uveitis · MESI",
       "disease": "Uveitis",
       "title": "Tabirafusp alfa (KSI-101) PEAK/PINNACLE Pivotal Analysis 2 topline (Kodiak)",
-      "detail": "Pivotal Analysis 2 pools PEAK patients 301–600 with PINNACLE (n=300), vs sham in macular edema secondary to inflammation.",
-      "src": "Kodiak Q2 2026 release (8-K Ex. 99.1)",
-      "url": "https://www.sec.gov/Archives/edgar/data/0001468748/000119312526349107/kod-ex99_1.htm",
+      "detail": "Pivotal Analysis 2 evaluates a second cohort of 600 subjects across PEAK and PINNACLE (n=300), vs sham in macular edema secondary to inflammation.",
+      "src": "Kodiak Q3 2026 release (8-K Ex. 99.1)",
+      "url": "https://www.sec.gov/Archives/edgar/data/0001468748/000119312526458248/kod-ex99_1.htm",
       "nct": [
         "NCT06996080",
         "NCT06990399"
       ],
-      "confirmed": "2026-08-13"
+      "confirmed": "2026-11-12"
     },
     {
       "id": "ixovec-artemis",
@@ -876,6 +860,25 @@
       "confirmed": "2026-10-26"
     },
     {
+      "id": "rtx015-percept",
+      "status": "upcoming",
+      "kind": "trial",
+      "group": "Q4 2028",
+      "sort": "2028-10-01",
+      "date": null,
+      "when": "Est. Oct 2028",
+      "area": "RP · Gene therapy",
+      "disease": "IRD",
+      "title": "RTx-015 PERCEPT phase 2/3 in retinitis pigmentosa (Ray Therapeutics)",
+      "detail": "Single intravitreal injection of RTx-015 (lower or higher dose) vs sham in RP regardless of genotype, with baseline BCVA ~20/200–20/9000 (n=60); recruiting.",
+      "src": "ClinicalTrials.gov NCT07901751",
+      "url": "https://clinicaltrials.gov/study/NCT07901751",
+      "nct": [
+        "NCT07901751"
+      ],
+      "confirmed": "2026-11-16"
+    },
+    {
       "id": "belsar-choroidal-melanoma",
       "status": "upcoming",
       "kind": "readout",
@@ -893,25 +896,6 @@
         "NCT06007690"
       ],
       "confirmed": "2026-08-11"
-    },
-    {
-      "id": "darovasertib-optimum10",
-      "status": "upcoming",
-      "kind": "trial",
-      "group": "Q4 2030",
-      "sort": "2030-10-01",
-      "date": null,
-      "when": "Est. Oct 2030",
-      "area": "Uveal melanoma",
-      "disease": "Oncology",
-      "title": "Neoadjuvant darovasertib OptimUM-10 phase 3 in uveal melanoma (IDEAYA)",
-      "detail": "Neoadjuvant darovasertib before primary local therapy in non-metastatic uveal melanoma (n=520); recruiting.",
-      "src": "ClinicalTrials.gov NCT07015190",
-      "url": "https://clinicaltrials.gov/study/NCT07015190",
-      "nct": [
-        "NCT07015190"
-      ],
-      "confirmed": "2026-10-26"
     },
     {
       "id": "rrd-phacovit",
@@ -1066,28 +1050,28 @@
       "confirmed": "2026-11-09"
     },
     {
-      "id": "remigromig-brunello",
+      "id": "szn8141-duet",
       "status": "resolved",
-      "kind": "readout",
+      "kind": "start",
       "disease": "DME/DR",
-      "date": "2026-09-24",
-      "outcome": "Met primary endpoint",
-      "title": "Remigromig BRUNELLO, DME",
-      "detail": "Both doses (0.5 mg and 0.8 mg) met Week 52 BCVA non-inferiority vs ranibizumab 0.5 mg (n=984); effect sizes not disclosed. Higher rates of PDR, vitreous hemorrhage and discontinuations due to adverse events vs ranibizumab.",
-      "src": "Merck",
-      "url": "https://www.merck.com/news/mercks-remigromig-a-tri-specific-agonist-of-the-wingless-related-integration-site-wnt-pathway-met-primary-endpoint-in-the-pivotal-phase-2b-3-brunello-study-of-adults-with-diabetic-macular/"
+      "date": "2026-11-09",
+      "outcome": "First patient dosed",
+      "title": "SZN-8141 DUET phase 1b/2a (Surrozen)",
+      "detail": "Surrozen dosed its first patient in the open-label phase 1b single-ascending-dose portion of DUET in DME.",
+      "src": "Surrozen Q3 2026 release",
+      "url": "https://www.globenewswire.com/news-release/2026/11/09/3398957/0/en/surrozen-reports-third-quarter-2026-financial-results-and-provides-business-update.html"
     },
     {
-      "id": "laruzova-vista",
+      "id": "darovasertib-optimum10",
       "status": "resolved",
-      "kind": "readout",
-      "disease": "IRD",
-      "date": "2026-09-21",
-      "outcome": "Met primary endpoint",
-      "title": "Laru-zova VISTA, X-linked RP (Beacon)",
-      "detail": "The pivotal VISTA trial met its primary endpoint; a rolling BLA is planned.",
-      "src": "Ophthalmology Times",
-      "url": "https://www.ophthalmologytimes.com/view/laru-zova-meets-primary-endpoint-in-pivotal-vista-trial-for-x-linked-retinitis-pigmentosa"
+      "kind": "trial",
+      "disease": "Oncology",
+      "date": "2026-11-03",
+      "outcome": "Discontinued",
+      "title": "Neoadjuvant darovasertib OptimUM-10 phase 3 in uveal melanoma (IDEAYA)",
+      "detail": "IDEAYA decided to stop enrollment and close the Phase 3 OptimUM-010 trial, citing ongoing site activation and enrollment challenges; the registry still lists it as recruiting.",
+      "src": "IDEAYA Q3 2026 release",
+      "url": "https://www.prnewswire.com/news-releases/ideaya-biosciences-reports-financial-results-for-the-third-quarter-2026-and-provides-a-business-update-302926978.html"
     },
     {
       "id": "duravyu-lucia",
@@ -1112,6 +1096,30 @@
       "src": "EMA",
       "url": "https://www.ema.europa.eu/en/news/meeting-highlights-committee-medicinal-products-human-use-chmp-12-15-october-2026",
       "disease": "nAMD"
+    },
+    {
+      "id": "remigromig-brunello",
+      "status": "resolved",
+      "kind": "readout",
+      "disease": "DME/DR",
+      "date": "2026-09-24",
+      "outcome": "Met primary endpoint",
+      "title": "Remigromig BRUNELLO, DME",
+      "detail": "Both doses (0.5 mg and 0.8 mg) met Week 52 BCVA non-inferiority vs ranibizumab 0.5 mg (n=984); effect sizes not disclosed. Higher rates of PDR, vitreous hemorrhage and discontinuations due to adverse events vs ranibizumab.",
+      "src": "Merck",
+      "url": "https://www.merck.com/news/mercks-remigromig-a-tri-specific-agonist-of-the-wingless-related-integration-site-wnt-pathway-met-primary-endpoint-in-the-pivotal-phase-2b-3-brunello-study-of-adults-with-diabetic-macular/"
+    },
+    {
+      "id": "laruzova-vista",
+      "status": "resolved",
+      "kind": "readout",
+      "disease": "IRD",
+      "date": "2026-09-21",
+      "outcome": "Met primary endpoint",
+      "title": "Laru-zova VISTA, X-linked RP (Beacon)",
+      "detail": "The pivotal VISTA trial met its primary endpoint; a rolling BLA is planned.",
+      "src": "Ophthalmology Times",
+      "url": "https://www.ophthalmologytimes.com/view/laru-zova-meets-primary-endpoint-in-pivotal-vista-trial-for-x-linked-retinitis-pigmentosa"
     }
   ]
 }
