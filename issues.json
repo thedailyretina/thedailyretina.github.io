@@ -1,6 +1,76 @@
 {
-  "updated": "2026-11-16",
+  "updated": "2026-11-17",
   "issues": [
+    {
+      "date": "2026-11-17",
+      "top": [
+        {
+          "h": "Of 10,744 eyes without baseline nAMD that started pegcetacoplan or avacincaptad pegol in clinical practice, 6.6% developed new-onset nAMD within 12 months (Ophthalmology Retina)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/43039191/",
+          "src": "PubMed"
+        },
+        {
+          "h": "Faricimab-induced intraocular inflammation was rare (0.47% per patient; 0.090% per injection) in a J-CREST study (Ophthalmology Retina)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/43039192/",
+          "src": "PubMed"
+        },
+        {
+          "h": "Retinal artery occlusion was associated with lower brain imaging use than transient ischemic attack after same-date emergency department contact (Ophthalmology)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/43039085/",
+          "src": "PubMed"
+        }
+      ],
+      "items": [
+        {
+          "section": "research",
+          "h": "Of 10,744 eyes without baseline nAMD that started pegcetacoplan or avacincaptad pegol in clinical practice, 6.6% developed new-onset nAMD within 12 months (Ophthalmology Retina)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/43039191/",
+          "src": "PubMed",
+          "ctx": "In 20,316 eyes of 14,655 patients in the Vestrum Health Retina Database, 58.0% of pegcetacoplan-only eyes received a second injection within 60 days and 18.6% of avacincaptad pegol-only eyes a second injection within 35 days, and avacincaptad pegol monotherapy was associated with lower odds of new-onset nAMD than pegcetacoplan monotherapy (OR, 0.83; 95% CI, 0.70-0.99). Endophthalmitis rates within 30 days of the baseline injection were 0.16% for pegcetacoplan and 0.10% for avacincaptad pegol, and intraocular inflammation followed 0.23% and 0.15% of baseline injections, respectively, with a loss of 30 or more letters in over half of cases.",
+          "tag": "GA",
+          "lead": true
+        },
+        {
+          "section": "research",
+          "h": "Faricimab-induced intraocular inflammation was rare (0.47% per patient; 0.090% per injection) in a J-CREST study (Ophthalmology Retina)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/43039192/",
+          "src": "PubMed",
+          "ctx": "It presented as anterior-limited inflammation or intermediate uveitis, and although intermediate uveitis caused greater visual decline, the authors report visual recovery with appropriate corticosteroid treatment.",
+          "tag": "Drug safety"
+        },
+        {
+          "section": "research",
+          "h": "Retinal artery occlusion was associated with lower brain imaging use than transient ischemic attack after same-date emergency department contact (Ophthalmology)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/43039085/",
+          "src": "PubMed",
+          "ctx": "Among 3695 matched pairs, brain imaging use was 77.3% for retinal artery occlusion vs 91.7% for transient ischemic attack, and cervical imaging use was 81.7% vs 79.2%.",
+          "tag": "Vascular"
+        }
+      ],
+      "lead": {
+        "section": "research",
+        "h": "Of 10,744 eyes without baseline nAMD that started pegcetacoplan or avacincaptad pegol in clinical practice, 6.6% developed new-onset nAMD within 12 months (Ophthalmology Retina)",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/43039191/",
+        "src": "PubMed",
+        "ctx": "In 20,316 eyes of 14,655 patients in the Vestrum Health Retina Database, 58.0% of pegcetacoplan-only eyes received a second injection within 60 days and 18.6% of avacincaptad pegol-only eyes a second injection within 35 days, and avacincaptad pegol monotherapy was associated with lower odds of new-onset nAMD than pegcetacoplan monotherapy (OR, 0.83; 95% CI, 0.70-0.99). Endophthalmitis rates within 30 days of the baseline injection were 0.16% for pegcetacoplan and 0.10% for avacincaptad pegol, and intraocular inflammation followed 0.23% and 0.15% of baseline injections, respectively, with a loss of 30 or more letters in over half of cases.",
+        "tag": "GA",
+        "why": "The study offers real-world benchmarks for retreatment delays, nAMD conversion, and inflammatory and infectious adverse events, and the authors say the clinically significant adverse events warrant focused patient education and close monitoring, although the between-drug difference in nAMD conversion comes from a retrospective database analysis and is an association only."
+      },
+      "numbers": [
+        {
+          "big": "6.6%",
+          "label": "Eyes without baseline nAMD (705 of 10,744) that developed new-onset nAMD within 12 months of starting anti-complement therapy."
+        },
+        {
+          "big": "58.0%",
+          "label": "Pegcetacoplan-only eyes that received a second injection within 60 days."
+        },
+        {
+          "big": "0.090%",
+          "label": "Rate of faricimab-induced intraocular inflammation per injection in the J-CREST study."
+        }
+      ]
+    },
     {
       "date": "2026-11-16",
       "top": [
