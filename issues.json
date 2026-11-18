@@ -1,6 +1,100 @@
 {
-  "updated": "2026-11-17",
+  "updated": "2026-11-18",
   "issues": [
+    {
+      "date": "2026-11-18",
+      "top": [
+        {
+          "h": "Johnson & Johnson will acquire Ollin Biosciences, developer of the VEGF/Ang2 bispecific antibody OLN324 for wet AMD and DME, for $2.2 billion upfront",
+          "url": "https://www.jnj.com/media-center/press-releases/johnson-johnson-to-acquire-ollin-biosciences-and-late-stage-bispecific-antibody-with-best-in-class-potential-in-ophthalmology",
+          "src": "Johnson & Johnson"
+        },
+        {
+          "h": "Science Corporation has raised a $400 million Series D to expand its PRIMA retinal implant in Europe and prepare a US launch",
+          "url": "https://science.xyz/news/series-d/",
+          "src": "Science Corporation"
+        },
+        {
+          "h": "Of 50 eyes with treatment-naive quiescent type 1 MNV, 17 (34%) became exudative over a mean follow-up of 35.9 months in a retrospective cohort (Eye)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/43045800/",
+          "src": "PubMed"
+        }
+      ],
+      "items": [
+        {
+          "section": "industry",
+          "h": "Johnson & Johnson will acquire Ollin Biosciences, developer of the VEGF/Ang2 bispecific antibody OLN324 for wet AMD and DME, for $2.2 billion upfront",
+          "url": "https://www.jnj.com/media-center/press-releases/johnson-johnson-to-acquire-ollin-biosciences-and-late-stage-bispecific-antibody-with-best-in-class-potential-in-ophthalmology",
+          "src": "Johnson & Johnson",
+          "ctx": "The deal also includes potential regulatory and commercial milestone payments of up to about $1.125 billion, and Blackstone will pay J&J $750 million over multiple years to fully fund OLN324's phase 3 development, contingent on the deal closing, which is expected before the end of 2026. The release reports no clinical data.",
+          "tag": "nAMD",
+          "lead": true
+        },
+        {
+          "section": "industry",
+          "h": "Science Corporation has raised a $400 million Series D to expand its PRIMA retinal implant in Europe and prepare a US launch",
+          "url": "https://science.xyz/news/series-d/",
+          "src": "Science Corporation",
+          "ctx": "PRIMA is CE marked and launched commercially in Europe, and the company is pursuing FDA approval through the Humanitarian Device Exemption pathway.",
+          "tag": "Devices"
+        },
+        {
+          "section": "research",
+          "h": "Of 50 eyes with treatment-naive quiescent type 1 MNV, 17 (34%) became exudative over a mean follow-up of 35.9 months in a retrospective cohort (Eye)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/43045800/",
+          "src": "PubMed",
+          "ctx": "Neovascular area enlargement, hypointense halo formation on OCTA, increased branching complexity, and enlarging PED dimensions were associated with activation, and the mean duration of quiescence before activation was 48.6 months.",
+          "tag": "nAMD"
+        },
+        {
+          "section": "research",
+          "h": "Only 4 of 23 commercially available AMD supplements matched the AREDS2 formulation in a laboratory analysis (IOVS)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/43043343/",
+          "src": "PubMed",
+          "ctx": "Measured lutein ranged from 76% to 207% and zeaxanthin from 59% to 326% of declared amounts, and in a small randomized crossover trial in 11 healthy adults an AREDS2 softgel raised serum lutein and zeaxanthin while a herbal-coated tablet produced no measurable change.",
+          "tag": "AMD"
+        },
+        {
+          "section": "research",
+          "h": "In 21 eyes with radiation chorioretinopathy after CyberKnife or proton beam therapy for choroidal melanoma, OCTA microvascular metrics tracked mesopic microperimetry sensitivity but not BCVA (Retina)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/43043838/",
+          "src": "PubMed",
+          "ctx": "In this cross-sectional case-control study with fellow-eye controls, deep capillary plexus vessel density, choriocapillaris flow deficit, and parafoveal retinal thickness were the strongest independent predictors of retinal sensitivity (adjusted R2 = 0.73), and no biomarker was independently associated with BCVA.",
+          "tag": "Oncology"
+        },
+        {
+          "section": "fda",
+          "h": "The 2027 Medicare Part B annual deductible will be $292, up from $283 in 2026",
+          "url": "https://www.cms.gov/newsroom/fact-sheets/2027-medicare-parts-b-premiums-deductibles",
+          "src": "CMS",
+          "ctx": "The standard monthly Part B premium will rise to $209.40 from $202.90, and CMS attributes the increases mainly to projected increases in healthcare spending.",
+          "tag": "Payment"
+        }
+      ],
+      "lead": {
+        "section": "industry",
+        "h": "Johnson & Johnson will acquire Ollin Biosciences, developer of the VEGF/Ang2 bispecific antibody OLN324 for wet AMD and DME, for $2.2 billion upfront",
+        "url": "https://www.jnj.com/media-center/press-releases/johnson-johnson-to-acquire-ollin-biosciences-and-late-stage-bispecific-antibody-with-best-in-class-potential-in-ophthalmology",
+        "src": "Johnson & Johnson",
+        "ctx": "The deal also includes potential regulatory and commercial milestone payments of up to about $1.125 billion, and Blackstone will pay J&J $750 million over multiple years to fully fund OLN324's phase 3 development, contingent on the deal closing, which is expected before the end of 2026. The release reports no clinical data.",
+        "tag": "nAMD",
+        "why": "The deal gives a phase 3 VEGF/Ang2 candidate for wet AMD and DME a large-company sponsor and dedicated phase 3 funding, although the release discloses no efficacy, durability, or safety data."
+      },
+      "numbers": [
+        {
+          "big": "$2.2 billion",
+          "label": "Upfront payment by Johnson & Johnson to acquire Ollin Biosciences."
+        },
+        {
+          "big": "4 of 23",
+          "label": "Commercially available AMD supplements whose content matched the AREDS2 formulation."
+        },
+        {
+          "big": "34%",
+          "label": "Eyes with quiescent type 1 MNV (17 of 50) that became exudative over a mean 35.9 months of follow-up."
+        }
+      ]
+    },
     {
       "date": "2026-11-17",
       "top": [
