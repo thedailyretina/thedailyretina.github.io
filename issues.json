@@ -1,6 +1,100 @@
 {
-  "updated": "2026-11-18",
+  "updated": "2026-11-19",
   "issues": [
+    {
+      "date": "2026-11-19",
+      "top": [
+        {
+          "h": "Endophthalmitis followed 0.029% of 224,397 intravitreal injections over ten years at a single centre, with prefilled-syringe ranibizumab lowest at 0.014% (Eye)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/43052414/",
+          "src": "PubMed"
+        },
+        {
+          "h": "In a meta-analysis of 15 studies (814 treated eyes), 85% of patients reported symptom improvement after Nd:YAG vitreolysis for floaters, but the certainty of evidence was very low (Graefe's)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/43052577/",
+          "src": "PubMed"
+        },
+        {
+          "h": "Visara has dosed the first patient in ASCEND, a phase 2b head-to-head trial of the tetravalent VEGF-A x ANG-2 inhibitor VIS-101 against aflibercept 2 mg in wet AMD",
+          "url": "https://www.globenewswire.com/news-release/2026/11/18/3405520/0/en/visara-announces-first-patient-dosed-in-ascend-phase-2b-trial-of-vis-101-in-wet-amd.html",
+          "src": "Visara"
+        }
+      ],
+      "items": [
+        {
+          "section": "research",
+          "h": "Endophthalmitis followed 0.029% of 224,397 intravitreal injections over ten years at a single centre, with prefilled-syringe ranibizumab lowest at 0.014% (Eye)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/43052414/",
+          "src": "PubMed",
+          "ctx": "Manually prepared bevacizumab had a higher incidence (0.039%; OR 2.74, 95% CI 1.36-5.55) than prefilled-syringe ranibizumab, while vial-sourced aflibercept (0.027%) was not statistically distinguishable from either. Of eyes first treated with tap and intravitreal antibiotics, 60% (21/35) later required vitrectomy.",
+          "tag": "Endophthalmitis",
+          "lead": true
+        },
+        {
+          "section": "research",
+          "h": "In a meta-analysis of 15 studies (814 treated eyes), 85% of patients reported symptom improvement after Nd:YAG vitreolysis for floaters, but the certainty of evidence was very low (Graefe's)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/43052577/",
+          "src": "PubMed",
+          "ctx": "In two randomized trials, symptom improvement versus sham laser was not statistically significant (risk ratio 5.41, p = 0.08), and no retinal tears or detachments were reported.",
+          "tag": "Surgery"
+        },
+        {
+          "section": "industry",
+          "h": "Visara has dosed the first patient in ASCEND, a phase 2b head-to-head trial of the tetravalent VEGF-A x ANG-2 inhibitor VIS-101 against aflibercept 2 mg in wet AMD",
+          "url": "https://www.globenewswire.com/news-release/2026/11/18/3405520/0/en/visara-announces-first-patient-dosed-in-ascend-phase-2b-trial-of-vis-101-in-wet-amd.html",
+          "src": "Visara",
+          "ctx": "The quadruple-masked trial plans to enroll about 244 treatment-naive patients in China, randomized to VIS-101 6 mg or 9 mg or aflibercept 2 mg every eight weeks, to select phase 3 doses and assess intervals up to seven months after three loading doses.",
+          "tag": "nAMD"
+        },
+        {
+          "section": "research",
+          "h": "Cystoid macular oedema developed in 20.8% of 202 eyes with vitreomacular traction after uncomplicated phacoemulsification in a retrospective cohort (Eye)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/43052415/",
+          "src": "PubMed",
+          "ctx": "Traction released in 6.9% of eyes, macular holes formed in 3.0%, and 3.0% required secondary vitrectomy; CME rates with and without ketorolac (15.8% vs 25.2%) did not differ significantly.",
+          "tag": "Surgery"
+        },
+        {
+          "section": "research",
+          "h": "Static perimetry mean retinal sensitivity correlated strongly with kinetic visual field diameter (Spearman rho 0.83) in 100 adults with retinitis pigmentosa, allowing cutoffs mapped to ICO severity categories (AJO)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/43051311/",
+          "src": "PubMed",
+          "ctx": "In this retrospective study, several of whose authors are industry employees, agreement with the ICO classification was weighted kappa 0.59 for the retinal sensitivity cutoffs and 0.73 for the visual field area cutoffs.",
+          "tag": "IRD"
+        },
+        {
+          "section": "industry",
+          "h": "MacuMira's microcurrent stimulation treatment for dry AMD has received a CE mark as a Class IIa device under the EU Medical Device Regulation",
+          "url": "https://www.globenewswire.com/news-release/2026/11/16/3403489/0/en/macumira-receives-ce-mark-for-its-microcurrent-treatment-for-dry-amd.html",
+          "src": "MacuMira",
+          "ctx": "The company's efficacy claims rest on a 2023 sham-controlled trial and an internal, unpublished retrospective analysis, and the treatment is already available in Canada, Australia, and New Zealand.",
+          "tag": "Devices"
+        }
+      ],
+      "lead": {
+        "section": "research",
+        "h": "Endophthalmitis followed 0.029% of 224,397 intravitreal injections over ten years at a single centre, with prefilled-syringe ranibizumab lowest at 0.014% (Eye)",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/43052414/",
+        "src": "PubMed",
+        "ctx": "Manually prepared bevacizumab had a higher incidence (0.039%; OR 2.74, 95% CI 1.36-5.55) than prefilled-syringe ranibizumab, while vial-sourced aflibercept (0.027%) was not statistically distinguishable from either. Of eyes first treated with tap and intravitreal antibiotics, 60% (21/35) later required vitrectomy.",
+        "tag": "Endophthalmitis",
+        "why": "In this retrospective single-centre series, endophthalmitis rates differed by agent and preparation method, and most eyes managed initially with tap and inject still went on to vitrectomy, data relevant to injection preparation choices and close follow-up after a tap and inject."
+      },
+      "numbers": [
+        {
+          "big": "224,397",
+          "label": "Intravitreal injections analysed for endophthalmitis at a single centre over ten years."
+        },
+        {
+          "big": "20.8%",
+          "label": "Eyes with vitreomacular traction (42 of 202) that developed CME after phacoemulsification."
+        },
+        {
+          "big": "85%",
+          "label": "Patients reporting symptom improvement after Nd:YAG vitreolysis across pooled studies."
+        }
+      ]
+    },
     {
       "date": "2026-11-18",
       "top": [
