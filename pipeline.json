@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-16",
+  "updated": "2026-11-20",
   "note": "Only add dates from company releases, SEC filings, FDA or EMA (trade press only when it reports the primary source). 'confirmed' is the date of the source that last stated the timing. 'date' is set only for an exact day; 'when' is what the source says. Trials: industry-sponsored phase 3 and pivotal phase 2/3 retina trials that are recruiting or active, plus large network trials (DRCR/Jaeb and major multicenter academic studies). 'kind': 'trial' entries are dated by the estimated primary completion on ClinicalTrials.gov; replace with company readout guidance ('kind': 'readout') when a company states one. Before adding or keeping a trial, confirm it has not already reported results (company releases, SEC filings, trade press, registry results); if it has, drop it or move it to resolved. Every trial or readout title includes the trial acronym when one exists (registry acronym field, or the sponsor's name for the trial).",
   "items": [
     {
@@ -1048,6 +1048,18 @@
         "NCT05844982"
       ],
       "confirmed": "2026-11-09"
+    },
+    {
+      "id": "opgx-rdh12-start",
+      "status": "resolved",
+      "kind": "start",
+      "disease": "IRD",
+      "date": "2026-11-19",
+      "outcome": "First patient dosed",
+      "title": "OPGx-RDH12 phase 1/2 in RDH12-associated LCA (Opus Genetics)",
+      "detail": "Opus Genetics dosed the first participant in a phase 1/2 trial of OPGx-RDH12, an AAV gene therapy for Leber congenital amaurosis caused by RDH12 mutations.",
+      "src": "Opus Genetics release",
+      "url": "https://www.globenewswire.com/news-release/2026/11/19/3406427/0/en/opus-genetics-announces-first-participant-dosed-in-phase-1-2-clinical-trial-of-opgx-rdh12-gene-therapy-for-rare-inherited-childhood-blindness.html"
     },
     {
       "id": "szn8141-duet",
