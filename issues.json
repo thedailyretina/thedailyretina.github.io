@@ -1,6 +1,88 @@
 {
-  "updated": "2026-11-19",
+  "updated": "2026-11-20",
   "issues": [
+    {
+      "date": "2026-11-20",
+      "top": [
+        {
+          "h": "A network meta-analysis of 13 randomized trials (5,126 patients) found no difference in geographic atrophy lesion growth between any pegcetacoplan and avacincaptad pegol regimens (Survey of Ophthalmology)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/43057623/",
+          "src": "PubMed"
+        },
+        {
+          "h": "Propensity-matched patients treated with aflibercept 8 mg received 40.7% fewer injections over two years than those treated with aflibercept 2 mg, with no significant difference in two-year cumulative cost (Br J Ophthalmol)",
+          "url": "https://bjo.bmj.com/content/early/2026/11/03/bjo-2026-330093",
+          "src": "BJO"
+        },
+        {
+          "h": "Higher baseline choriocapillaris flow deficits were associated with faster local geographic atrophy progression in a prospective cohort of 102 eyes (IOVS)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/43055595/",
+          "src": "PubMed"
+        }
+      ],
+      "items": [
+        {
+          "section": "research",
+          "h": "A network meta-analysis of 13 randomized trials (5,126 patients) found no difference in geographic atrophy lesion growth between any pegcetacoplan and avacincaptad pegol regimens (Survey of Ophthalmology)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/43057623/",
+          "src": "PubMed",
+          "ctx": "No complement inhibitor improved low-luminance visual acuity, and in indirect comparison (low certainty) new neovascular AMD was less frequent with avacincaptad pegol 2 mg than with pegcetacoplan 15 mg monthly. The authors note differences in trial populations, endpoints, and follow-up, and call for head-to-head trials with functional endpoints.",
+          "tag": "GA",
+          "lead": true
+        },
+        {
+          "section": "research",
+          "h": "Propensity-matched patients treated with aflibercept 8 mg received 40.7% fewer injections over two years than those treated with aflibercept 2 mg, with no significant difference in two-year cumulative cost (Br J Ophthalmol)",
+          "url": "https://bjo.bmj.com/content/early/2026/11/03/bjo-2026-330093",
+          "src": "BJO",
+          "ctx": "In this retrospective TriNetX analysis of 497 patients per cohort at CMS 2026 Part B rates, first-year costs were higher with 8 mg (US$9716 vs US$8388) and second-year costs lower (US$6985 vs US$8185), for two-year totals of US$16,701 vs US$16,573 (p=0.103)",
+          "tag": "Retina"
+        },
+        {
+          "section": "research",
+          "h": "Higher baseline choriocapillaris flow deficits were associated with faster local geographic atrophy progression in a prospective cohort of 102 eyes (IOVS)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/43055595/",
+          "src": "PubMed",
+          "ctx": "The association was steepest for direct conversion of retina outside existing loss to RPE loss (time-averaged hazard ratio 3.94; 95% CI, 3.16-4.92 for flow deficits >30% vs <10%), although flow deficits added limited predictive value beyond structural biomarkers in machine-learning models.",
+          "tag": "GA"
+        },
+        {
+          "section": "industry",
+          "h": "Opus Genetics has dosed the first participant in a phase 1/2 trial of OPGx-RDH12, an AAV gene therapy for RDH12-associated Leber congenital amaurosis",
+          "url": "https://www.biospace.com/press-releases/opus-genetics-announces-first-participant-dosed-in-phase-1-2-clinical-trial-of-opgx-rdh12-gene-therapy-for-rare-inherited-childhood-blindness",
+          "src": "Opus Genetics",
+          "ctx": "The trial will evaluate safety and tolerability with exploratory measures of retinal structure and visual function, following FDA clearance of the IND in October 2026; the release does not state planned enrollment.",
+          "tag": "IRD"
+        },
+        {
+          "section": "fda",
+          "h": "NanoRetinal says it has received Rare Disease Evidence Principles (RDEP) designation from FDA's drug center (CDER) for NAR-001, its intravitreal protein therapeutic for RLBP1-associated retinal dystrophy",
+          "url": "https://www.globenewswire.com/news-release/2026/11/19/3406555/0/en/nanoretinal-secures-rare-disease-evidence-principles-rdep-pathway-from-cder-ophthalmology-at-fda.html",
+          "src": "NanoRetinal",
+          "ctx": "Under RDEP, substantial evidence of effectiveness may generally be established from one adequate and well-controlled study plus robust confirmatory evidence; the privately held company reported no clinical data or trial timelines.",
+          "tag": "IRD"
+        }
+      ],
+      "lead": {
+        "section": "research",
+        "h": "A network meta-analysis of 13 randomized trials (5,126 patients) found no difference in geographic atrophy lesion growth between any pegcetacoplan and avacincaptad pegol regimens (Survey of Ophthalmology)",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/43057623/",
+        "src": "PubMed",
+        "ctx": "No complement inhibitor improved low-luminance visual acuity, and in indirect comparison (low certainty) new neovascular AMD was less frequent with avacincaptad pegol 2 mg than with pegcetacoplan 15 mg monthly. The authors note differences in trial populations, endpoints, and follow-up, and call for head-to-head trials with functional endpoints.",
+        "tag": "GA",
+        "why": "Without head-to-head trials, this indirect comparison found no difference in lesion-growth efficacy between the two approved complement inhibitors and only low-certainty evidence of a difference in neovascular conversion, which may inform agent-selection discussions but does not establish either drug as superior."
+      },
+      "numbers": [
+        {
+          "big": "40.7%",
+          "label": "Fewer aflibercept injections over two years with 8 mg than with 2 mg in propensity-matched patients."
+        },
+        {
+          "big": "5,126",
+          "label": "Patients across the 13 randomized trials in the complement-inhibitor network meta-analysis."
+        }
+      ]
+    },
     {
       "date": "2026-11-19",
       "top": [
