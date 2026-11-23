@@ -1,6 +1,100 @@
 {
-  "updated": "2026-11-20",
+  "updated": "2026-11-23",
   "issues": [
+    {
+      "date": "2026-11-23",
+      "top": [
+        {
+          "h": "Five-year glaucoma diagnoses were less frequent after pneumatic retinopexy (2.4% vs 3.7%) and scleral buckle (2.7% vs 4.6%) than after vitrectomy for rhegmatogenous retinal detachment in a propensity-matched TriNetX analysis (J Vitreoretin Dis)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/43067826/",
+          "src": "PubMed"
+        },
+        {
+          "h": "CMS has proposed that Medicare Advantage plans' provider contracts require in-network providers to submit prior authorization requests and associated documentation through the plan's FHIR-based Prior Authorization API",
+          "url": "https://www.cms.gov/newsroom/fact-sheets/contract-year-2028-policy-technical-changes-medicare-advantage-program-medicare-prescription-drug",
+          "src": "CMS"
+        },
+        {
+          "h": "Retinal redetachment occurred in 22% of eyes after removal of 1000-centistoke silicone oil in a 156-eye chart review series (J Vitreoretin Dis)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/43067932/",
+          "src": "PubMed"
+        }
+      ],
+      "items": [
+        {
+          "section": "research",
+          "h": "Five-year glaucoma diagnoses were less frequent after pneumatic retinopexy (2.4% vs 3.7%) and scleral buckle (2.7% vs 4.6%) than after vitrectomy for rhegmatogenous retinal detachment in a propensity-matched TriNetX analysis (J Vitreoretin Dis)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/43067826/",
+          "src": "PubMed",
+          "ctx": "Vitrectomy with silicone oil was associated with a higher five-year glaucoma risk than vitrectomy without oil (10.8% vs 6.8%; RR, 1.59), in matched comparisons of 679 to 5,092 patients per cohort. Outcomes were a new glaucoma diagnosis and initiation of IOP-lowering medication between 3 months and 5 years after surgery, and the retrospective design shows associations rather than effects of technique.",
+          "tag": "Surgery",
+          "lead": true
+        },
+        {
+          "section": "fda",
+          "h": "CMS has proposed that Medicare Advantage plans' provider contracts require in-network providers to submit prior authorization requests and associated documentation through the plan's FHIR-based Prior Authorization API",
+          "url": "https://www.cms.gov/newsroom/fact-sheets/contract-year-2028-policy-technical-changes-medicare-advantage-program-medicare-prescription-drug",
+          "src": "CMS",
+          "ctx": "The proposed contract year 2028 Medicare Advantage and Part D rule would also require MA provider contracts to obligate providers who furnish or administer a selected Part B drug during its maximum fair price period to enroll in the Medicare Drug Price Negotiation Program's Medicare Transaction Facilitator Data Module.",
+          "tag": "Coverage"
+        },
+        {
+          "section": "research",
+          "h": "Retinal redetachment occurred in 22% of eyes after removal of 1000-centistoke silicone oil in a 156-eye chart review series (J Vitreoretin Dis)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/43067932/",
+          "src": "PubMed",
+          "ctx": "Redetachment came at a median of 32 days after removal, and over a median 2.5 years of follow-up, epiretinal membrane (28%), cystoid macular edema (15%), ocular hypertension (11%), uveitis (10%), and hypotony (6%) also developed.",
+          "tag": "Surgery"
+        },
+        {
+          "section": "research",
+          "h": "Combined phacoemulsification and dexamethasone implant in 162 eyes with diabetic macular edema was followed by adjusted mean BCVA gains of 6.6 letters at 1 month and 3.1 letters at 6 months in a single-centre retrospective study (Retina)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/43062470/",
+          "src": "PubMed",
+          "ctx": "Retreatment was needed in 46.9% of eyes (median retreatment-free survival, 29.2 months), and raised IOP requiring topical therapy occurred in 12.3%, with no eye requiring surgical intervention.",
+          "tag": "DME"
+        },
+        {
+          "section": "research",
+          "h": "Clonal hematopoiesis of indeterminate potential was associated with incident AMD (HR 1.12; 95% CI, 1.04-1.21) and diabetic retinopathy among participants with diabetes (HR 1.48; 95% CI, 1.25-1.74), in 436,469 UK Biobank participants (GeroScience)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/43058396/",
+          "src": "PubMed",
+          "ctx": "Over a median 14.4 years of follow-up, 3.2% of participants had CHIP, and the authors note that, except for diabetic retinopathy, effect sizes were small.",
+          "tag": "AMD"
+        },
+        {
+          "section": "research",
+          "h": "Thinner choroid was associated with incident myopic maculopathy independent of axial length among 847 adults with axial myopia in a Japanese population-based cohort (Ophthalmology Science)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/43067905/",
+          "src": "PubMed",
+          "ctx": "Between baseline in 2017 and follow-up in 2023, 24 participants (2.8%) developed myopic maculopathy, and lower versus higher choroidal thickness carried an adjusted OR of 34.4 (95% CI, 10.2-116)",
+          "tag": "Myopia"
+        }
+      ],
+      "lead": {
+        "section": "research",
+        "h": "Five-year glaucoma diagnoses were less frequent after pneumatic retinopexy (2.4% vs 3.7%) and scleral buckle (2.7% vs 4.6%) than after vitrectomy for rhegmatogenous retinal detachment in a propensity-matched TriNetX analysis (J Vitreoretin Dis)",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/43067826/",
+        "src": "PubMed",
+        "ctx": "Vitrectomy with silicone oil was associated with a higher five-year glaucoma risk than vitrectomy without oil (10.8% vs 6.8%; RR, 1.59), in matched comparisons of 679 to 5,092 patients per cohort. Outcomes were a new glaucoma diagnosis and initiation of IOP-lowering medication between 3 months and 5 years after surgery, and the retrospective design shows associations rather than effects of technique.",
+        "tag": "Surgery",
+        "why": "In this retrospective TriNetX network analysis, glaucoma-related outcomes differed by repair technique, which may inform longer-term IOP surveillance after vitrectomy, especially with silicone oil, though it cannot show that technique choice itself changes glaucoma risk."
+      },
+      "numbers": [
+        {
+          "big": "10.8%",
+          "label": "Five-year glaucoma risk after vitrectomy with silicone oil for retinal detachment, vs 6.8% without oil, in propensity-matched patients."
+        },
+        {
+          "big": "22%",
+          "label": "Eyes with retinal redetachment after removal of 1000-centistoke silicone oil."
+        },
+        {
+          "big": "436,469",
+          "label": "UK Biobank participants in the clonal hematopoiesis and eye disease analysis."
+        }
+      ]
+    },
     {
       "date": "2026-11-20",
       "top": [
