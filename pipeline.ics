@@ -10,16 +10,17 @@ REFRESH-INTERVAL;VALUE=DURATION:PT12H
 X-PUBLISHED-TTL:PT12H
 BEGIN:VEVENT
 UID:tinlarebant-pdufa@thedailyretina.github.io
-DTSTAMP:20261120T000000Z
-DTSTART;VALUE=DATE:20270212
-DTEND;VALUE=DATE:20270213
+DTSTAMP:20261123T000000Z
+DTSTART;VALUE=DATE:20270512
+DTEND;VALUE=DATE:20270513
 SUMMARY:FDA decision: Tinlarebant for Stargardt disease type 1 (Belite Bio
  )
-DESCRIPTION:PDUFA date for the NDA\, which is under priority review. Sourc
- e: Healio https://www.healio.com/news/ophthalmology/20260925/stargardt-di
- sease-therapy-granted-priority-review-pdufa-date
-URL:https://www.healio.com/news/ophthalmology/20260925/stargardt-disease-t
- herapy-granted-priority-review-pdufa-date
+DESCRIPTION:PDUFA date for the NDA\; FDA extended the review period by thr
+ ee months (from Feb 12\, 2027). Source: Belite Bio release (6-K\, Nov 20\
+ , 2026) https://www.sec.gov/Archives/edgar/data/0001889109/00011046592613
+ 0425/tm2630348d1_ex99-1.htm
+URL:https://www.sec.gov/Archives/edgar/data/0001889109/000110465926130425/
+ tm2630348d1_ex99-1.htm
 TRANSP:TRANSPARENT
 END:VEVENT
 END:VCALENDAR

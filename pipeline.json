@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-20",
+  "updated": "2026-11-23",
   "note": "Only add dates from company releases, SEC filings, FDA or EMA (trade press only when it reports the primary source). 'confirmed' is the date of the source that last stated the timing. 'date' is set only for an exact day; 'when' is what the source says. Trials: industry-sponsored phase 3 and pivotal phase 2/3 retina trials that are recruiting or active, plus large network trials (DRCR/Jaeb and major multicenter academic studies). 'kind': 'trial' entries are dated by the estimated primary completion on ClinicalTrials.gov; replace with company readout guidance ('kind': 'readout') when a company states one. Before adding or keeping a trial, confirm it has not already reported results (company releases, SEC filings, trade press, registry results); if it has, drop it or move it to resolved. Every trial or readout title includes the trial acronym when one exists (registry acronym field, or the sponsor's name for the trial).",
   "items": [
     {
@@ -22,16 +22,16 @@
       "id": "tinlarebant-pdufa",
       "status": "upcoming",
       "kind": "fda",
-      "group": "Q1 2027",
-      "sort": "2027-02-12",
-      "date": "2027-02-12",
-      "when": "Feb 12, 2027",
+      "group": "Q2 2027",
+      "sort": "2027-05-12",
+      "date": "2027-05-12",
+      "when": "May 12, 2027",
       "area": "Stargardt · IRD",
       "title": "Tinlarebant for Stargardt disease type 1 (Belite Bio)",
-      "detail": "PDUFA date for the NDA, which is under priority review.",
-      "src": "Healio",
-      "url": "https://www.healio.com/news/ophthalmology/20260925/stargardt-disease-therapy-granted-priority-review-pdufa-date",
-      "confirmed": "2026-09-25",
+      "detail": "PDUFA date for the NDA; FDA extended the review period by three months (from Feb 12, 2027).",
+      "src": "Belite Bio release (6-K, Nov 20, 2026)",
+      "url": "https://www.sec.gov/Archives/edgar/data/0001889109/000110465926130425/tm2630348d1_ex99-1.htm",
+      "confirmed": "2026-11-20",
       "disease": "IRD"
     },
     {
@@ -558,10 +558,10 @@
       "id": "drcr-pdr-faricimab-ppv",
       "status": "upcoming",
       "kind": "trial",
-      "group": "Q3 2031",
-      "sort": "2031-08-01",
+      "group": "Q1 2032",
+      "sort": "2032-02-01",
       "date": null,
-      "when": "Est. Aug 2031",
+      "when": "Est. Feb 2032",
       "area": "PDR · Surgery",
       "disease": "DME/DR",
       "title": "DRCR Protocol AP: faricimab plus PRP vs vitrectomy with endolaser for PDR (Jaeb Center)",
@@ -571,7 +571,7 @@
       "nct": [
         "NCT06790784"
       ],
-      "confirmed": "2026-10-26"
+      "confirmed": "2026-11-23"
     },
     {
       "id": "semaglutide-dr",
@@ -890,12 +890,12 @@
       "disease": "Oncology",
       "title": "Belzupacap sarotalocan (bel-sar) CoMpass phase 3 topline in small choroidal melanoma (Aura)",
       "detail": "Suprachoroidal bel-sar vs sham in indeterminate lesions or small choroidal melanoma (n=108); topline data from the 15-month primary endpoint expected in the second half of 2027.",
-      "src": "Aura Q2 2026 release (8-K Ex. 99.1, Aug 11, 2026)",
-      "url": "https://www.sec.gov/Archives/edgar/data/0001501796/000119312526343408/aura-ex99_1.htm",
+      "src": "Aura Q3 2026 release (8-K Ex. 99.1, Nov 9, 2026)",
+      "url": "https://www.sec.gov/Archives/edgar/data/0001501796/000119312526452620/aura-ex99_1.htm",
       "nct": [
         "NCT06007690"
       ],
-      "confirmed": "2026-08-11"
+      "confirmed": "2026-11-09"
     },
     {
       "id": "rrd-phacovit",
@@ -1010,6 +1010,25 @@
         "NCT06985706"
       ],
       "confirmed": "2026-11-02"
+    },
+    {
+      "id": "mk8748-rvo",
+      "status": "upcoming",
+      "kind": "trial",
+      "group": "Q4 2029",
+      "sort": "2029-11-19",
+      "date": null,
+      "when": "Est. Nov 2029",
+      "area": "RVO",
+      "disease": "DME/DR",
+      "title": "MK-8748 pivotal phase 2/3 trial vs aflibercept in macular edema after RVO (Merck)",
+      "detail": "Intravitreal MK-8748 vs aflibercept 2 mg in macular edema following retinal vein occlusion (n=1,188); not yet recruiting.",
+      "src": "ClinicalTrials.gov NCT07951515",
+      "url": "https://clinicaltrials.gov/study/NCT07951515",
+      "nct": [
+        "NCT07951515"
+      ],
+      "confirmed": "2026-11-23"
     },
     {
       "id": "darovasertib-optimum11",
