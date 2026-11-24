@@ -1,6 +1,92 @@
 {
-  "updated": "2026-11-23",
+  "updated": "2026-11-24",
   "issues": [
+    {
+      "date": "2026-11-24",
+      "top": [
+        {
+          "h": "Anti-VEGF therapy for non-proliferative diabetic retinopathy without center-involving DME was associated with greater retinopathy severity improvement and less progression to PDR, without a clinically meaningful visual acuity gain, in a meta-analysis of four randomized trials (Survey of Ophthalmology)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/43072646/",
+          "src": "PubMed"
+        },
+        {
+          "h": "Five of six patients who received vial-drawn aflibercept 8 mg on a single treatment day at one tertiary center developed presumed sterile endophthalmitis within 2-4 days (J Ophthalmic Inflamm Infect)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/43071026/",
+          "src": "PubMed"
+        },
+        {
+          "h": "The Multimodal Imaging in Uveitis (MUV) taskforce issued consensus imaging guidelines for ocular syphilis, naming color fundus photography, OCT, and fundus autofluorescence as the most important modalities for diagnosis and follow-up (Ophthalmology Retina)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/43072635/",
+          "src": "PubMed"
+        }
+      ],
+      "items": [
+        {
+          "section": "research",
+          "h": "Anti-VEGF therapy for non-proliferative diabetic retinopathy without center-involving DME was associated with greater retinopathy severity improvement and less progression to PDR, without a clinically meaningful visual acuity gain, in a meta-analysis of four randomized trials (Survey of Ophthalmology)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/43072646/",
+          "src": "PubMed",
+          "ctx": "Across 1,228 participants treated with aflibercept, the ranibizumab Port Delivery System, or tarcocimab tedromer, progression to PDR was lower at 2 years (RR, 0.24; 95% CI, 0.15-0.40) and CI-DME development was reduced (RR, 0.23; 95% CI, 0.11-0.48), while BCVA differences were 0.87 letters at 1 year and 0.70 letters at 2 years. Trial sequential analysis suggested futility for a meaningful BCVA benefit, and the authors call for cautious interpretation given heterogeneity in several pooled estimates.",
+          "tag": "DR",
+          "lead": true
+        },
+        {
+          "section": "research",
+          "h": "Five of six patients who received vial-drawn aflibercept 8 mg on a single treatment day at one tertiary center developed presumed sterile endophthalmitis within 2-4 days (J Ophthalmic Inflamm Infect)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/43071026/",
+          "src": "PubMed",
+          "ctx": "Mean BCVA fell from 0.44 to 1.32 logMAR at diagnosis and was 0.40 logMAR at about one year; no cause could be established because individual vial batch numbers were not recorded and microbiological testing was limited to the single vitrectomized patient, and no comparable events followed other anti-VEGF agents given in the same session.",
+          "tag": "Safety"
+        },
+        {
+          "section": "guidelines",
+          "h": "The Multimodal Imaging in Uveitis (MUV) taskforce issued consensus imaging guidelines for ocular syphilis, naming color fundus photography, OCT, and fundus autofluorescence as the most important modalities for diagnosis and follow-up (Ophthalmology Retina)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/43072635/",
+          "src": "PubMed",
+          "ctx": "The guidelines cover acute syphilitic posterior placoid chorioretinitis, syphilitic multifocal retinitis, and syphilitic necrotizing retinitis, and conclude that fluorescein angiography, ICGA, and OCTA have a limited role in diagnosing or assessing disease activity in all three phenotypes.",
+          "tag": "Uveitis"
+        },
+        {
+          "section": "research",
+          "h": "Retinal ischemic perivascular lesions were found in 34.7% of 245 patients with active central serous chorioretinopathy versus 11.1% of 63 matched healthy controls in a cross-sectional OCT study (AJO)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/43072621/",
+          "src": "PubMed",
+          "ctx": "Hypertension was the only independent factor associated with the lesions (OR, 2.66; 95% CI, 1.20-5.87), and prevalence remained higher than in controls among patients without diagnosed hypertension (24.1% vs 11.1%)",
+          "tag": "CSCR"
+        },
+        {
+          "section": "research",
+          "h": "Male sex was associated with a higher risk of rhegmatogenous retinal detachment (HR, 1.90; 95% CI, 1.74-2.09) and choroidal neovascular membrane (HR, 1.27; 95% CI, 1.18-1.37) in noninfectious uveitis, in a propensity-matched TriNetX analysis (AJO)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/43072620/",
+          "src": "PubMed",
+          "ctx": "Of 225,607 patients with noninfectious uveitis, 57.9% were female, and after matching (93,869 per cohort) both associations persisted in all sensitivity analyses.",
+          "tag": "Uveitis"
+        }
+      ],
+      "lead": {
+        "section": "research",
+        "h": "Anti-VEGF therapy for non-proliferative diabetic retinopathy without center-involving DME was associated with greater retinopathy severity improvement and less progression to PDR, without a clinically meaningful visual acuity gain, in a meta-analysis of four randomized trials (Survey of Ophthalmology)",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/43072646/",
+        "src": "PubMed",
+        "ctx": "Across 1,228 participants treated with aflibercept, the ranibizumab Port Delivery System, or tarcocimab tedromer, progression to PDR was lower at 2 years (RR, 0.24; 95% CI, 0.15-0.40) and CI-DME development was reduced (RR, 0.23; 95% CI, 0.11-0.48), while BCVA differences were 0.87 letters at 1 year and 0.70 letters at 2 years. Trial sequential analysis suggested futility for a meaningful BCVA benefit, and the authors call for cautious interpretation given heterogeneity in several pooled estimates.",
+        "tag": "DR",
+        "why": "The pooled randomized data support an anatomic benefit from anti-VEGF treatment of NPDR without CI-DME but, according to the authors, not a clinically meaningful visual acuity benefit, which bears on the treat-versus-observe discussion with patients."
+      },
+      "numbers": [
+        {
+          "big": "1,228",
+          "label": "Participants across the four randomized trials of anti-VEGF therapy for NPDR without CI-DME."
+        },
+        {
+          "big": "5 of 6",
+          "label": "Patients who developed presumed sterile endophthalmitis after aflibercept 8 mg injections on a single treatment day."
+        },
+        {
+          "big": "34.7%",
+          "label": "Patients with active central serous chorioretinopathy who had retinal ischemic perivascular lesions."
+        }
+      ]
+    },
     {
       "date": "2026-11-23",
       "top": [
