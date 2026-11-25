@@ -1,6 +1,68 @@
 {
-  "updated": "2026-11-24",
+  "updated": "2026-11-25",
   "issues": [
+    {
+      "date": "2026-11-25",
+      "top": [
+        {
+          "h": "GLP-1 receptor agonists probably increase the risk of diabetic retinopathy and other retinal events, a meta-analysis of 142 randomized trials finds",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/43078246/",
+          "src": "Ophthalmology"
+        },
+        {
+          "h": "Type 1 ROP treatment fell among Black infants after implementation of a biphasic oxygen protocol, a before-and-after cohort study finds",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/43078428/",
+          "src": "Ophthalmology Retina"
+        },
+        {
+          "h": "Cystoid macular changes showed an increasing trend over 12 months in idiopathic epiretinal membrane, a prospective study finds, though visual acuity remained stable",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/43076662/",
+          "src": "Retina"
+        }
+      ],
+      "items": [
+        {
+          "section": "research",
+          "h": "GLP-1 receptor agonists probably increase the risk of diabetic retinopathy and other retinal events, a meta-analysis of 142 randomized trials finds",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/43078246/",
+          "src": "Ophthalmology",
+          "ctx": "Across 172,050 participants, the Ophthalmology review reported odds ratios of 1.15 (95% CI, 1.03-1.28) for diabetic retinopathy, 1.64 (95% CI, 1.08-2.49) for vitreous hemorrhage, and 2.33 (95% CI, 1.22-4.45) for retinal vascular occlusion, on moderate- to high-certainty evidence. The effect on age-related macular degeneration was very uncertain (OR, 0.91; 95% CI, 0.15-5.45)",
+          "tag": "DR",
+          "lead": true
+        },
+        {
+          "section": "research",
+          "h": "Type 1 ROP treatment fell among Black infants after implementation of a biphasic oxygen protocol, a before-and-after cohort study finds",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/43078428/",
+          "src": "Ophthalmology Retina",
+          "ctx": "Among 903 screened infants, the proportion of Black infants treated fell from 5.8% to 1.65% after implementation, with no difference among infants of other races, and the authors say the differential association should be interpreted cautiously.",
+          "tag": "Peds"
+        },
+        {
+          "section": "research",
+          "h": "Cystoid macular changes showed an increasing trend over 12 months in idiopathic epiretinal membrane, a prospective study finds, though visual acuity remained stable",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/43076662/",
+          "src": "Retina",
+          "ctx": "In a prospective 100-eye study in Retina, lower microperimetry average threshold was associated with greater central macular volume and with cystoid macular changes.",
+          "tag": "Imaging"
+        }
+      ],
+      "lead": {
+        "section": "research",
+        "h": "GLP-1 receptor agonists probably increase the risk of diabetic retinopathy and other retinal events, a meta-analysis of 142 randomized trials finds",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/43078246/",
+        "src": "Ophthalmology",
+        "ctx": "Across 172,050 participants, the Ophthalmology review reported odds ratios of 1.15 (95% CI, 1.03-1.28) for diabetic retinopathy, 1.64 (95% CI, 1.08-2.49) for vitreous hemorrhage, and 2.33 (95% CI, 1.22-4.45) for retinal vascular occlusion, on moderate- to high-certainty evidence. The effect on age-related macular degeneration was very uncertain (OR, 0.91; 95% CI, 0.15-5.45)",
+        "tag": "DR",
+        "why": "The authors conclude the absolute ocular risks are small and likely outweighed by cardiometabolic benefits, but advise early monitoring for retinal events in patients with diabetes or pre-existing retinopathy."
+      },
+      "numbers": [
+        {
+          "big": "172,050",
+          "label": "Participants across 142 randomized trials in the GLP-1 receptor agonist meta-analysis."
+        }
+      ]
+    },
     {
       "date": "2026-11-24",
       "top": [
