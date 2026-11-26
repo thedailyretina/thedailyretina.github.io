@@ -1,6 +1,72 @@
 {
-  "updated": "2026-11-25",
+  "updated": "2026-11-26",
   "issues": [
+    {
+      "date": "2026-11-26",
+      "top": [
+        {
+          "h": "Navigated short-pulse panretinal photocoagulation needed more retreatments than conventional argon PRP in a 497-eye retrospective cohort (Graefe's Archive)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/43073419/",
+          "src": "PubMed"
+        },
+        {
+          "h": "Suprachoroidal triamcinolone acetonide met the treatment-response criterion in 54.2% of eyes with noninfectious uveitic macular edema at 1 month in a 101-eye real-world series (Retina)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/43076687/",
+          "src": "PubMed"
+        },
+        {
+          "h": "Change in mean microperimetry sensitivity was not significantly correlated with 12-month structural progression in a post hoc analysis of 99 eyes from the NIGHT choroideremia natural history study (TVST)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/43082260/",
+          "src": "PubMed"
+        }
+      ],
+      "items": [
+        {
+          "section": "research",
+          "h": "Navigated short-pulse panretinal photocoagulation needed more retreatments than conventional argon PRP in a 497-eye retrospective cohort (Graefe's Archive)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/43073419/",
+          "src": "PubMed",
+          "ctx": "Two-year retreatment-free survival was 72.2% after argon PRP versus 62.0% and 42.7% in two navigated 577-nm laser cohorts, and after adjustment for age, indication, baseline severity and prior anti-VEGF treatment the retreatment risk remained higher only in the 2022-2024 navigated cohort (HR 2.38; 95% CI, 1.59-3.56), with no difference in vitrectomy rates. The authors attribute the gap partly to more active disease being selected for the new system and conclude that initial navigated treatment was insufficient.",
+          "tag": "Laser",
+          "lead": true
+        },
+        {
+          "section": "research",
+          "h": "Suprachoroidal triamcinolone acetonide met the treatment-response criterion in 54.2% of eyes with noninfectious uveitic macular edema at 1 month in a 101-eye real-world series (Retina)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/43076687/",
+          "src": "PubMed",
+          "ctx": "In this single-center retrospective series, mean central foveal thickness fell by 111.8 μm at 6 months, 9.9% of eyes had an IOP rise of more than 10 mm Hg, 69.3% received supplemental therapy after the first injection, and there were no cases of endophthalmitis or retinal detachment.",
+          "tag": "Uveitis"
+        },
+        {
+          "section": "research",
+          "h": "Change in mean microperimetry sensitivity was not significantly correlated with 12-month structural progression in a post hoc analysis of 99 eyes from the NIGHT choroideremia natural history study (TVST)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/43082260/",
+          "src": "PubMed",
+          "ctx": "Preserved autofluorescence area fell from 3.23 to 2.90 mm² and mean sensitivity declined, but correlations with raw area change (r = 0.095), square-root area change (r = 0.015) and border displacement (r = 0.122) were not significant, which the authors say may limit mean sensitivity as a functional outcome measure in choroideremia.",
+          "tag": "IRD"
+        }
+      ],
+      "lead": {
+        "section": "research",
+        "h": "Navigated short-pulse panretinal photocoagulation needed more retreatments than conventional argon PRP in a 497-eye retrospective cohort (Graefe's Archive)",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/43073419/",
+        "src": "PubMed",
+        "ctx": "Two-year retreatment-free survival was 72.2% after argon PRP versus 62.0% and 42.7% in two navigated 577-nm laser cohorts, and after adjustment for age, indication, baseline severity and prior anti-VEGF treatment the retreatment risk remained higher only in the 2022-2024 navigated cohort (HR 2.38; 95% CI, 1.59-3.56), with no difference in vitrectomy rates. The authors attribute the gap partly to more active disease being selected for the new system and conclude that initial navigated treatment was insufficient.",
+        "tag": "Laser",
+        "why": "For practices adopting navigated PRP systems, the authors recommend that new lasers be accompanied by systematic evaluation of efficacy and patient selection, with treatment protocols adapted accordingly."
+      },
+      "numbers": [
+        {
+          "big": "497",
+          "label": "Eyes in the retrospective comparison of navigated and argon panretinal photocoagulation."
+        },
+        {
+          "big": "54.2%",
+          "label": "Eyes with noninfectious uveitic macular edema meeting the response criterion 1 month after suprachoroidal triamcinolone."
+        }
+      ]
+    },
     {
       "date": "2026-11-25",
       "top": [
