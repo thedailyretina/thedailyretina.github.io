@@ -1,6 +1,72 @@
 {
-  "updated": "2026-11-26",
+  "updated": "2026-11-27",
   "issues": [
+    {
+      "date": "2026-11-27",
+      "top": [
+        {
+          "h": "Ellipsoid zone width was associated with visual acuity in CNGA1-associated retinitis pigmentosa in a 101-patient multicenter cohort",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/43098448/",
+          "src": "American Journal of Ophthalmology"
+        },
+        {
+          "h": "The pitchfork sign appeared in hemorrhagic type 2 CNV of non-inflammatory as well as inflammatory causes",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/43086319/",
+          "src": "Eye"
+        },
+        {
+          "h": "An ultra-widefield foundation model pretrained on 243,505 unlabeled images performed comparably to or better than RETFound",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/43083883/",
+          "src": "Graefe's Archive"
+        }
+      ],
+      "items": [
+        {
+          "section": "research",
+          "h": "Ellipsoid zone width was associated with visual acuity in CNGA1-associated retinitis pigmentosa in a 101-patient multicenter cohort",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/43098448/",
+          "src": "American Journal of Ophthalmology",
+          "ctx": "The cross-sectional study of 202 eyes with CNGA1-, CNGB1-, CNGA3- or CNGB3-related retinopathies identified 62 distinct variants and genotype-specific autofluorescence and OCT patterns. In CNGA1-associated RP, EZ width remained associated with BCVA after adjustment for age and central foveal thickness (β per 1000 μm, −0.260 logMAR; 95% CI, −0.353 to −0.168)",
+          "tag": "IRD",
+          "lead": true
+        },
+        {
+          "section": "research",
+          "h": "The pitchfork sign appeared in hemorrhagic type 2 CNV of non-inflammatory as well as inflammatory causes",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/43086319/",
+          "src": "Eye",
+          "ctx": "In a single-center retrospective series of 72 eyes with treatment-naive hemorrhagic type 2 CNV, prevalence ranged from 20% in angioid streaks to 66.7% in inflammatory CNV, and the authors concluded the sign is not pathognomonic for inflammatory CNV.",
+          "tag": "CNV"
+        },
+        {
+          "section": "research",
+          "h": "An ultra-widefield foundation model pretrained on 243,505 unlabeled images performed comparably to or better than RETFound",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/43083883/",
+          "src": "Graefe's Archive",
+          "ctx": "In multiclass classification on the development-site dataset, UWF-FM reached an AUROC of 0.959 versus 0.950 for RETFound and 0.945 for ViT, with comparable performance on an external UWF dataset.",
+          "tag": "Imaging"
+        }
+      ],
+      "lead": {
+        "section": "research",
+        "h": "Ellipsoid zone width was associated with visual acuity in CNGA1-associated retinitis pigmentosa in a 101-patient multicenter cohort",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/43098448/",
+        "src": "American Journal of Ophthalmology",
+        "ctx": "The cross-sectional study of 202 eyes with CNGA1-, CNGB1-, CNGA3- or CNGB3-related retinopathies identified 62 distinct variants and genotype-specific autofluorescence and OCT patterns. In CNGA1-associated RP, EZ width remained associated with BCVA after adjustment for age and central foveal thickness (β per 1000 μm, −0.260 logMAR; 95% CI, −0.353 to −0.168)",
+        "tag": "IRD",
+        "why": "The authors propose EZ width as a candidate structural biomarker in CNGA1-associated RP that merits further evaluation, and say the exploratory age-associated EZ pattern needs longitudinal validation before it informs progression estimates or therapeutic timing."
+      },
+      "numbers": [
+        {
+          "big": "62",
+          "label": "distinct variants identified across four CNG channel genes in 101 patients."
+        },
+        {
+          "big": "243,505",
+          "label": "unlabeled ultra-widefield images used to pretrain UWF-FM."
+        }
+      ]
+    },
     {
       "date": "2026-11-26",
       "top": [
